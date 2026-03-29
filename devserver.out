@@ -1,0 +1,156 @@
+
+> my-site@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://10.200.143.107:3000
+- Environments: .env.local
+✓ Ready in 1006ms
+Creating turbopack project { dir: 'C:\\xampp\\htdocs\\NewStairio\\my-site', testMode: true }
+
+○ Compiling / ...
+ GET / 200 in 10.4s (next.js: 9.1s, application-code: 1325ms)
+ GET / 200 in 389ms (next.js: 17ms, application-code: 372ms)
+✓ Compiled in 350ms
+✓ Compiled in 872ms
+✓ Compiled in 288ms
+✓ Compiled in 417ms
+✓ Compiled in 529ms
+ GET / 200 in 1437ms (next.js: 297ms, application-code: 1140ms)
+ GET / 200 in 92ms (next.js: 9ms, application-code: 83ms)
+ GET / 200 in 980ms (next.js: 812ms, application-code: 168ms)
+ GET / 200 in 1097ms (next.js: 9ms, application-code: 1088ms)
+✓ Compiled in 121ms
+✓ Compiled in 478ms
+ GET /website-builder 200 in 3.0s (next.js: 2.3s, application-code: 685ms)
+ GET / 200 in 895ms (next.js: 169ms, application-code: 726ms)
+✓ Compiled in 434ms
+✓ Compiled in 356ms
+ GET / 200 in 902ms (next.js: 196ms, application-code: 705ms)
+✓ Compiled in 431ms
+ GET / 200 in 954ms (next.js: 205ms, application-code: 749ms)
+ GET /website-builder 200 in 244ms (next.js: 170ms, application-code: 73ms)
+✓ Compiled in 126ms
+✓ Compiled in 208ms
+ GET /hotel-saas 200 in 2.6s (next.js: 2.0s, application-code: 588ms)
+✓ Compiled in 233ms
+ GET / 200 in 398ms (next.js: 261ms, application-code: 137ms)
+✓ Compiled in 982ms
+ GET / 200 in 117ms (next.js: 16ms, application-code: 101ms)
+ GET / 200 in 405ms (next.js: 320ms, application-code: 85ms)
+ GET / 200 in 1702ms (next.js: 261ms, application-code: 1441ms)
+ GET / 200 in 1739ms (next.js: 369ms, application-code: 1370ms)
+ GET / 200 in 467ms (next.js: 15ms, application-code: 453ms)
+ GET / 200 in 335ms (next.js: 10ms, application-code: 325ms)
+ GET /hotel-saas 200 in 307ms (next.js: 205ms, application-code: 102ms)
+ GET /quote 200 in 1012ms (next.js: 974ms, application-code: 38ms)
+ GET / 200 in 59ms (next.js: 5ms, application-code: 55ms)
+ GET /quote 200 in 33ms (next.js: 4ms, application-code: 28ms)
+ GET / 200 in 47ms (next.js: 5ms, application-code: 42ms)
+✓ Compiled in 262ms
+ GET /team 200 in 2.4s (next.js: 1879ms, application-code: 526ms)
+✓ Compiled in 212ms
+ GET /team 200 in 86ms (next.js: 17ms, application-code: 68ms)
+ GET / 200 in 1224ms (next.js: 210ms, application-code: 1013ms)
+✓ Compiled in 347ms
+✓ Compiled in 531ms
+✓ Compiled in 601ms
+ GET /team 200 in 1060ms (next.js: 285ms, application-code: 775ms)
+ GET /team 200 in 285ms (next.js: 24ms, application-code: 261ms)
+ GET /team 200 in 158ms (next.js: 9ms, application-code: 150ms)
+ GET / 200 in 1242ms (next.js: 648ms, application-code: 594ms)
+ GET /team 200 in 187ms (next.js: 8ms, application-code: 179ms)
+ GET /team 200 in 187ms (next.js: 49ms, application-code: 137ms)
+ GET / 200 in 514ms (next.js: 63ms, application-code: 451ms)
+ GET /team 200 in 203ms (next.js: 7ms, application-code: 196ms)
+ GET /team 200 in 236ms (next.js: 7ms, application-code: 229ms)
+ GET /team 200 in 201ms (next.js: 11ms, application-code: 190ms)
+ GET /team 200 in 160ms (next.js: 32ms, application-code: 128ms)
+ GET /team 200 in 164ms (next.js: 7ms, application-code: 156ms)
+ GET /team 200 in 240ms (next.js: 6ms, application-code: 234ms)
+ GET /team 200 in 279ms (next.js: 42ms, application-code: 237ms)
+ GET /team 200 in 267ms (next.js: 8ms, application-code: 259ms)
+ GET /team 200 in 221ms (next.js: 12ms, application-code: 209ms)
+ GET /team 200 in 218ms (next.js: 58ms, application-code: 160ms)
+ GET /team 200 in 167ms (next.js: 44ms, application-code: 123ms)
+ GET /team 200 in 236ms (next.js: 13ms, application-code: 223ms)
+ GET /team 200 in 244ms (next.js: 5ms, application-code: 239ms)
+ GET / 200 in 337ms (next.js: 6ms, application-code: 331ms)
+ GET / 200 in 287ms (next.js: 8ms, application-code: 280ms)
+ GET / 200 in 288ms (next.js: 56ms, application-code: 232ms)
+ GET / 200 in 241ms (next.js: 55ms, application-code: 187ms)
+ GET / 200 in 339ms (next.js: 7ms, application-code: 331ms)
+ GET / 200 in 283ms (next.js: 17ms, application-code: 266ms)
+ GET / 200 in 323ms (next.js: 10ms, application-code: 314ms)
+ GET / 200 in 322ms (next.js: 61ms, application-code: 262ms)
+ GET / 200 in 223ms (next.js: 50ms, application-code: 173ms)
+ GET / 200 in 226ms (next.js: 7ms, application-code: 219ms)
+ GET / 200 in 326ms (next.js: 6ms, application-code: 320ms)
+ GET / 200 in 272ms (next.js: 5ms, application-code: 267ms)
+ GET / 200 in 212ms (next.js: 9ms, application-code: 203ms)
+ GET / 200 in 210ms (next.js: 56ms, application-code: 154ms)
+ GET / 200 in 112ms (next.js: 6ms, application-code: 106ms)
+ GET / 200 in 112ms (next.js: 51ms, application-code: 61ms)
+✓ Compiled in 138ms
+ GET /about 200 in 1635ms (next.js: 1065ms, application-code: 570ms)
+ GET / 200 in 269ms (next.js: 182ms, application-code: 88ms)
+✓ Compiled in 681ms
+ GET / 200 in 916ms (next.js: 285ms, application-code: 630ms)
+ GET / 200 in 599ms (next.js: 9ms, application-code: 590ms)
+ GET / 200 in 600ms (next.js: 10ms, application-code: 590ms)
+ GET / 200 in 601ms (next.js: 80ms, application-code: 521ms)
+ GET / 200 in 606ms (next.js: 146ms, application-code: 460ms)
+ GET / 200 in 532ms (next.js: 8ms, application-code: 524ms)
+ GET / 200 in 431ms (next.js: 8ms, application-code: 423ms)
+ GET / 200 in 409ms (next.js: 9ms, application-code: 400ms)
+ GET / 200 in 332ms (next.js: 8ms, application-code: 324ms)
+ GET / 200 in 415ms (next.js: 66ms, application-code: 349ms)
+ GET / 200 in 307ms (next.js: 6ms, application-code: 301ms)
+ GET / 200 in 414ms (next.js: 6ms, application-code: 408ms)
+ GET / 200 in 408ms (next.js: 7ms, application-code: 401ms)
+ GET / 200 in 383ms (next.js: 11ms, application-code: 373ms)
+ GET / 200 in 296ms (next.js: 11ms, application-code: 285ms)
+ GET / 200 in 298ms (next.js: 7ms, application-code: 291ms)
+ GET / 200 in 352ms (next.js: 56ms, application-code: 297ms)
+ GET / 200 in 343ms (next.js: 5ms, application-code: 337ms)
+ GET / 200 in 342ms (next.js: 5ms, application-code: 337ms)
+ GET / 200 in 345ms (next.js: 6ms, application-code: 339ms)
+ GET / 200 in 307ms (next.js: 6ms, application-code: 300ms)
+ GET / 200 in 252ms (next.js: 6ms, application-code: 247ms)
+ GET / 200 in 288ms (next.js: 5ms, application-code: 283ms)
+ GET / 200 in 233ms (next.js: 6ms, application-code: 227ms)
+ GET / 200 in 180ms (next.js: 6ms, application-code: 175ms)
+ GET / 200 in 110ms (next.js: 7ms, application-code: 103ms)
+✓ Compiled in 191ms
+✓ Compiled in 191ms
+ GET /privacy-policy 200 in 1318ms (next.js: 909ms, application-code: 409ms)
+ GET /terms-of-service 200 in 1880ms (next.js: 1612ms, application-code: 268ms)
+ GET /refund-policy 200 in 746ms (next.js: 592ms, application-code: 154ms)
+ GET /blog 200 in 943ms (next.js: 719ms, application-code: 224ms)
+ GET /help-center 200 in 1636ms (next.js: 1462ms, application-code: 174ms)
+ GET /quote 200 in 633ms (next.js: 375ms, application-code: 258ms)
+ GET / 200 in 382ms (next.js: 261ms, application-code: 121ms)
+ GET /team 200 in 755ms (next.js: 212ms, application-code: 543ms)
+✓ Compiled in 324ms
+ GET /team 200 in 747ms (next.js: 91ms, application-code: 657ms)
+ GET /quote 200 in 749ms (next.js: 248ms, application-code: 501ms)
+ GET /blog 200 in 879ms (next.js: 16ms, application-code: 863ms)
+ GET /privacy-policy 200 in 880ms (next.js: 528ms, application-code: 352ms)
+ GET /terms-of-service 200 in 314ms (next.js: 26ms, application-code: 287ms)
+ GET /team 200 in 246ms (next.js: 10ms, application-code: 236ms)
+ GET / 200 in 1081ms (next.js: 458ms, application-code: 622ms)
+ GET /blog 200 in 411ms (next.js: 12ms, application-code: 399ms)
+ GET /quote 200 in 285ms (next.js: 11ms, application-code: 274ms)
+ GET /privacy-policy 200 in 194ms (next.js: 9ms, application-code: 185ms)
+ GET /terms-of-service 200 in 138ms (next.js: 9ms, application-code: 128ms)
+ GET / 200 in 333ms (next.js: 58ms, application-code: 274ms)
+ GET / 200 in 793ms (next.js: 9ms, application-code: 785ms)
+ GET /quote 200 in 158ms (next.js: 7ms, application-code: 151ms)
+ GET /website-builder 200 in 789ms (next.js: 164ms, application-code: 625ms)
+ GET /privacy-policy 200 in 121ms (next.js: 6ms, application-code: 114ms)
+ GET /team 200 in 151ms (next.js: 5ms, application-code: 147ms)
+ GET / 200 in 66ms (next.js: 6ms, application-code: 60ms)
+ GET / 200 in 389ms (next.js: 9ms, application-code: 380ms)
+ GET /team 200 in 213ms (next.js: 8ms, application-code: 205ms)
+✓ Compiled in 173ms

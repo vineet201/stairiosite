@@ -1,0 +1,763 @@
+"use client";
+
+import { motion, useInView, useSpring, AnimatePresence } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
+import { LiquidMetalButton } from "@/components/ui/liquid-metal-button";
+import { 
+  Sparkles, 
+  MousePointerClick, 
+  Layout, 
+  Rocket,
+  Check,
+  ChevronDown,
+  Play,
+  Zap,
+  Smartphone,
+  Search,
+  Server,
+  Shield,
+  Users,
+  Star,
+  Globe,
+  Code,
+  Palette
+} from "lucide-react";
+
+// Animated Counter Component
+function AnimatedCounter({ value, suffix = "" }: { value: string; suffix?: string }) {
+  const [count, setCount] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const numericValue = parseInt(value.replace(/[^0-9]/g, ""));
+  
+  useEffect(() => {
+    if (isInView) {
+      const duration = 2000;
+      const steps = 60;
+      const increment = numericValue / steps;
+      let current = 0;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= numericValue) {
+          setCount(numericValue);
+          clearInterval(timer);
+        } else {
+          setCount(Math.floor(current));
+        }
+      }, duration / steps);
+      return () => clearInterval(timer);
+    }
+  }, [isInView, numericValue]);
+  
+  return (
+    <span ref={ref}>
+      {count.toLocaleString()}{suffix}
+    </span>
+  );
+}
+
+// Premium FAQ Accordion Component
+function FAQItem({ question, answer, isOpen, onClick, index }: { 
+  question: string; 
+  answer: string; 
+  isOpen: boolean; 
+  onClick: () => void;
+  index: number;
+}) {
+  return (
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: index * 0.1 }}
+      className="group relative"
+    >
+      <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r from-[#D8B4FE]/50 via-[#FF9132]/50 to-[#5DDF18]/50 opacity-0 blur-sm transition-opacity duration-500 ${isOpen ? "opacity-100" : "group-hover:opacity-50"}`} />
+      
+      <div className={`relative rounded-2xl border transition-all duration-300 ${isOpen ? "bg-white/[0.03] border-[#D8B4FE]/30" : "bg-white/[0.01] border-white/[0.06] hover:border-white/[0.12]"}`}>
+        <button 
+          onClick={onClick}
+          className="w-full p-6 flex items-center justify-between text-left"
+        >
+          <span className={`text-lg font-medium transition-colors duration-300 ${isOpen ? "text-[#D8B4FE]" : "text-white group-hover:text-[#D8B4FE]"}`}>
+            {question}
+          </span>
+          <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${isOpen ? "bg-[#D8B4FE]/20 rotate-180" : "bg-white/[0.05]"}`}>
+            <ChevronDown className={`w-4 h-4 transition-colors ${isOpen ? "text-[#D8B4FE]" : "text-neutral-400"}`} />
+          </div>
+        </button>
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="overflow-hidden"
+            >
+              <p className="px-6 pb-6 text-neutral-400 leading-relaxed">{answer}</p>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </motion.div>
+  );
+}
+
+// Floating Orb Component
+function FloatingOrb({ color, size, top, left, delay = 0 }: { color: string; size: number; top: string; left: string; delay?: number }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ 
+        opacity: [0.3, 0.6, 0.3],
+        scale: [1, 1.2, 1],
+        y: [-20, 20, -20],
+        x: [-10, 10, -10]
+      }}
+      transition={{ 
+        duration: 8 + delay * 2,
+        repeat: Infinity,
+        delay,
+        ease: "easeInOut"
+      }}
+      className="absolute rounded-full pointer-events-none"
+      style={{
+        width: size,
+        height: size,
+        top,
+        left,
+        background: `radial-gradient(circle, ${color}40, transparent 70%)`,
+        filter: "blur(40px)",
+      }}
+    />
+  );
+}
+
+// Glowing Card Border Component
+function GlowingBorder({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+  return (
+    <div className={`relative group ${className}`}>
+      <div className="absolute -inset-[1px] rounded-3xl bg-gradient-to-r from-[#D8B4FE]/0 via-[#D8B4FE]/50 to-[#FF9132]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm" />
+      <div className="absolute -inset-[1px] rounded-3xl bg-gradient-to-r from-[#D8B4FE]/0 via-[#D8B4FE]/30 to-[#FF9132]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      {children}
+    </div>
+  );
+}
+
+export default function WebsiteBuilderPage() {
+  const heroRef = useRef(null);
+  const problemRef = useRef(null);
+  const featuresRef = useRef(null);
+  const valueRef = useRef(null);
+  const demoRef = useRef(null);
+  const pricingRef = useRef(null);
+  const processRef = useRef(null);
+  const statsRef = useRef(null);
+  const highlightsRef = useRef(null);
+  const faqRef = useRef(null);
+  const ctaRef = useRef(null);
+
+  const isHeroInView = useInView(heroRef, { once: true });
+  const isProblemInView = useInView(problemRef, { once: true, margin: "-100px" });
+  const isFeaturesInView = useInView(featuresRef, { once: true, margin: "-100px" });
+  const isValueInView = useInView(valueRef, { once: true, margin: "-100px" });
+  const isDemoInView = useInView(demoRef, { once: true, margin: "-100px" });
+  const isPricingInView = useInView(pricingRef, { once: true, margin: "-100px" });
+  const isProcessInView = useInView(processRef, { once: true, margin: "-100px" });
+  const isStatsInView = useInView(statsRef, { once: true, margin: "-100px" });
+  const isHighlightsInView = useInView(highlightsRef, { once: true, margin: "-100px" });
+  const isFaqInView = useInView(faqRef, { once: true, margin: "-100px" });
+  const isCtaInView = useInView(ctaRef, { once: true, margin: "-100px" });
+
+  const [activeTab, setActiveTab] = useState("design");
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [hoveredPlan, setHoveredPlan] = useState<number | null>(null);
+
+  const features = [
+    {
+      icon: Sparkles,
+      title: "AI Design Assistant",
+      description: "Automatically creates high-converting website layouts tailored to your business.",
+      tags: ["AI-powered", "Conversion-focused", "Smart layouts"],
+      color: "#D8B4FE",
+      gradient: "from-[#D8B4FE] to-[#A855F7]"
+    },
+    {
+      icon: MousePointerClick,
+      title: "Drag & Drop Builder",
+      description: "Easily customise your website without any technical knowledge.",
+      tags: ["No coding", "User-friendly", "Flexible"],
+      color: "#FF9132",
+      gradient: "from-[#FF9132] to-[#F97316]"
+    },
+    {
+      icon: Layout,
+      title: "Smart Templates",
+      description: "Professionally designed templates built for Indian businesses and real-world conversions.",
+      tags: ["Industry-ready", "Optimised", "Modern UI"],
+      color: "#5DDF18",
+      gradient: "from-[#5DDF18] to-[#22C55E]"
+    },
+    {
+      icon: Rocket,
+      title: "One-Click Deploy",
+      description: "Launch your website instantly with fast, secure, and reliable hosting.",
+      tags: ["Fast launch", "Secure", "Scalable"],
+      color: "#D8B4FE",
+      gradient: "from-[#D8B4FE] to-[#FF9132]"
+    }
+  ];
+
+  const highlights = [
+    { icon: Zap, text: "Designed to convert visitors into customers", color: "#D8B4FE" },
+    { icon: Smartphone, text: "Mobile-first experience", color: "#FF9132" },
+    { icon: Rocket, text: "Fast loading performance", color: "#5DDF18" },
+    { icon: Search, text: "SEO-ready structure", color: "#D8B4FE" },
+    { icon: Server, text: "Scalable architecture", color: "#FF9132" },
+    { icon: Shield, text: "Secure and reliable", color: "#5DDF18" }
+  ];
+
+  const faqs = [
+    { question: "How fast can my website go live?", answer: "Most websites are ready within 10–14 days. Advanced features may take slightly longer." },
+    { question: "What do you need from me?", answer: "Logo, business details, content (we help), and 3–5 reference websites." },
+    { question: "Who owns the website?", answer: "You own everything — 100%. Full access and control." },
+    { question: "Any hidden costs later?", answer: "No. Everything is transparent. Renewal is typically 10–15% annually." },
+    { question: "Can I update the website myself?", answer: "Yes. We make it simple and guide you." },
+    { question: "Do you redesign existing websites?", answer: "Yes. We can upgrade your current website into a modern system." }
+  ];
+
+  const processSteps = [
+    { title: "Understanding", description: "Your business & goals", icon: Search },
+    { title: "Designing", description: "Building your website", icon: Palette },
+    { title: "Refining", description: "Feedback & optimisation", icon: Code },
+    { title: "Launching", description: "Ongoing support", icon: Rocket }
+  ];
+
+  const pricingPlans = [
+    { name: "Basic", tagline: "Start your online presence", features: ["Simple professional website", "Mobile-friendly design", "Essential pages", "Basic SEO"], cta: "Get Started", popular: false },
+    { name: "Standard", tagline: "Build trust & grow faster", features: ["Everything in Basic", "Premium UI/UX", "Faster performance", "More features"], cta: "Get Started", popular: true },
+    { name: "Pro", tagline: "Scale your business", features: ["Everything in Standard", "Custom features", "API integrations", "Advanced SEO & analytics"], cta: "Contact Sales", popular: false }
+  ];
+
+  const demoTabs = [
+    { id: "design", title: "AI-Powered Design", description: "Our AI analyses your business type and automatically suggests the best layouts, colors, and content structure for maximum conversions.", features: ["Smart layout suggestions", "Color palette matching", "Content optimization"], icon: Sparkles, color: "#D8B4FE" },
+    { id: "customisation", title: "Drag & Drop Editor", description: "Intuitive visual editor that lets you customize every element without writing a single line of code.", features: ["Real-time preview", "Mobile responsive editing", "Component library"], icon: MousePointerClick, color: "#FF9132" },
+    { id: "deployment", title: "One-Click Launch", description: "Deploy your website to our fast, secure servers with a single click. SSL, CDN, and backups included.", features: ["Instant deployment", "Free SSL certificate", "Global CDN"], icon: Rocket, color: "#5DDF18" }
+  ];
+
+  return (
+    <main className="min-h-screen bg-[#030303] text-white relative overflow-hidden">
+      {/* Premium Background Effects */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(216,180,254,0.08),transparent)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_80%_60%,rgba(255,145,50,0.05),transparent)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_20%_80%,rgba(93,223,24,0.04),transparent)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,black,transparent)]" />
+        <FloatingOrb color="#D8B4FE" size={400} top="10%" left="20%" delay={0} />
+        <FloatingOrb color="#FF9132" size={300} top="40%" left="70%" delay={2} />
+        <FloatingOrb color="#5DDF18" size={250} top="70%" left="30%" delay={4} />
+      </div>
+
+      {/* ==================== HERO SECTION ==================== */}
+      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center pt-20 pb-16">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {[...Array(20)].map((_, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: [0, 1, 0], y: [Math.random() * 100, Math.random() * -100 - 100], x: [0, (Math.random() - 0.5) * 100] }}
+              transition={{ duration: 3 + Math.random() * 4, repeat: Infinity, delay: Math.random() * 5, ease: "easeOut" }}
+              className="absolute w-1 h-1 rounded-full"
+              style={{ left: `${Math.random() * 100}%`, top: `${60 + Math.random() * 40}%`, background: ["#D8B4FE", "#FF9132", "#5DDF18"][Math.floor(Math.random() * 3)] }}
+            />
+          ))}
+        </div>
+
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-[#D8B4FE]/10 opacity-30" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-[#FF9132]/10 opacity-20" />
+
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center">
+          <motion.div initial={{ opacity: 0, y: 30, scale: 0.95 }} animate={isHeroInView ? { opacity: 1, y: 0, scale: 1 } : {}} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}>
+            <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#D8B4FE]/10 to-[#FF9132]/10 border border-[#D8B4FE]/20 mb-10 backdrop-blur-sm">
+              <motion.div animate={{ scale: [1, 1.3, 1] }} transition={{ duration: 2, repeat: Infinity }} className="w-2 h-2 rounded-full bg-[#5DDF18] shadow-[0_0_10px_#5DDF18]" />
+              <span className="text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#D8B4FE] to-[#FF9132] tracking-wide uppercase">AI-Powered Website Builder</span>
+            </div>
+          </motion.div>
+
+          <motion.h1 initial={{ opacity: 0, y: 40 }} animate={isHeroInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }} className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.1] mb-8 tracking-tight">
+            <span className="text-white">Your business is losing</span>
+            <br />
+            <span className="relative inline-block">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#D8B4FE] via-[#FF9132] to-[#D8B4FE] animate-gradient bg-[length:200%_auto]">customers every single</span>
+            </span>
+            <br />
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF9132] to-[#D8B4FE]">day.</span>
+          </motion.h1>
+
+          <motion.p initial={{ opacity: 0, y: 30 }} animate={isHeroInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, delay: 0.25 }} className="text-xl sm:text-2xl md:text-3xl text-neutral-300 mb-5 font-light">
+            Because when people search for you online… they find <span className="text-[#FF9132] font-medium">nothing</span>.
+          </motion.p>
+
+          <motion.p initial={{ opacity: 0, y: 30 }} animate={isHeroInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, delay: 0.35 }} className="text-lg text-neutral-400 max-w-3xl mx-auto mb-12 leading-relaxed">
+            Build a powerful website that earns trust, attracts customers, and drives real sales — not just traffic.
+          </motion.p>
+
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={isHeroInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, delay: 0.45 }} className="flex flex-col sm:flex-row gap-5 justify-center items-center">
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#D8B4FE] via-[#FF9132] to-[#5DDF18] rounded-full opacity-50 blur-lg group-hover:opacity-75 transition-opacity" />
+              <LiquidMetalButton label="Start Building Free" />
+            </div>
+            <button className="flex items-center gap-3 px-8 py-4 text-neutral-300 hover:text-white transition-all duration-300 group">
+              <div className="relative w-12 h-12 rounded-full bg-white/[0.03] border border-white/[0.1] flex items-center justify-center group-hover:bg-white/[0.08] group-hover:border-[#D8B4FE]/30 group-hover:scale-110 transition-all duration-300">
+                <div className="absolute inset-0 rounded-full bg-[#D8B4FE]/20 opacity-0 group-hover:opacity-100 blur-md transition-opacity" />
+                <Play className="w-4 h-4 ml-0.5 relative z-10" fill="currentColor" />
+              </div>
+              <span className="font-medium">Watch Demo</span>
+            </button>
+          </motion.div>
+
+          <motion.div initial={{ opacity: 0 }} animate={isHeroInView ? { opacity: 1 } : {}} transition={{ duration: 1, delay: 1 }} className="absolute bottom-10 left-1/2 -translate-x-1/2">
+            <motion.div animate={{ y: [0, 10, 0] }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }} className="flex flex-col items-center gap-2">
+              <span className="text-xs text-neutral-500 uppercase tracking-widest">Scroll</span>
+              <div className="w-6 h-10 rounded-full border-2 border-white/10 flex justify-center pt-2">
+                <motion.div animate={{ y: [0, 12, 0], opacity: [1, 0, 1] }} transition={{ duration: 2, repeat: Infinity }} className="w-1.5 h-1.5 bg-[#D8B4FE] rounded-full" />
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ==================== PROBLEM SECTION ==================== */}
+      <section ref={problemRef} className="relative py-24 sm:py-36">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <motion.div initial={{ opacity: 0, y: 50 }} animate={isProblemInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8 }} className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+              <span className="text-white">If you&apos;re not online, </span>
+              <br className="hidden sm:block" />
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF9132] via-[#D8B4FE] to-[#FF9132]">you&apos;re already behind.</span>
+            </h2>
+          </motion.div>
+
+          <motion.div initial={{ opacity: 0, y: 50 }} animate={isProblemInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, delay: 0.2 }} className="relative">
+            <div className="absolute -inset-4 bg-gradient-to-r from-[#FF9132]/20 via-[#D8B4FE]/10 to-[#FF9132]/20 rounded-[40px] blur-3xl opacity-50" />
+            
+            <div className="relative p-10 sm:p-14 rounded-[32px] bg-gradient-to-b from-white/[0.05] to-transparent border border-white/[0.08] backdrop-blur-xl overflow-hidden">
+              <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#FF9132]/50 to-transparent" />
+              <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#D8B4FE]/30 to-transparent" />
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-40 bg-[#FF9132]/10 blur-[80px]" />
+              
+              <div className="relative z-10">
+                <p className="text-xl sm:text-2xl text-neutral-200 mb-10 leading-relaxed font-light">
+                  In today&apos;s market, before calling or visiting — <span className="text-white font-medium">customers Google you first.</span>
+                </p>
+                
+                <p className="text-lg text-neutral-400 mb-8">And if they don&apos;t find a proper website:</p>
+                
+                <ul className="space-y-5 mb-10">
+                  {["They don't trust your business", "They choose your competitor", "You lose ready-to-buy customers"].map((item, index) => (
+                    <motion.li key={index} initial={{ opacity: 0, x: -30 }} animate={isProblemInView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.5, delay: 0.4 + index * 0.15 }} className="flex items-center gap-4 text-neutral-200 text-lg">
+                      <div className="relative">
+                        <div className="absolute inset-0 bg-[#FF9132] rounded-full blur-md opacity-50" />
+                        <div className="relative w-3 h-3 rounded-full bg-gradient-to-r from-[#FF9132] to-[#D8B4FE]" />
+                      </div>
+                      <span>{item}</span>
+                    </motion.li>
+                  ))}
+                </ul>
+                
+                <div className="relative pl-6">
+                  <div className="absolute left-0 top-0 w-0.5 h-full bg-gradient-to-b from-[#D8B4FE] to-[#FF9132]" />
+                  <p className="text-xl text-white font-medium leading-relaxed">
+                    Most business owners don&apos;t even realise how much revenue they are losing every month.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ==================== FEATURES SECTION ==================== */}
+      <section ref={featuresRef} className="relative py-24 sm:py-36">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-20">
+            <motion.div initial={{ opacity: 0, y: 30 }} animate={isFeaturesInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}>
+              <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#D8B4FE]/10 to-[#FF9132]/10 border border-[#D8B4FE]/20 mb-8 backdrop-blur-sm">
+                <Sparkles className="w-4 h-4 text-[#D8B4FE]" />
+                <span className="text-sm font-medium text-neutral-300 tracking-wide uppercase">Powerful Features</span>
+              </div>
+            </motion.div>
+            
+            <motion.h2 initial={{ opacity: 0, y: 30 }} animate={isFeaturesInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.1 }} className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+              <span className="text-white">Everything you need to </span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#D8B4FE] via-[#FF9132] to-[#5DDF18]">go online</span>
+            </motion.h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {features.map((feature, index) => (
+              <motion.div key={index} initial={{ opacity: 0, y: 40 }} animate={isFeaturesInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}>
+                <GlowingBorder>
+                  <div className="relative p-8 sm:p-10 rounded-3xl bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06] overflow-hidden transition-all duration-500 hover:border-white/[0.12] group">
+                    <motion.div initial={{ opacity: 0, scale: 0.5 }} whileHover={{ opacity: 1, scale: 1 }} className="absolute -top-20 -right-20 w-60 h-60 rounded-full blur-3xl transition-all duration-700" style={{ background: `radial-gradient(circle, ${feature.color}25, transparent 70%)` }} />
+                    
+                    <div className="absolute top-8 right-8 w-10 h-10 rounded-full bg-white/[0.03] border border-white/[0.08] flex items-center justify-center group-hover:border-white/[0.15] transition-colors">
+                      <span className="text-sm font-medium text-neutral-500 group-hover:text-neutral-300 transition-colors">0{index + 1}</span>
+                    </div>
+                    
+                    <div className="relative mb-8">
+                      <div className="absolute inset-0 rounded-2xl blur-xl opacity-50" style={{ background: feature.color }} />
+                      <div className="relative w-16 h-16 rounded-2xl border-2 flex items-center justify-center group-hover:scale-110 transition-transform duration-500" style={{ background: `linear-gradient(135deg, ${feature.color}20, transparent)`, borderColor: `${feature.color}40` }}>
+                        <feature.icon className="w-8 h-8" style={{ color: feature.color }} />
+                      </div>
+                    </div>
+                    
+                    <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-white group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-gradient-to-r transition-all duration-300" style={{ backgroundImage: `linear-gradient(to right, ${feature.color}, white)` }}>
+                      {feature.title}
+                    </h3>
+                    
+                    <p className="text-neutral-400 text-lg leading-relaxed mb-8">{feature.description}</p>
+                    
+                    <div className="flex flex-wrap gap-3">
+                      {feature.tags.map((tag, tagIndex) => (
+                        <span key={tagIndex} className="px-4 py-2 text-sm rounded-full bg-white/[0.03] border border-white/[0.06] text-neutral-400 group-hover:border-white/[0.1] group-hover:text-neutral-300 transition-all">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </GlowingBorder>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== VALUE PROPOSITION SECTION ==================== */}
+      <section ref={valueRef} className="relative py-24 sm:py-36 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#5DDF18]/[0.02] to-transparent" />
+        
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center relative z-10">
+          <motion.div initial={{ opacity: 0, y: 50 }} animate={isValueInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8 }}>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-10 leading-tight">
+              <span className="text-white">This is not just a website. </span>
+              <br className="hidden sm:block" />
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#5DDF18] via-[#D8B4FE] to-[#FF9132]">It&apos;s your digital salesman.</span>
+            </h2>
+          </motion.div>
+
+          <motion.p initial={{ opacity: 0, y: 40 }} animate={isValueInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, delay: 0.2 }} className="text-xl text-neutral-400 mb-16">
+            Your website should work for you 24/7:
+          </motion.p>
+
+          <motion.div initial={{ opacity: 0, y: 40 }} animate={isValueInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, delay: 0.3 }} className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
+            {[
+              { icon: Users, text: "Bringing new enquiries", color: "#D8B4FE" },
+              { icon: Shield, text: "Building trust instantly", color: "#FF9132" },
+              { icon: Zap, text: "Converting visitors into paying customers", color: "#5DDF18" }
+            ].map((item, index) => (
+              <motion.div key={index} whileHover={{ y: -8, scale: 1.02 }} transition={{ duration: 0.3 }} className="relative group">
+                <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r opacity-0 group-hover:opacity-50 blur-xl transition-opacity duration-500" style={{ background: `linear-gradient(135deg, ${item.color}50, transparent)` }} />
+                <div className="relative p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.15] transition-all duration-300 backdrop-blur-sm">
+                  <div className="relative w-14 h-14 mx-auto mb-6 rounded-2xl flex items-center justify-center" style={{ background: `linear-gradient(135deg, ${item.color}20, transparent)` }}>
+                    <item.icon className="w-7 h-7" style={{ color: item.color }} />
+                  </div>
+                  <p className="text-neutral-200 text-lg font-medium">{item.text}</p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          <motion.p initial={{ opacity: 0, y: 40 }} animate={isValueInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, delay: 0.4 }} className="text-xl text-neutral-300 italic font-light">
+            We build systems that help your business grow — <span className="text-[#5DDF18] font-medium not-italic">even when you&apos;re offline.</span>
+          </motion.p>
+        </div>
+      </section>
+
+      {/* ==================== INTERACTIVE DEMO SECTION ==================== */}
+      <section ref={demoRef} className="relative py-24 sm:py-36">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <motion.h2 initial={{ opacity: 0, y: 30 }} animate={isDemoInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+              <span className="text-white">See how your website </span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#D8B4FE] via-[#FF9132] to-[#D8B4FE]">comes to life</span>
+            </motion.h2>
+            <motion.p initial={{ opacity: 0, y: 30 }} animate={isDemoInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.1 }} className="text-xl text-neutral-400">
+              From idea to live website — experience how Stairio simplifies everything.
+            </motion.p>
+          </div>
+
+          <motion.div initial={{ opacity: 0, y: 40 }} animate={isDemoInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, delay: 0.2 }} className="relative">
+            <div className="absolute -inset-2 bg-gradient-to-r from-[#D8B4FE]/10 via-[#FF9132]/10 to-[#5DDF18]/10 rounded-[40px] blur-2xl" />
+            
+            <div className="relative rounded-[32px] bg-gradient-to-b from-white/[0.05] to-white/[0.01] border border-white/[0.08] overflow-hidden backdrop-blur-xl">
+              <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#D8B4FE]/60 to-transparent" />
+              
+              <div className="flex border-b border-white/[0.06] relative">
+                <motion.div layoutId="activeTab" className="absolute bottom-0 h-0.5 bg-gradient-to-r from-[#D8B4FE] to-[#FF9132]" style={{ left: `${demoTabs.findIndex(t => t.id === activeTab) * 33.33}%`, width: "33.33%" }} transition={{ type: "spring", stiffness: 300, damping: 30 }} />
+                
+                {demoTabs.map((tab) => (
+                  <button key={tab.id} onClick={() => setActiveTab(tab.id)} className={`flex-1 py-5 px-6 text-sm font-medium capitalize transition-all relative ${activeTab === tab.id ? "text-white" : "text-neutral-500 hover:text-neutral-300"}`}>
+                    {activeTab === tab.id && <motion.div layoutId="tabBg" className="absolute inset-0 bg-white/[0.03]" transition={{ type: "spring", stiffness: 300, damping: 30 }} />}
+                    <span className="relative z-10">{tab.id}</span>
+                  </button>
+                ))}
+              </div>
+
+              <div className="p-10 sm:p-14 min-h-[450px]">
+                <AnimatePresence mode="wait">
+                  {demoTabs.map((tab) => (
+                    activeTab === tab.id && (
+                      <motion.div key={tab.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4 }} className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                        <div>
+                          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style={{ background: `${tab.color}15`, border: `1px solid ${tab.color}30` }}>
+                            <tab.icon className="w-4 h-4" style={{ color: tab.color }} />
+                            <span className="text-sm font-medium" style={{ color: tab.color }}>{tab.id.charAt(0).toUpperCase() + tab.id.slice(1)}</span>
+                          </div>
+                          
+                          <h3 className="text-3xl sm:text-4xl font-bold text-white mb-6">{tab.title}</h3>
+                          <p className="text-lg text-neutral-400 mb-8 leading-relaxed">{tab.description}</p>
+                          <ul className="space-y-4">
+                            {tab.features.map((item, i) => (
+                              <motion.li key={i} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.1 }} className="flex items-center gap-4 text-neutral-200">
+                                <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ background: `${tab.color}20` }}>
+                                  <Check className="w-4 h-4" style={{ color: tab.color }} />
+                                </div>
+                                {item}
+                              </motion.li>
+                            ))}
+                          </ul>
+                        </div>
+                        
+                        <div className="relative">
+                          <div className="absolute -inset-4 rounded-3xl blur-2xl" style={{ background: `${tab.color}15` }} />
+                          <div className="relative aspect-[4/3] rounded-2xl bg-gradient-to-br from-neutral-800/80 to-neutral-900/80 border border-white/[0.08] flex items-center justify-center overflow-hidden">
+                            <div className="absolute top-0 inset-x-0 h-10 bg-neutral-900/80 border-b border-white/[0.06] flex items-center px-4 gap-2">
+                              <div className="w-3 h-3 rounded-full bg-red-500/60" />
+                              <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
+                              <div className="w-3 h-3 rounded-full bg-green-500/60" />
+                              <div className="flex-1 mx-4">
+                                <div className="h-6 rounded-md bg-white/[0.05] flex items-center px-3">
+                                  <Globe className="w-3 h-3 text-neutral-500 mr-2" />
+                                  <span className="text-xs text-neutral-500">stairio.com</span>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div className="pt-10 flex items-center justify-center w-full h-full">
+                              <motion.div animate={{ scale: [1, 1.1, 1], rotate: [0, 5, 0, -5, 0] }} transition={{ duration: 4, repeat: Infinity }}>
+                                <tab.icon className="w-20 h-20" style={{ color: `${tab.color}40` }} />
+                              </motion.div>
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )
+                  ))}
+                </AnimatePresence>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ==================== PRICING SECTION ==================== */}
+      <section ref={pricingRef} className="relative py-24 sm:py-36">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-20">
+            <motion.h2 initial={{ opacity: 0, y: 30 }} animate={isPricingInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+              <span className="text-white">Choose a plan that </span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#D8B4FE] via-[#FF9132] to-[#D8B4FE]">fits your business</span>
+            </motion.h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {pricingPlans.map((plan, index) => (
+              <motion.div key={index} initial={{ opacity: 0, y: 40 }} animate={isPricingInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: index * 0.1 }} onMouseEnter={() => setHoveredPlan(index)} onMouseLeave={() => setHoveredPlan(null)} className="relative">
+                {plan.popular && <div className="absolute -inset-4 bg-gradient-to-r from-[#D8B4FE]/30 via-[#FF9132]/20 to-[#D8B4FE]/30 rounded-[40px] blur-2xl animate-pulse" />}
+                
+                <div className={`relative h-full p-8 sm:p-10 rounded-3xl transition-all duration-500 ${plan.popular ? "bg-gradient-to-b from-white/[0.08] to-white/[0.02] border-2 border-[#D8B4FE]/50" : "bg-gradient-to-b from-white/[0.03] to-transparent border border-white/[0.06] hover:border-white/[0.12]"}`}>
+                  {plan.popular && (
+                    <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                      <div className="relative">
+                        <div className="absolute inset-0 bg-gradient-to-r from-[#D8B4FE] to-[#FF9132] rounded-full blur-md" />
+                        <div className="relative px-6 py-2 rounded-full bg-gradient-to-r from-[#D8B4FE] to-[#FF9132] text-sm font-bold text-white flex items-center gap-2">
+                          <Star className="w-4 h-4" fill="currentColor" />
+                          Recommended
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  
+                  <div className="pt-4">
+                    <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
+                    <p className="text-neutral-400 mb-8">{plan.tagline}</p>
+                    
+                    <ul className="space-y-4 mb-10">
+                      {plan.features.map((item, i) => (
+                        <li key={i} className="flex items-center gap-3 text-neutral-300">
+                          <div className="w-5 h-5 rounded-full bg-[#5DDF18]/20 flex items-center justify-center flex-shrink-0">
+                            <Check className="w-3 h-3 text-[#5DDF18]" />
+                          </div>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    
+                    {plan.popular ? (
+                      <div className="relative">
+                        <div className="absolute -inset-1 bg-gradient-to-r from-[#D8B4FE] to-[#FF9132] rounded-full opacity-50 blur-md" />
+                        <LiquidMetalButton label={plan.cta} />
+                      </div>
+                    ) : (
+                      <button className="w-full py-4 rounded-full border border-white/[0.1] text-white hover:bg-white/[0.05] hover:border-white/[0.2] transition-all duration-300 font-medium">{plan.cta}</button>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== STATS SECTION ==================== */}
+      <section ref={statsRef} className="relative py-20">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#D8B4FE]/[0.03] via-[#FF9132]/[0.03] to-[#5DDF18]/[0.03]" />
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/[0.1] to-transparent" />
+        <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/[0.1] to-transparent" />
+        
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={isStatsInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="grid grid-cols-1 sm:grid-cols-3 gap-12 text-center">
+            {[
+              { value: "10000", suffix: "+", label: "websites built" },
+              { value: "99.9", suffix: "%", label: "uptime" },
+              { value: "24/7", suffix: "", label: "support" }
+            ].map((stat, index) => (
+              <div key={index} className="relative group">
+                <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-[#D8B4FE]/10 to-[#FF9132]/10 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500" />
+                <div className="relative">
+                  <div className="text-5xl sm:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#D8B4FE] via-[#FF9132] to-[#D8B4FE] mb-3">
+                    {stat.suffix === "%" || stat.value === "24/7" ? stat.value + stat.suffix : <AnimatedCounter value={stat.value} suffix={stat.suffix} />}
+                  </div>
+                  <div className="text-lg text-neutral-400">{stat.label}</div>
+                </div>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ==================== PROCESS SECTION ==================== */}
+      <section ref={processRef} className="relative py-24 sm:py-36">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-20">
+            <motion.h2 initial={{ opacity: 0, y: 30 }} animate={isProcessInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+              <span className="text-white">Simple. Clear. </span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#5DDF18] via-[#D8B4FE] to-[#FF9132]">Hassle-free.</span>
+            </motion.h2>
+            <motion.p initial={{ opacity: 0, y: 30 }} animate={isProcessInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.1 }} className="text-xl text-neutral-400">
+              No confusion. No technical headache.
+            </motion.p>
+          </div>
+
+          <div className="relative">
+            <div className="hidden md:block absolute top-1/2 left-0 right-0 h-1 -translate-y-1/2">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#D8B4FE]/30 via-[#FF9132]/30 to-[#5DDF18]/30 rounded-full" />
+              <motion.div initial={{ scaleX: 0 }} animate={isProcessInView ? { scaleX: 1 } : {}} transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }} className="absolute inset-0 bg-gradient-to-r from-[#D8B4FE] via-[#FF9132] to-[#5DDF18] rounded-full origin-left" />
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6">
+              {processSteps.map((step, index) => (
+                <motion.div key={index} initial={{ opacity: 0, y: 40 }} animate={isProcessInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.2 + index * 0.15 }} className="relative text-center group">
+                  <div className="relative z-10 mb-8 inline-block">
+                    <div className="absolute -inset-4 rounded-full bg-gradient-to-r from-[#D8B4FE]/30 to-[#FF9132]/30 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="relative w-20 h-20 rounded-full bg-gradient-to-br from-[#D8B4FE] via-[#FF9132] to-[#5DDF18] p-[2px] group-hover:scale-110 transition-transform duration-300">
+                      <div className="w-full h-full rounded-full bg-[#0a0a0a] flex items-center justify-center">
+                        <step.icon className="w-8 h-8 text-white" />
+                      </div>
+                    </div>
+                    <div className="absolute -bottom-2 -right-2 w-8 h-8 rounded-full bg-gradient-to-r from-[#D8B4FE] to-[#FF9132] flex items-center justify-center text-sm font-bold text-white shadow-lg">{index + 1}</div>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-white mb-2">{step.title}</h3>
+                  <p className="text-neutral-400">{step.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== HIGHLIGHTS SECTION ==================== */}
+      <section ref={highlightsRef} className="relative py-20 bg-gradient-to-b from-transparent via-white/[0.01] to-transparent">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={isHighlightsInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+            {highlights.map((item, index) => (
+              <motion.div key={index} initial={{ opacity: 0, y: 20 }} animate={isHighlightsInView ? { opacity: 1, y: 0 } : {}} transition={{ delay: index * 0.1 }} whileHover={{ y: -5 }} className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/[0.02] border border-white/[0.04] hover:border-white/[0.1] transition-all duration-300 group">
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 transition-all duration-300" style={{ background: `${item.color}15` }}>
+                  <item.icon className="w-7 h-7 transition-transform duration-300 group-hover:scale-110" style={{ color: item.color }} />
+                </div>
+                <p className="text-sm text-neutral-400 group-hover:text-neutral-300 transition-colors">{item.text}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ==================== FAQ SECTION ==================== */}
+      <section ref={faqRef} className="relative py-24 sm:py-36">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <motion.h2 initial={{ opacity: 0, y: 30 }} animate={isFaqInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="text-4xl sm:text-5xl font-bold mb-6">
+              <span className="text-white">Frequently Asked </span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#D8B4FE] via-[#FF9132] to-[#D8B4FE]">Questions</span>
+            </motion.h2>
+          </div>
+
+          <motion.div initial={{ opacity: 0, y: 40 }} animate={isFaqInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.2 }} className="space-y-4">
+            {faqs.map((faq, index) => (
+              <FAQItem key={index} index={index} question={faq.question} answer={faq.answer} isOpen={openFaq === index} onClick={() => setOpenFaq(openFaq === index ? null : index)} />
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ==================== FINAL CTA SECTION ==================== */}
+      <section ref={ctaRef} className="relative py-24 sm:py-36">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <motion.div initial={{ opacity: 0, y: 50 }} animate={isCtaInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8 }} className="relative">
+            <div className="absolute -inset-10 bg-gradient-to-r from-[#D8B4FE]/20 via-[#FF9132]/15 to-[#5DDF18]/10 rounded-[60px] blur-3xl" />
+            
+            <div className="relative text-center p-12 sm:p-20 rounded-[40px] overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#D8B4FE]/15 via-[#FF9132]/10 to-[#5DDF18]/10 animate-gradient bg-[length:200%_200%]" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+              <div className="absolute inset-0 rounded-[40px] border border-white/[0.1]" />
+              <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#D8B4FE]/60 to-transparent" />
+              
+              {[...Array(6)].map((_, i) => (
+                <motion.div key={i} animate={{ y: [-20, 20, -20], opacity: [0.3, 0.6, 0.3] }} transition={{ duration: 4 + i, repeat: Infinity, delay: i * 0.5 }} className="absolute w-2 h-2 rounded-full" style={{ left: `${15 + i * 15}%`, top: `${20 + (i % 3) * 20}%`, background: ["#D8B4FE", "#FF9132", "#5DDF18"][i % 3] }} />
+              ))}
+              
+              <div className="relative z-10">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 leading-tight">
+                  <span className="text-white">Don&apos;t let your competitors </span>
+                  <br className="hidden sm:block" />
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF9132] via-[#D8B4FE] to-[#FF9132]">take your customers.</span>
+                </h2>
+                
+                <p className="text-xl text-neutral-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+                  Every day you delay, you are losing business to someone who is already online.
+                </p>
+                
+                <div className="relative inline-block">
+                  <div className="absolute -inset-2 bg-gradient-to-r from-[#D8B4FE] via-[#FF9132] to-[#5DDF18] rounded-full opacity-50 blur-xl animate-pulse" />
+                  <LiquidMetalButton label="Start Building Your Website" />
+                </div>
+                
+                <p className="mt-8 text-neutral-500 text-sm">No credit card required • Free consultation</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </main>
+  );
+}
