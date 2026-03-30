@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import connectDB from '@/lib/mongodb';
-import Quote from '@/models/Quote';
+import { createQuoteSubmission } from '@/lib/quote-store';
 
 export async function POST(request: NextRequest) {
   try {
@@ -25,9 +24,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    await connectDB();
-
-    const quote = await Quote.create({
+    const result = await createQuoteSubmission({
       name,
       email,
       company,
@@ -39,7 +36,14 @@ export async function POST(request: NextRequest) {
     });
 
     return NextResponse.json(
-      { message: 'Quote request submitted successfully', id: quote._id },
+      {
+        message:
+          result.storage === 'mongodb'
+            ? 'Quote request submitted successfully'
+            : 'Quote request submitted successfully and saved locally',
+        id: result.quote.id,
+        storage: result.storage,
+      },
       { status: 201 }
     );
   } catch (error) {

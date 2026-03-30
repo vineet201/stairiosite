@@ -33,6 +33,7 @@ const statusLabels: Record<QuoteStatus, string> = {
 interface QuotesDashboardProps {
   initialQuotes: AdminQuoteRecord[];
   adminUsername: string;
+  initialError?: string;
 }
 
 function formatDate(value: string) {
@@ -51,13 +52,17 @@ function getSummary(quotes: AdminQuoteRecord[]) {
   };
 }
 
-export function QuotesDashboard({ initialQuotes, adminUsername }: QuotesDashboardProps) {
+export function QuotesDashboard({
+  initialQuotes,
+  adminUsername,
+  initialError = '',
+}: QuotesDashboardProps) {
   const router = useRouter();
   const [quotes, setQuotes] = useState(initialQuotes);
   const [selectedId, setSelectedId] = useState(initialQuotes[0]?.id ?? '');
   const [search, setSearch] = useState('');
   const [statusFilter, setStatusFilter] = useState<'all' | QuoteStatus>('all');
-  const [error, setError] = useState('');
+  const [error, setError] = useState(initialError);
   const [message, setMessage] = useState('');
   const [updatingId, setUpdatingId] = useState('');
   const [isPending, startTransition] = useTransition();

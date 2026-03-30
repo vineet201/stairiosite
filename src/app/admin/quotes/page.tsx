@@ -10,7 +10,19 @@ export const metadata: Metadata = {
 
 export default async function AdminQuotesPage() {
   const session = await requireAdminSession('/admin/login?next=/admin/quotes');
-  const quotes = await listAdminQuotes();
+  try {
+    const quotes = await listAdminQuotes();
 
-  return <QuotesDashboard initialQuotes={quotes} adminUsername={session.username} />;
+    return <QuotesDashboard initialQuotes={quotes} adminUsername={session.username} />;
+  } catch (error) {
+    console.error('Admin quotes page failed to load:', error);
+
+    return (
+      <QuotesDashboard
+        initialQuotes={[]}
+        adminUsername={session.username}
+        initialError="Quote data could not be loaded because the MongoDB connection failed. Please check your Atlas IP whitelist or cluster connectivity, then refresh."
+      />
+    );
+  }
 }
