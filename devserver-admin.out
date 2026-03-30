@@ -1,0 +1,17 @@
+
+> my-site@0.1.0 dev
+> next dev --port 3001
+
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://10.200.143.107:3001
+- Environments: .env.local
+✓ Ready in 1213ms
+Creating turbopack project { dir: 'C:\\xampp\\htdocs\\stairiosite', testMode: true }
+
+○ Compiling /admin/login ...
+✓ Finished writing to filesystem cache in 59s
+✓ Finished writing to filesystem cache in 18.5s
+✓ Finished writing to filesystem cache in 11.2s
+✓ Finished writing to filesystem cache in 54s
+[?25h

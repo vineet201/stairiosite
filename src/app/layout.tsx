@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Header } from "@/components/ui/header-3";
-import { FlickeringFooter } from "@/components/ui/flickering-footer";
+import { SiteChrome } from "@/components/layout/site-chrome";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -53,10 +52,8 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${spaceGrotesk.variable} ${satoshi.variable} antialiased`}
     >
-      <body suppressHydrationWarning className="font-sans pt-14">
-        <Header />
-        {children}
-        <FlickeringFooter />
+      <body suppressHydrationWarning className="font-sans">
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );

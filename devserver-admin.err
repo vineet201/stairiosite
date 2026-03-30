@@ -1,0 +1,2641 @@
+
+
+
+
+
+
+
+
+
+
+
+#
+
+
+
+
+
+
+
+<--- Last few GCs --->
+<--- Last few GCs --->
+
+
+<--- Last few GCs --->
+#
+<--- Last few GCs --->
+<--- Last few GCs --->
+<--- Last few GCs --->
+#
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+[31208:000002095DFA4000]     2672 ms: Scavenge 5.9 (7.2) -> 5.3 (10.0) MB, pooled: 0 MB, 2.06 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+#
+#
+#
+
+
+
+[26436:0000013C79455000]     2917 ms: Scavenge 5.9 (7.2) -> 5.4 (10.0) MB, pooled: 0 MB, 2.33 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+# Fatal process out of memory: Re-embedded builtins: set permissions
+[10900:000001C2AC4F5000]     4087 ms: Scavenge 5.9 (7.2) -> 5.3 (10.0) MB, pooled: 0 MB, 2.95 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+# Fatal process out of memory: Re-embedded builtins: set permissions
+# Fatal process out of memory: Re-embedded builtins: set permissions
+# Fatal process out of memory: Re-embedded builtins: set permissions
+# Fatal process out of memory: Re-embedded builtins: set permissions
+
+# Fatal process out of memory: Re-embedded builtins: set permissions
+[26068:0000024619374000]     3579 ms: Scavenge 8.7 (11.3) -> 7.3 (11.0) MB, pooled: 0 MB, 1059.93 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[4508:00000207F1EB3000]     2801 ms: Scavenge 8.7 (11.3) -> 7.4 (11.3) MB, pooled: 0 MB, 2.00 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+#
+
+
+
+#
+#
+#
+#
+FATAL ERROR: Zone Allocation failed - process out of memory
+[4508:00000207F1EB3000]     2867 ms: Scavenge 9.5 (12.3) -> 8.8 (17.5) MB, pooled: 0 MB, 3.00 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+----- Native stack trace -----
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+[26068:0000024619374000]     5702 ms: Scavenge 9.5 (12.3) -> 8.9 (17.5) MB, pooled: 0 MB, 245.02 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+----- Native stack trace -----
+----- Native stack trace -----
+----- Native stack trace -----
+#
+#
+----- Native stack trace -----
+
+
+----- Native stack trace -----
+
+----- Native stack trace -----
+#
+----- Native stack trace -----
+
+
+
+
+
+
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+ 1: 00007FF67DEA0ECD 
+ 1: 00007FF67DEA0ECD 
+#
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+----- Native stack trace -----
+ 2: 00007FF67F3036B6 
+ 2: 00007FF67F3036B6 
+----- Native stack trace -----
+
+----- Native stack trace -----
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+
+ 3: 00007FF67EB961F6 
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+ 4: 00007FF67E9FD52E 
+ 3: 00007FF67EB961F6 
+
+ 4: 00007FF67E9FD52E 
+ 4: 00007FF67E5D57A3 v8::base::CPU::has_bmi2+18291
+ 5: 00007FF67EA30B5F 
+ 5: 00007FF67EA30B5F 
+ 6: 00007FF67EA31612 
+ 6: 00007FF67EA31612 
+ 5: 00007FF67E5D1427 v8::base::CPU::has_bmi2+1015
+ 6: 00007FF67E5DA27C v8::base::CPU::has_bmi2+37452
+ 7: 00007FF67EA31FF2 
+ 7: 00007FF67EA31FF2 
+ 7: 00007FF67E5BC4FB v8::base::CPU::family+39883
+ 8: 00007FF67E52DE33 
+ 8: 00007FF67E52DE33 
+ 8: 00007FF67E59F930 v8::String::Utf8Value::~Utf8Value+220032
+ 9: 00007FF67EBC10B6 
+ 9: 00007FF67EBC10B6 
+ 9: 00007FF67E59F052 v8::String::Utf8Value::~Utf8Value+217762
+10: 00007FF67E05A22D 
+10: 00007FF67E05A22D 
+10: 00007FF67E59D949 v8::String::Utf8Value::~Utf8Value+211865
+11: 00007FF67DDB5B73 
+11: 00007FF67DDB5B73 
+11: 00007FF67E59DBDC v8::String::Utf8Value::~Utf8Value+212524
+12: 00007FF67DDB4F09 
+12: 00007FF67DDB4F09 
+12: 00007FF67E59DABB v8::String::Utf8Value::~Utf8Value+212235
+13: 00007FF67DDBEA90 
+13: 00007FF67DDBEA90 
+13: 00007FF67E5749C2 v8::String::Utf8Value::~Utf8Value+44050
+14: 00007FF67EBEB1A6 
+14: 00007FF67EBEB1A6 
+14: 000001C2E44B75FA 
+15: 00007FF67FE4B0B3 
+15: 00007FF67FE4B0B3 
+16: 00007FF8A8A6E8D7 
+16: 00007FF8A8A6E8D7 
+
+ 1: 00007FF67DF4C44F 
+ 1: 00007FF67DEA0ECD 
+17: 00007FF8AAD2C48C 
+
+
+ 1: 00007FF67DF4C44F 
+ 1: 00007FF67DEA0ECD node::MultiIsolatePlatform::DisposeIsolate+5341
+17: 00007FF8AAD2C48C 
+<--- Last few GCs --->
+ 2: 00007FF67F3036B6 
+<--- Last few GCs --->
+
+<--- Last few GCs --->
+ 2: 00007FF67EB96217 
+
+
+
+ 3: 00007FF67EB961F6 
+ 3: 00007FF67E50FC46 
+
+ 2: 00007FF67EB96217 
+ 2: 00007FF67F3036B6 v8::base::FatalOOM+54
+#
+[38880:0000018C77E34000]     4515 ms: Scavenge 8.7 (11.3) -> 7.4 (11.3) MB, pooled: 0 MB, 2.05 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[41352:000001506EF04000]     4242 ms: Scavenge 8.7 (11.3) -> 7.4 (11.3) MB, pooled: 0 MB, 2.02 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 4: 00007FF67E9FD52E 
+ 4: 00007FF67E0D114A 
+[32996:0000028669894000]     7519 ms: Scavenge 8.7 (11.3) -> 7.4 (9.3) MB, pooled: 2 MB, 3.22 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 3: 00007FF67E50FC46 
+ 3: 00007FF67EB961F6 v8::Function::NewInstance+390
+# Fatal process out of memory: Re-embedded builtins: set permissions
+[38880:0000018C77E34000]     9951 ms: Scavenge 9.5 (12.3) -> 8.8 (13.3) MB, pooled: 0 MB, 4500.43 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[41352:000001506EF04000]     4932 ms: Scavenge 9.5 (12.3) -> 8.8 (17.3) MB, pooled: 0 MB, 3.23 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 5: 00007FF67EA30B5F 
+ 5: 00007FF67E8812BA 
+
+ 4: 00007FF67E09E0CE 
+ 4: 00007FF67E9FD52E v8::CppHeap::CollectGarbageInYoungGenerationForTesting+111438
+
+#
+
+ 6: 00007FF67EA31612 
+ 6: 00007FF67E880BE0 
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+ 5: 00007FF67EA30B5F SSL_CTX_set_default_read_buffer_len+41247
+FATAL ERROR: Zone Allocation failed - process out of memory
+ 5: 00007FF67E5D60E8 
+ 7: 00007FF67E8AE9FD 
+----- Native stack trace -----
+ 6: 00007FF67E5D5EF5 
+ 6: 00007FF67EA31612 SSL_CTX_set_default_read_buffer_len+43986
+----- Native stack trace -----
+ 7: 00007FF67EA31FF2 
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+----- Native stack trace -----
+ 8: 00007FF67E52DE33 
+ 8: 00007FF67E898EFC 
+
+ 7: 00007FF67E5C3F49 
+ 7: 00007FF67EA31FF2 SSL_CTX_set_default_read_buffer_len+46514
+
+
+ 9: 00007FF67EBC10B6 
+ 8: 00007FF67E5C2300 
+ 8: 00007FF67E52DE33 v8::internal::Version::GetSONAME+122307
+ 9: 00007FF67E899749 
+ 1: 00007FF67DF4C44F 
+10: 00007FF67E05A22D 
+10: 00007FF67E88AB55 
+ 9: 00007FF67E5C41C2 
+ 9: 00007FF67EBC10B6 v8::Isolate::Initialize+662
+ 2: 00007FF67EB96217 
+11: 00007FF67DDB5B73 
+11: 00007FF67E888DCB 
+10: 00007FF67E5C41C2 
+10: 00007FF67E05A22D node::SetIsolateUpForNode+749
+ 3: 00007FF67E996C07 
+12: 00007FF67DDB4F09 
+12: 00007FF67E889150 
+11: 00007FF67E5C1B12 
+11: 00007FF67DDB5B73 RSA_meth_get_flags+222691
+ 4: 00007FF67E92F62B 
+13: 00007FF67DDBEA90 
+13: 00007FF67E88836B 
+12: 00007FF67E5C39F8 
+12: 00007FF67DDB4F09 RSA_meth_get_flags+219513
+ 5: 00007FF67E90707E 
+14: 00007FF67EBEB1A6 
+14: 00007FF67E8877DF 
+13: 00007FF67E5C227F 
+13: 00007FF67DDBEA90 RSA_meth_get_flags+259328
+ 6: 00007FF67E9996A2 
+15: 00007FF67FE4B0B3 
+15: 00007FF67E885E73 
+14: 00007FF67E5BD0C4 
+14: 00007FF67EBEB1A6 uv_thread_detach+150
+ 7: 00007FF67E998657 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+16: 00007FF67E87D296 
+15: 00007FF67E5C41C2 
+15: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+ 8: 00007FF67E9A9582 
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+17: 00007FF67EB1AF9F 
+16: 00007FF67E5C41C2 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+ 9: 00007FF67E9A90AB 
+18: 00007FF67EB118B8 
+17: 00007FF67E5C1B12 
+17: 00007FF8AAD2C48C 
+10: 00007FF67FE2F8ED 
+19: 00007FF67EB110DD 
+18: 00007FF67E5C39F8 
+11: 00007FF67E9946D0 
+20: 00007FF67EB11B7C 
+19: 00007FF67E5C227F 
+12: 00007FF67E9AEF1A 
+21: 00007FF67E59417B 
+20: 00007FF67E5C41C2 
+13: 00007FF67E9BB3B6 
+22: 00000207AFE775FA 
+21: 00007FF67E5C41C2 
+14: 00007FF67E58D0F7 
+22: 00007FF67E5C1B12 
+15: 0000018C2FE775FA 
+23: 00007FF67E5C39F8 
+24: 00007FF67E5C227F 
+25: 00007FF67E5C41C2 
+26: 00007FF67E5C41C2 
+27: 00007FF67E5C1B12 
+28: 00007FF67E5C39F8 
+29: 00007FF67E5C227F 
+30: 00007FF67E5C41C2 
+31: 00007FF67E5C41C2 
+32: 00007FF67E5C1B12 
+33: 00007FF67E5C39F8 
+34: 00007FF67E5C227F 
+35: 00007FF67E5C41C2 
+36: 00007FF67E5C39F8 
+37: 00007FF67E5C227F 
+38: 00007FF67E5C41C2 
+39: 00007FF67E5C41C2 
+40: 00007FF67E5C39F8 
+41: 00007FF67E5C227F 
+42: 00007FF67E5BD0C4 
+43: 00007FF67E5C41C2 
+44: 00007FF67E5C41C2 
+45: 00007FF67E5C0206 
+46: 00007FF67E5C39F8 
+47: 00007FF67E5C227F 
+48: 00007FF67E5C41C2 
+49: 00007FF67E5C41C2 
+50: 00007FF67E5C39F8 
+51: 00007FF67E5C227F 
+52: 00007FF67E5BC428 
+53: 00007FF67E59F930 
+54: 00007FF67E59F052 
+55: 00007FF67E59D949 
+56: 00007FF67E59DBDC 
+57: 00007FF67E59DABB 
+58: 00007FF67E5749C2 
+59: 0000013C37E775FA 
+ 1: 00007FF67DEA0ECD 
+ 2: 00007FF67F3036B6 
+ 3: 00007FF67EB961F6 
+ 4: 00007FF67E9FD52E 
+ 5: 00007FF67EA30B5F 
+ 6: 00007FF67EA31612 
+ 7: 00007FF67EA31FF2 
+ 8: 00007FF67E52DE33 
+ 9: 00007FF67EBC10B6 
+10: 00007FF67E05A22D 
+11: 00007FF67DDB5B73 
+12: 00007FF67DDB4F09 
+13: 00007FF67DDBEA90 
+14: 00007FF67EBEB1A6 
+15: 00007FF67FE4B0B3 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+ 4: 00007FF67E0D114A X509_get0_tbs_sigalg+9818
+ 5: 00007FF67E8812BA v8::Promise::MarkAsSilent+545562
+ 6: 00007FF67E880BE0 v8::Promise::MarkAsSilent+543808
+ 7: 00007FF67E8B3901 v8::Promise::MarkAsSilent+751969
+ 8: 00007FF67E8927F5 v8::Promise::MarkAsSilent+616533
+ 9: 00007FF67E89E158 v8::Promise::MarkAsSilent+663992
+10: 00007FF67E89CA44 v8::Promise::MarkAsSilent+658084
+11: 00007FF67E89D3B3 v8::Promise::MarkAsSilent+660499
+12: 00007FF67E88AB55 v8::Promise::MarkAsSilent+584629
+13: 00007FF67E888DCB v8::Promise::MarkAsSilent+577067
+14: 00007FF67E889150 v8::Promise::MarkAsSilent+577968
+15: 00007FF67E888DCB v8::Promise::MarkAsSilent+577067
+16: 00007FF67E889150 v8::Promise::MarkAsSilent+577968
+17: 00007FF67E88F37A v8::Promise::MarkAsSilent+603098
+18: 00007FF67E888DCB v8::Promise::MarkAsSilent+577067
+19: 00007FF67E889150 v8::Promise::MarkAsSilent+577968
+20: 00007FF67E888DCB v8::Promise::MarkAsSilent+577067
+21: 00007FF67E889150 v8::Promise::MarkAsSilent+577968
+22: 00007FF67E88AD3A v8::Promise::MarkAsSilent+585114
+23: 00007FF67E88836B v8::Promise::MarkAsSilent+574411
+24: 00007FF67E8877DF v8::Promise::MarkAsSilent+571455
+25: 00007FF67E885E73 v8::Promise::MarkAsSilent+564947
+26: 00007FF67E87D296 v8::Promise::MarkAsSilent+529142
+ 1: 00007FF67DEA0ECD 
+ 2: 00007FF67F3036B6 
+ 3: 00007FF67EB961F6 
+ 4: 00007FF67E9FD52E 
+ 5: 00007FF67EA30B5F 
+ 6: 00007FF67EA31612 
+ 7: 00007FF67EA31FF2 
+ 8: 00007FF67E52DE33 
+ 9: 00007FF67EBC10B6 
+10: 00007FF67E05A22D 
+11: 00007FF67DDB5B73 
+12: 00007FF67DDB4F09 
+13: 00007FF67DDBEA90 
+14: 00007FF67EBEB1A6 
+15: 00007FF67FE4B0B3 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+ 1: 00007FF67DEA0ECD 
+ 2: 00007FF67F3036B6 
+ 3: 00007FF67EB961F6 
+ 4: 00007FF67E9FD52E 
+ 5: 00007FF67EA30B5F 
+ 6: 00007FF67EA31612 
+ 7: 00007FF67EA31FF2 
+ 8: 00007FF67E52DE33 
+ 9: 00007FF67EBC10B6 
+10: 00007FF67E05A22D 
+11: 00007FF67DDB5B73 
+12: 00007FF67DDB4F09 
+13: 00007FF67DDBEA90 
+14: 00007FF67EBEB1A6 
+15: 00007FF67FE4B0B3 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+ 1: 00007FF67DEA0ECD node::MultiIsolatePlatform::DisposeIsolate+5341
+ 2: 00007FF67F3036B6 v8::base::FatalOOM+54
+ 3: 00007FF67EB961F6 v8::Function::NewInstance+390
+ 4: 00007FF67E996C07 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+ 5: 00007FF67E948E5A v8::base::AddressSpaceReservation::AddressSpaceReservation+3178
+ 6: 00007FF67E948F1C v8::base::AddressSpaceReservation::AddressSpaceReservation+3372
+ 7: 00007FF67E94980B v8::base::AddressSpaceReservation::AddressSpaceReservation+5659
+ 8: 00007FF67E920A61 v8::platform::DefaultPlatform::CurrentClockTimeMillis+430161
+ 9: 00007FF67E986913 v8::base::AddressSpaceReservation::AddressSpaceReservation+255779
+10: 00007FF67E98667E v8::base::AddressSpaceReservation::AddressSpaceReservation+255118
+11: 00007FF67E985468 v8::base::AddressSpaceReservation::AddressSpaceReservation+250488
+12: 00007FF67E9853EA v8::base::AddressSpaceReservation::AddressSpaceReservation+250362
+13: 00007FF67E54B493 v8::internal::Version::GetSONAME+242723
+14: 00007FF67E5492DC v8::internal::Version::GetSONAME+234092
+15: 00007FF67E55055E v8::internal::Version::GetSONAME+263406
+16: 00007FF67E549D0D v8::internal::Version::GetSONAME+236701
+17: 00007FF67E527744 v8::internal::Version::GetSONAME+95956
+18: 00007FF67E544E41 v8::internal::Version::GetSONAME+216529
+19: 00007FF67E532F82 v8::internal::Version::GetSONAME+143122
+20: 00007FF67EA31BA9 SSL_CTX_set_default_read_buffer_len+45417
+21: 00007FF67EA31FF2 SSL_CTX_set_default_read_buffer_len+46514
+22: 00007FF67E52DE33 v8::internal::Version::GetSONAME+122307
+23: 00007FF67EBC10B6 v8::Isolate::Initialize+662
+24: 00007FF67E05A22D node::SetIsolateUpForNode+749
+25: 00007FF67DDB5B73 RSA_meth_get_flags+222691
+26: 00007FF67DDB4F09 RSA_meth_get_flags+219513
+27: 00007FF67DDBEA90 RSA_meth_get_flags+259328
+28: 00007FF67EBEB1A6 uv_thread_detach+150
+29: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+30: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+31: 00007FF8AAD2C48C RtlUserThreadStart+44
+27: 00007FF67EB1AF9F X509_STORE_set_get_issuer+270399
+28: 00007FF67EB118B8 X509_STORE_set_get_issuer+231768
+29: 00007FF67EB110DD X509_STORE_set_get_issuer+229757
+30: 00007FF67EB11B7C X509_STORE_set_get_issuer+232476
+31: 00007FF67E59417B v8::String::Utf8Value::~Utf8Value+173003
+32: 00000246513375FA 
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 3: 00007FF67E996C07 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+ 4: 00007FF67E92F62B v8::platform::DefaultPlatform::CurrentClockTimeMillis+490523
+ 5: 00007FF67E90707E v8::platform::DefaultPlatform::CurrentClockTimeMillis+325230
+ 6: 00007FF67E9996A2 v8::base::AddressSpaceReservation::AddressSpaceReservation+332978
+ 7: 00007FF67E998657 v8::base::AddressSpaceReservation::AddressSpaceReservation+328807
+ 8: 00007FF67E9A9582 v8::internal::StrongRootAllocatorBase::deallocate_impl+15858
+ 9: 00007FF67E9A90AB v8::internal::StrongRootAllocatorBase::deallocate_impl+14619
+10: 00007FF67FE2F8ED v8::base::UnsignedDivisionByConstant<unsigned __int64>+2794685
+11: 00007FF67E9946D0 v8::base::AddressSpaceReservation::AddressSpaceReservation+312544
+12: 00007FF67E9AEF1A X509_STORE_set_cleanup+5098
+13: 00007FF67E9BAD78 uv_timer_set_repeat+19096
+14: 00007FF67E9D6EEA uv_timer_set_repeat+134154
+15: 00007FF67E6C2A75 v8::RegExp::GetFlags+142357
+16: 00007FF67E6C29FD v8::RegExp::GetFlags+142237
+17: 00007FF67E6CECBA v8::RegExp::GetFlags+192090
+18: 00007FF67E6D1845 v8::RegExp::GetFlags+203237
+19: 00007FF67E6CE0E4 v8::RegExp::GetFlags+189060
+20: 00007FF67E6CDF2D v8::RegExp::GetFlags+188621
+21: 00007FF67E6D3348 v8::RegExp::GetFlags+210152
+22: 00007FF67E6DBF43 v8::RegExp::GetFlags+245987
+23: 00007FF67E6BFBF1 v8::RegExp::GetFlags+130449
+24: 00007FF67E6BF429 v8::RegExp::GetFlags+128457
+25: 00007FF67E73C34B v8::RegExp::GetFlags+640235
+26: 00007FF67E7460F4 v8::RegExp::GetFlags+680596
+27: 00007FF67E5897A6 v8::String::Utf8Value::~Utf8Value+129526
+28: 00007FF67E588143 v8::String::Utf8Value::~Utf8Value+123795
+29: 0000028627E775FA 
+ 1: 00007FF67DF4C44F 
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+ 4: 00007FF67E65D276 EC_KEY_METHOD_set_verify+352022
+ 5: 00007FF67E65D716 EC_KEY_METHOD_set_verify+353206
+ 6: 00007FF67E65D716 EC_KEY_METHOD_set_verify+353206
+ 2: 00007FF67EB96217 
+ 1: 00007FF67DEA0ECD node::MultiIsolatePlatform::DisposeIsolate+5341
+ 7: 00007FF67E65D716 EC_KEY_METHOD_set_verify+353206
+ 3: 00007FF67E50FC46 
+ 8: 00007FF67E65B9B8 EC_KEY_METHOD_set_verify+345688
+ 4: 00007FF67EB93A14 
+ 2: 00007FF67F3036B6 v8::base::FatalOOM+54
+ 9: 00007FF67E65D6EB EC_KEY_METHOD_set_verify+353163
+ 3: 00007FF67EB961F6 v8::Function::NewInstance+390
+ 5: 00007FF67EB937D0 
+10: 00007FF67E64B51B EC_KEY_METHOD_set_verify+278971
+ 6: 00007FF67E61AA7F 
+ 4: 00007FF67E9FD52E v8::CppHeap::CollectGarbageInYoungGenerationForTesting+111438
+11: 00007FF67E64AA1A EC_KEY_METHOD_set_verify+276154
+ 7: 00007FF67E65A2E0 
+ 8: 00007FF67E6590A6 
+ 5: 00007FF67EA30B5F SSL_CTX_set_default_read_buffer_len+41247
+12: 00007FF67E63E117 EC_KEY_METHOD_set_verify+224695
+ 6: 00007FF67EA31612 SSL_CTX_set_default_read_buffer_len+43986
+13: 00007FF67E63F8FE EC_KEY_METHOD_set_verify+230814
+ 9: 00007FF67E650696 
+ 7: 00007FF67EA31FF2 SSL_CTX_set_default_read_buffer_len+46514
+14: 00007FF67E63EE8A EC_KEY_METHOD_set_verify+228138
+10: 00007FF67E651D9B 
+ 8: 00007FF67E52DE33 v8::internal::Version::GetSONAME+122307
+15: 00007FF67E637B2E EC_KEY_METHOD_set_verify+198606
+ 9: 00007FF67EBC10B6 v8::Isolate::Initialize+662
+11: 00007FF67E650F6E 
+16: 00007FF67EB11080 X509_STORE_set_get_issuer+229664
+10: 00007FF67E05A22D node::SetIsolateUpForNode+749
+12: 00007FF67E662E42 
+17: 00007FF67EB11B7C X509_STORE_set_get_issuer+232476
+13: 00007FF67E642915 
+18: 00007FF67E59417B v8::String::Utf8Value::~Utf8Value+173003
+14: 00007FF67E64B51B 
+11: 00007FF67DDB5B73 RSA_meth_get_flags+222691
+12: 00007FF67DDB4F09 RSA_meth_get_flags+219513
+19: 0000015027E775FA 
+15: 00007FF67E64AA1A 
+13: 00007FF67DDBEA90 RSA_meth_get_flags+259328
+16: 00007FF67E63E117 
+14: 00007FF67EBEB1A6 uv_thread_detach+150
+17: 00007FF67E63D2E4 
+15: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+18: 00007FF67E63C5D2 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+19: 00007FF67E63C27A 
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+20: 00007FF67E6378A9 
+21: 00007FF67EB13C4F 
+22: 00007FF67EB16A51 
+23: 00007FF67EB9F6D3 
+24: 00007FF67DF69063 
+25: 00007FF67DF6780E 
+26: 000002091FDCF64D 
+
+
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+----- Native stack trace -----
+
+
+
+
+#
+
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+#
+----- Native stack trace -----
+----- Native stack trace -----
+
+ 1: 00007FF67DEA0ECD 
+
+ 2: 00007FF67F3036B6 
+ 3: 00007FF67EB961F6 
+ 1: 00007FF67DEA0ECD 
+ 4: 00007FF67E9FD52E 
+ 2: 00007FF67F3036B6 
+ 5: 00007FF67EA30B5F 
+ 3: 00007FF67EB961F6 
+ 6: 00007FF67EA31612 
+ 4: 00007FF67E9FD52E 
+ 7: 00007FF67EA31FF2 
+ 5: 00007FF67EA30B5F 
+ 8: 00007FF67E52DE33 
+ 6: 00007FF67EA31612 
+ 9: 00007FF67EBC10B6 
+
+Error: Can't resolve 'tailwindcss' in 'C:\xampp\htdocs'
+    [2m[at finishWithoutResolve (C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:587:18)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:679:14][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'C:\\xampp\\htdocs'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in C:\\xampp\\htdocs or above\n' +
+    '  resolve as module\n' +
+    "    C:\\xampp\\htdocs\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\xampp\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\node_modules doesn't exist or is not a directory"
+}
+ 7: 00007FF67EA31FF2 
+10: 00007FF67E05A22D 
+<--- Last few GCs --->
+ 8: 00007FF67E52DE33 
+11: 00007FF67DDB5B73 
+[21608:0000029DCAE14000]     1009 ms: Scavenge 5.9 (7.2) -> 5.4 (10.0) MB, pooled: 0 MB, 3.62 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 9: 00007FF67EBC10B6 
+12: 00007FF67DDB4F09 
+
+10: 00007FF67E05A22D 
+13: 00007FF67DDBEA90 
+11: 00007FF67DDB5B73 
+FATAL ERROR: AlignedAlloc Allocation failed - process out of memory
+14: 00007FF67EBEB1A6 
+
+12: 00007FF67DDB4F09 
+----- Native stack trace -----
+15: 00007FF67FE4B0B3 
+<--- Last few GCs --->
+
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+13: 00007FF67DDBEA90 
+[30548:000002AE40215000]      878 ms: Scavenge 5.9 (7.2) -> 5.4 (10.0) MB, pooled: 0 MB, 1.98 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+14: 00007FF67EBEB1A6 
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+
+15: 00007FF67FE4B0B3 
+16: 00007FF8A8A6E8D7 
+ 1: 00007FF67DEA0ECD 
+FATAL ERROR: Zone Allocation failed - process out of memory
+17: 00007FF8AAD2C48C 
+----- Native stack trace -----
+ 2: 00007FF67F3036B6 
+
+ 3: 00007FF67EB961F6 
+ 4: 00007FF67E9FD52E 
+ 5: 00007FF67EA30B5F 
+ 6: 00007FF67EA31612 
+ 7: 00007FF67EA31FF2 
+ 8: 00007FF67E52DE33 
+ 9: 00007FF67EBC10B6 
+10: 00007FF67E05A22D 
+11: 00007FF67DDB5B73 
+12: 00007FF67DDB4F09 
+13: 00007FF67DDBEA90 
+14: 00007FF67EBEB1A6 
+15: 00007FF67FE4B0B3 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+ 4: 00007FF67EB7D236 X509_STORE_set_get_issuer+672470
+ 5: 00007FF67E6505D6 EC_KEY_METHOD_set_verify+299638
+ 6: 00007FF67E651D9B EC_KEY_METHOD_set_verify+305723
+ 7: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+ 8: 00007FF67E6577D2 EC_KEY_METHOD_set_verify+328818
+ 9: 00007FF67E6541F3 EC_KEY_METHOD_set_verify+315027
+10: 00007FF67E651DE8 EC_KEY_METHOD_set_verify+305800
+11: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+12: 00007FF67E656934 EC_KEY_METHOD_set_verify+325076
+13: 00007FF67E66055F EC_KEY_METHOD_set_verify+365055
+14: 00007FF67E64B51B EC_KEY_METHOD_set_verify+278971
+15: 00007FF67E640F5A EC_KEY_METHOD_set_verify+236538
+16: 00007FF67E651C90 EC_KEY_METHOD_set_verify+305456
+17: 00007FF67E650FB4 EC_KEY_METHOD_set_verify+302164
+18: 00007FF67E6517D6 EC_KEY_METHOD_set_verify+304246
+19: 00007FF67E650FB4 EC_KEY_METHOD_set_verify+302164
+20: 00007FF67E656934 EC_KEY_METHOD_set_verify+325076
+21: 00007FF67E661D4F EC_KEY_METHOD_set_verify+371183
+22: 00007FF67E64B51B EC_KEY_METHOD_set_verify+278971
+23: 00007FF67E640F5A EC_KEY_METHOD_set_verify+236538
+24: 00007FF67E651C90 EC_KEY_METHOD_set_verify+305456
+25: 00007FF67E650FB4 EC_KEY_METHOD_set_verify+302164
+26: 00007FF67E656934 EC_KEY_METHOD_set_verify+325076
+27: 00007FF67E654DBE EC_KEY_METHOD_set_verify+318046
+28: 00007FF67E651D9B EC_KEY_METHOD_set_verify+305723
+29: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+30: 00007FF67E656934 EC_KEY_METHOD_set_verify+325076
+31: 00007FF67E661D4F EC_KEY_METHOD_set_verify+371183
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+32: 00007FF67E64B51B EC_KEY_METHOD_set_verify+278971
+33: 00007FF67E64AA1A EC_KEY_METHOD_set_verify+276154
+34: 00007FF67E63E117 EC_KEY_METHOD_set_verify+224695
+35: 00007FF67E63D2E4 EC_KEY_METHOD_set_verify+221060
+36: 00007FF67E63C5D2 EC_KEY_METHOD_set_verify+217714
+37: 00007FF67E63C27A EC_KEY_METHOD_set_verify+216858
+38: 00007FF67E6378A9 EC_KEY_METHOD_set_verify+197961
+39: 00007FF67EB13C4F X509_STORE_set_get_issuer+240879
+40: 00007FF67EB16A51 X509_STORE_set_get_issuer+252657
+41: 00007FF67EB9F6D3 v8::ScriptCompiler::CompileFunction+1011
+42: 00007FF67DF69063 node::GetCurrentEnvironment+20883
+43: 00007FF67DF6780E node::GetCurrentEnvironment+14654
+44: 000002AE7810F64D 
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 3: 00007FF67E512B8E v8::internal::Version::GetSONAME+11038
+ 4: 00007FF67E68CD7B v8::MemorySpan<unsigned __int64>::operator[]+82491
+ 5: 00007FF67E68AD6C v8::MemorySpan<unsigned __int64>::operator[]+74284
+ 6: 00007FF67E9D18F7 uv_timer_set_repeat+112151
+ 7: 00007FF67EB8C7C1 X509_STORE_set_get_issuer+735329
+ 8: 00007FF67EB8D46B X509_STORE_set_get_issuer+738571
+ 9: 00007FF67E63CB3E EC_KEY_METHOD_set_verify+219102
+10: 00007FF67E63C27A EC_KEY_METHOD_set_verify+216858
+11: 00007FF67E6378A9 EC_KEY_METHOD_set_verify+197961
+12: 00007FF67EB13C4F X509_STORE_set_get_issuer+240879
+13: 00007FF67EB16A51 X509_STORE_set_get_issuer+252657
+14: 00007FF67EB9F6D3 v8::ScriptCompiler::CompileFunction+1011
+15: 00007FF67DF69063 node::GetCurrentEnvironment+20883
+16: 00007FF67DF6780E node::GetCurrentEnvironment+14654
+17: 0000029D9FDCF64D 
+
+<--- Last few GCs --->
+
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+
+
+#
+# Fatal error in , line 0
+# Out of memory: HashMap::Initialize
+#
+#
+#
+#FailureMessage Object: 0000002BD3BFB210
+----- Native stack trace -----
+
+ 1: 00007FF67DF4C44F 
+ 2: 00007FF67EB96217 
+ 3: 00007FF67E996C07 
+ 4: 00007FF67E92F62B 
+ 5: 00007FF67E90707E 
+ 6: 00007FF67E9996A2 
+ 7: 00007FF67E998657 
+ 8: 00007FF67E9A9582 
+ 9: 00007FF67E9A90AB 
+10: 00007FF67FE2F8ED 
+11: 00007FF67E9946D0 
+12: 00007FF67E9AEF1A 
+13: 00007FF67E9BB3B6 
+14: 00007FF67E58D0F7 
+15: 000001D6D83F75FA 
+
+
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+----- Native stack trace -----
+
+
+<--- Last few GCs --->
+
+
+
+#
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+#
+----- Native stack trace -----
+
+ 1: 00007FF67DEA0ECD 
+ 2: 00007FF67F303C4F 
+ 3: 00007FF67EB942B6 
+ 4: 00007FF67EB939A2 
+ 5: 00007FF67EB937D0 
+ 6: 00007FF67E61AA7F 
+ 7: 00007FF67E63B6A6 
+ 8: 00007FF67E651D9B 
+ 9: 00007FF67E650F6E 
+10: 00007FF67E650C29 
+11: 00007FF67E6593F0 
+12: 00007FF67E650696 
+ 1: 00007FF67DEA0ECD node::MultiIsolatePlatform::DisposeIsolate+5341
+13: 00007FF67E651D9B 
+ 2: 00007FF67F3036B6 v8::base::FatalOOM+54
+14: 00007FF67E650F6E 
+ 3: 00007FF67EB961F6 v8::Function::NewInstance+390
+15: 00007FF67E662E42 
+ 4: 00007FF67E9FD52E v8::CppHeap::CollectGarbageInYoungGenerationForTesting+111438
+16: 00007FF67E642915 
+ 5: 00007FF67EA30B5F SSL_CTX_set_default_read_buffer_len+41247
+17: 00007FF67E64B51B 
+ 6: 00007FF67EA31612 SSL_CTX_set_default_read_buffer_len+43986
+18: 00007FF67E64AA1A 
+ 7: 00007FF67EA31FF2 SSL_CTX_set_default_read_buffer_len+46514
+19: 00007FF67E63E117 
+ 8: 00007FF67E52DE33 v8::internal::Version::GetSONAME+122307
+20: 00007FF67E63D2E4 
+ 9: 00007FF67EBC10B6 v8::Isolate::Initialize+662
+21: 00007FF67E63C5D2 
+10: 00007FF67E05A22D node::SetIsolateUpForNode+749
+22: 00007FF67E63C27A 
+11: 00007FF67DDB5B73 RSA_meth_get_flags+222691
+23: 00007FF67E6378A9 
+12: 00007FF67DDB4F09 RSA_meth_get_flags+219513
+24: 00007FF67EB13C4F 
+13: 00007FF67DDBEA90 RSA_meth_get_flags+259328
+25: 00007FF67EB16A51 
+14: 00007FF67EBEB1A6 uv_thread_detach+150
+26: 00007FF67EB9F6D3 
+15: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+27: 00007FF67DF69063 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+28: 00007FF67DF6780E 
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+29: 00000216AFDCF64D 
+ 1: 00007FF67DEA0ECD 
+ 2: 00007FF67F3036B6 
+ 3: 00007FF67EB961F6 
+ 4: 00007FF67E996C07 
+ 5: 00007FF67E948E5A 
+ 6: 00007FF67E948F1C 
+ 7: 00007FF67E94980B 
+ 8: 00007FF67E920A61 
+ 9: 00007FF67E986913 
+10: 00007FF67E98667E 
+11: 00007FF67E985468 
+12: 00007FF67E9853EA 
+13: 00007FF67E54B493 
+14: 00007FF67E5492DC 
+15: 00007FF67E54EF86 
+16: 00007FF67E549FC8 
+17: 00007FF67E5494BE 
+18: 00007FF67E54EF86 
+19: 00007FF67E549FC8 
+20: 00007FF67E5494BE 
+21: 00007FF67E54EF86 
+22: 00007FF67E549FC8 
+23: 00007FF67E5494BE 
+24: 00007FF67E54EF86 
+25: 00007FF67E549FC8 
+26: 00007FF67E5494BE 
+27: 00007FF67E54EF86 
+28: 00007FF67E549FC8 
+29: 00007FF67E5494BE 
+30: 00007FF67E55055E 
+31: 00007FF67E549D0D 
+32: 00007FF67E99EBC8 
+33: 00007FF67E5281F3 
+34: 00007FF67EA31BFC 
+35: 00007FF67EA31FF2 
+36: 00007FF67E52DE33 
+37: 00007FF67EBC10B6 
+38: 00007FF67E05A22D 
+39: 00007FF67DDB5B73 
+40: 00007FF67DDB4F09 
+41: 00007FF67DDBEA90 
+42: 00007FF67EBEB1A6 
+43: 00007FF67FE4B0B3 
+44: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+45: 00007FF8AAD2C48C RtlUserThreadStart+44
+
+<--- Last few GCs --->
+
+[13588:0000015247320000]      189 ms: Scavenge 8.7 (11.3) -> 7.4 (11.3) MB, pooled: 0 MB, 2.41 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[13588:0000015247320000]      895 ms: Scavenge 9.5 (12.3) -> 8.8 (17.3) MB, pooled: 0 MB, 2.66 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+ 4: 00007FF67EB93A2A X509_STORE_set_get_issuer+764618
+ 5: 00007FF67EB937D0 X509_STORE_set_get_issuer+764016
+ 6: 00007FF67E61AA7F EC_KEY_METHOD_set_verify+79647
+ 7: 00007FF67E62C151 EC_KEY_METHOD_set_verify+151025
+ 8: 00007FF67E62B483 EC_KEY_METHOD_set_verify+147747
+ 9: 00007FF67E626931 EC_KEY_METHOD_set_verify+128465
+10: 00007FF67E62CB8A EC_KEY_METHOD_set_verify+153642
+11: 00007FF67E62ECF5 EC_KEY_METHOD_set_verify+162197
+12: 00007FF67E621876 EC_KEY_METHOD_set_verify+107798
+13: 00007FF67E6201DB EC_KEY_METHOD_set_verify+102011
+14: 00007FF67E61F516 EC_KEY_METHOD_set_verify+98742
+15: 00007FF67E64A078 EC_KEY_METHOD_set_verify+273688
+16: 00007FF67E63E090 EC_KEY_METHOD_set_verify+224560
+17: 00007FF67E662613 EC_KEY_METHOD_set_verify+373427
+18: 00007FF67E642A84 EC_KEY_METHOD_set_verify+243492
+19: 00007FF67E64B51B EC_KEY_METHOD_set_verify+278971
+20: 00007FF67E64AA1A EC_KEY_METHOD_set_verify+276154
+21: 00007FF67E63E117 EC_KEY_METHOD_set_verify+224695
+22: 00007FF67E656213 EC_KEY_METHOD_set_verify+323251
+23: 00007FF67E651D9B EC_KEY_METHOD_set_verify+305723
+24: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+25: 00007FF67E656934 EC_KEY_METHOD_set_verify+325076
+26: 00007FF67E654DBE EC_KEY_METHOD_set_verify+318046
+27: 00007FF67E651D9B EC_KEY_METHOD_set_verify+305723
+28: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+29: 00007FF67E6577D2 EC_KEY_METHOD_set_verify+328818
+30: 00007FF67E6541F3 EC_KEY_METHOD_set_verify+315027
+31: 00007FF67E651DE8 EC_KEY_METHOD_set_verify+305800
+32: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+33: 00007FF67E656934 EC_KEY_METHOD_set_verify+325076
+34: 00007FF67E661D4F EC_KEY_METHOD_set_verify+371183
+35: 00007FF67E64B51B EC_KEY_METHOD_set_verify+278971
+36: 00007FF67E64AA1A EC_KEY_METHOD_set_verify+276154
+37: 00007FF67E63E117 EC_KEY_METHOD_set_verify+224695
+38: 00007FF67E63D2E4 EC_KEY_METHOD_set_verify+221060
+39: 00007FF67E63C5D2 EC_KEY_METHOD_set_verify+217714
+40: 00007FF67E63C27A EC_KEY_METHOD_set_verify+216858
+41: 00007FF67E6378A9 EC_KEY_METHOD_set_verify+197961
+42: 00007FF67EB13C4F X509_STORE_set_get_issuer+240879
+43: 00007FF67EB16A51 X509_STORE_set_get_issuer+252657
+44: 00007FF67EB9F6D3 v8::ScriptCompiler::CompileFunction+1011
+45: 00007FF67DF69063 node::GetCurrentEnvironment+20883
+46: 00007FF67DF6780E node::GetCurrentEnvironment+14654
+47: 000001527F90F64D 
+
+
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+----- Native stack trace -----
+
+Error: Can't resolve 'tailwindcss' in 'C:\xampp\htdocs'
+    [2m[at finishWithoutResolve (C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:587:18)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:679:14][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'C:\\xampp\\htdocs'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in C:\\xampp\\htdocs or above\n' +
+    '  resolve as module\n' +
+    "    C:\\xampp\\htdocs\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\xampp\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\node_modules doesn't exist or is not a directory"
+}
+ 1: 00007FF67DEA0ECD node::MultiIsolatePlatform::DisposeIsolate+5341
+ 2: 00007FF67F3036B6 v8::base::FatalOOM+54
+ 3: 00007FF67EB961F6 v8::Function::NewInstance+390
+ 4: 00007FF67E9FD52E v8::CppHeap::CollectGarbageInYoungGenerationForTesting+111438
+ 5: 00007FF67EA30B5F SSL_CTX_set_default_read_buffer_len+41247
+ 6: 00007FF67EA31612 SSL_CTX_set_default_read_buffer_len+43986
+ 7: 00007FF67EA31FF2 SSL_CTX_set_default_read_buffer_len+46514
+ 8: 00007FF67E52DE33 v8::internal::Version::GetSONAME+122307
+ 9: 00007FF67EBC10B6 v8::Isolate::Initialize+662
+10: 00007FF67E05A22D node::SetIsolateUpForNode+749
+11: 00007FF67DDB5B73 RSA_meth_get_flags+222691
+12: 00007FF67DDB4F09 RSA_meth_get_flags+219513
+13: 00007FF67DDBEA90 RSA_meth_get_flags+259328
+14: 00007FF67EBEB1A6 uv_thread_detach+150
+15: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+
+
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+----- Native stack trace -----
+
+ 1: 00007FF67DEA0ECD node::MultiIsolatePlatform::DisposeIsolate+5341
+ 2: 00007FF67F3036B6 v8::base::FatalOOM+54
+ 3: 00007FF67EB961F6 v8::Function::NewInstance+390
+ 4: 00007FF67E9FD52E v8::CppHeap::CollectGarbageInYoungGenerationForTesting+111438
+ 5: 00007FF67EA30B5F SSL_CTX_set_default_read_buffer_len+41247
+ 6: 00007FF67EA31612 SSL_CTX_set_default_read_buffer_len+43986
+ 7: 00007FF67EA31FF2 SSL_CTX_set_default_read_buffer_len+46514
+ 8: 00007FF67E52DE33 v8::internal::Version::GetSONAME+122307
+ 9: 00007FF67EBC10B6 v8::Isolate::Initialize+662
+10: 00007FF67E05A22D node::SetIsolateUpForNode+749
+11: 00007FF67DDB5B73 RSA_meth_get_flags+222691
+12: 00007FF67DDB4F09 RSA_meth_get_flags+219513
+13: 00007FF67DDBEA90 RSA_meth_get_flags+259328
+14: 00007FF67EBEB1A6 uv_thread_detach+150
+15: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+Error: Can't resolve 'tailwindcss' in 'C:\xampp\htdocs'
+    [2m[at finishWithoutResolve (C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:587:18)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:679:14][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'C:\\xampp\\htdocs'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in C:\\xampp\\htdocs or above\n' +
+    '  resolve as module\n' +
+    "    C:\\xampp\\htdocs\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\xampp\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\node_modules doesn't exist or is not a directory"
+}
+
+
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+----- Native stack trace -----
+
+ 1: 00007FF67DEA0ECD 
+ 2: 00007FF67F3036B6 
+ 3: 00007FF67EB961F6 
+ 4: 00007FF67E9FD52E 
+ 5: 00007FF67EA30B5F 
+ 6: 00007FF67EA31612 
+ 7: 00007FF67EA31FF2 
+ 8: 00007FF67E52DE33 
+ 9: 00007FF67EBC10B6 
+10: 00007FF67E05A22D 
+11: 00007FF67DDB5B73 
+12: 00007FF67DDB4F09 
+13: 00007FF67DDBEA90 
+14: 00007FF67EBEB1A6 
+15: 00007FF67FE4B0B3 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+
+<--- Last few GCs --->
+memory allocation of 8720 bytes failed
+[40220:000001B95BD76000]     3880 ms: Scavenge 5.9 (7.2) -> 5.3 (10.0) MB, pooled: 0 MB, 2.66 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+
+<--- Last few GCs --->
+<--- Last few GCs --->
+[20800:0000023CD5495000]     1445 ms: Scavenge 5.9 (7.2) -> 5.3 (10.0) MB, pooled: 0 MB, 5.61 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+
+[13176:0000028301434000]     2791 ms: Scavenge 8.7 (11.3) -> 7.4 (11.3) MB, pooled: 0 MB, 2.37 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+----- Native stack trace -----
+
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+----- Native stack trace -----
+
+
+ 1: 00007FF67DF4C44F 
+ 2: 00007FF67EB96217 
+ 3: 00007FF67E50FC46 
+ 4: 00007FF67E659D5A 
+ 5: 00007FF67E650696 
+ 6: 00007FF67E651D9B 
+ 7: 00007FF67E650F6E 
+ 8: 00007FF67E6577D2 
+ 9: 00007FF67E6541F3 
+10: 00007FF67E651DE8 
+11: 00007FF67E650F6E 
+12: 00007FF67E6517D6 
+13: 00007FF67E650FB4 
+14: 00007FF67E656934 
+15: 00007FF67E661D4F 
+16: 00007FF67E64B51B 
+17: 00007FF67E64AA1A 
+18: 00007FF67E63E117 
+19: 00007FF67E63D2E4 
+20: 00007FF67E63C5D2 
+21: 00007FF67E63C27A 
+22: 00007FF67E6378A9 
+23: 00007FF67EB13C4F 
+24: 00007FF67EB16A51 
+25: 00007FF67EB9F6D3 
+26: 00007FF67DF69063 
+27: 00007FF67DF6780E 
+28: 0000023C9FDCF64D 
+ 1: 00007FF67DF4C44F 
+ 2: 00007FF67EB96217 
+ 3: 00007FF67E50FC46 
+ 4: 00007FF67EB7CECA 
+ 5: 00007FF67EB7E5E6 
+ 6: 00007FF67E645537 
+ 7: 00007FF67E66267A 
+ 8: 00007FF67E642A84 
+ 9: 00007FF67E64B51B 
+10: 00007FF67E64AA1A 
+11: 00007FF67E63E117 
+12: 00007FF67E63D2E4 
+13: 00007FF67E63C5D2 
+ 1: 00007FF67DF4C44F 
+14: 00007FF67E63C27A 
+15: 00007FF67E6378A9 
+ 2: 00007FF67EB96217 
+16: 00007FF67EB13C4F 
+ 3: 00007FF67E50FC46 
+17: 00007FF67EB16A51 
+ 4: 00007FF67E6278B9 
+18: 00007FF67EB9F6D3 
+ 5: 00007FF67E6247C5 
+19: 00007FF67DF69063 
+ 6: 00007FF67E628D9B 
+20: 00007FF67DF6780E 
+ 7: 00007FF67E628263 
+21: 000001B91FDCF64D 
+ 8: 00007FF67E62B1D2 
+ 9: 00007FF67E62666D 
+10: 00007FF67E624815 
+11: 00007FF67E628D9B 
+12: 00007FF67E628263 
+13: 00007FF67E620F59 
+14: 00007FF67E62AB9B 
+15: 00007FF67E628BC0 
+16: 00007FF67E6282DD 
+17: 00007FF67E627D04 
+18: 00007FF67E6241FB 
+19: 00007FF67E628E0A 
+20: 00007FF67E628263 
+21: 00007FF67E626CBA 
+22: 00007FF67E632F61 
+23: 00007FF67E622541 
+24: 00007FF67E633F0F 
+25: 00007FF67E630F9E 
+26: 00007FF67E622483 
+27: 00007FF67E621AAD 
+28: 00007FF67E6201DB 
+29: 00007FF67E61F516 
+30: 00007FF67E64A078 
+31: 00007FF67E63E090 
+32: 00007FF67E662613 
+33: 00007FF67E642A84 
+34: 00007FF67E64B51B 
+35: 00007FF67E64AA1A 
+36: 00007FF67E63E117 
+37: 00007FF67E63D2E4 
+38: 00007FF67E63C5D2 
+39: 00007FF67E63C27A 
+40: 00007FF67E6378A9 
+41: 00007FF67EB13C4F 
+42: 00007FF67EB16A51 
+43: 00007FF67EB9F6D3 
+44: 00007FF67DF69063 
+45: 00007FF67DF6780E 
+46: 00000283392CF64D 
+
+
+
+#
+
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+#
+----- Native stack trace -----
+----- Native stack trace -----
+
+ 1: 00007FF67DEA0ECD 
+
+ 2: 00007FF67F3036B6 
+ 3: 00007FF67EB961F6 
+ 4: 00007FF67E9FD52E 
+ 5: 00007FF67EA30B5F 
+ 6: 00007FF67EA31612 
+ 7: 00007FF67EA31FF2 
+ 8: 00007FF67E52DE33 
+ 9: 00007FF67EBC10B6 
+10: 00007FF67E05A22D 
+11: 00007FF67DDB5B73 
+12: 00007FF67DDB4F09 
+13: 00007FF67DDBEA90 
+14: 00007FF67EBEB1A6 
+15: 00007FF67FE4B0B3 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+ 1: 00007FF67DEA0ECD 
+ 2: 00007FF67F3036B6 
+ 3: 00007FF67EB961F6 
+ 4: 00007FF67E9FD52E 
+ 5: 00007FF67EA30B5F 
+ 6: 00007FF67EA31612 
+ 7: 00007FF67EA31FF2 
+ 8: 00007FF67E52DE33 
+ 9: 00007FF67EBC10B6 
+10: 00007FF67E05A22D 
+11: 00007FF67DDB5B73 
+12: 00007FF67DDB4F09 
+13: 00007FF67DDBEA90 
+14: 00007FF67EBEB1A6 
+15: 00007FF67FE4B0B3 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+
+<--- Last few GCs --->
+
+
+
+#
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+#
+----- Native stack trace -----
+
+ 1: 00007FF67DEA0ECD 
+ 2: 00007FF67F3036B6 
+ 3: 00007FF67EB961F6 
+ 4: 00007FF67E996C07 
+ 5: 00007FF67E948E5A 
+ 6: 00007FF67E948F1C 
+ 7: 00007FF67E94980B 
+ 8: 00007FF67E920A61 
+ 9: 00007FF67E986913 
+10: 00007FF67E98667E 
+11: 00007FF67E985468 
+12: 00007FF67E9853EA 
+13: 00007FF67E54B493 
+14: 00007FF67E5492DC 
+15: 00007FF67E55055E 
+16: 00007FF67E549D0D 
+17: 00007FF67E527744 
+18: 00007FF67E544CF1 
+19: 00007FF67E5281FF 
+20: 00007FF67EA31BFC 
+21: 00007FF67EA31FF2 
+22: 00007FF67E52DE33 
+23: 00007FF67EBC10B6 
+24: 00007FF67E05A22D 
+25: 00007FF67DDB5B73 
+26: 00007FF67DDB4F09 
+27: 00007FF67DDBEA90 
+28: 00007FF67EBEB1A6 
+29: 00007FF67FE4B0B3 
+30: 00007FF8A8A6E8D7 
+31: 00007FF8AAD2C48C 
+
+
+
+
+#
+#
+
+# Fatal process out of memory: Re-embedded builtins: set permissions
+# Fatal process out of memory: Re-embedded builtins: set permissions
+<--- Last few GCs --->
+#
+
+----- Native stack trace -----
+#
+[42988:000001D2A3886000]      894 ms: Scavenge 8.7 (11.3) -> 7.4 (11.3) MB, pooled: 0 MB, 5.58 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+----- Native stack trace -----
+[42988:000001D2A3886000]     1109 ms: Scavenge 9.5 (12.3) -> 8.9 (17.3) MB, pooled: 0 MB, 3.22 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+
+ 1: 00007FF67DEA0ECD 
+ 1: 00007FF67DEA0ECD node::MultiIsolatePlatform::DisposeIsolate+5341
+
+ 2: 00007FF67F3036B6 
+<--- Last few GCs --->
+ 2: 00007FF67F3036B6 v8::base::FatalOOM+54
+
+ 1: 00007FF67DF4C44F 
+ 3: 00007FF67EB961F6 
+ 3: 00007FF67EB961F6 v8::Function::NewInstance+390
+ 2: 00007FF67EB96217 
+[19588:0000015530015000]     2314 ms: Scavenge 8.7 (11.3) -> 7.4 (11.3) MB, pooled: 0 MB, 9.14 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 4: 00007FF67E9FD52E 
+[19588:0000015530015000]     2983 ms: Scavenge 9.5 (12.3) -> 8.9 (17.3) MB, pooled: 0 MB, 58.27 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 3: 00007FF67E50FC46 
+ 5: 00007FF67EA30B5F 
+ 4: 00007FF67E9FD52E v8::CppHeap::CollectGarbageInYoungGenerationForTesting+111438
+ 5: 00007FF67EA30B5F SSL_CTX_set_default_read_buffer_len+41247
+ 4: 00007FF67E3C0742 
+ 6: 00007FF67EA31612 
+
+ 6: 00007FF67EA31612 SSL_CTX_set_default_read_buffer_len+43986
+ 5: 00007FF67E361CDD 
+ 7: 00007FF67EA31FF2 
+FATAL ERROR: Zone Allocation failed - process out of memory
+ 7: 00007FF67EA31FF2 SSL_CTX_set_default_read_buffer_len+46514
+----- Native stack trace -----
+ 8: 00007FF67E52DE33 v8::internal::Version::GetSONAME+122307
+ 6: 00007FF67E3623DF 
+ 8: 00007FF67E52DE33 
+ 7: 00007FF67E39B10A 
+ 9: 00007FF67EBC10B6 
+
+ 9: 00007FF67EBC10B6 v8::Isolate::Initialize+662
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+10: 00007FF67E05A22D node::SetIsolateUpForNode+749
+ 8: 00007FF67E370DCB 
+10: 00007FF67E05A22D 
+ 9: 00007FF67E3E8F36 
+11: 00007FF67DDB5B73 RSA_meth_get_flags+222691
+10: 00007FF67E3E7C50 
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+11: 00007FF67DDB5B73 
+12: 00007FF67DDB4F09 
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+12: 00007FF67DDB4F09 RSA_meth_get_flags+219513
+ 4: 00007FF67F7835B7 v8::platform::DelayedTaskQueue::Terminate+1692263
+13: 00007FF67DDBEA90 
+11: 00007FF67E3E5A4A 
+13: 00007FF67DDBEA90 RSA_meth_get_flags+259328
+12: 00007FF67EB09ECF 
+14: 00007FF67EBEB1A6 
+ 5: 00007FF67F782E83 v8::platform::DelayedTaskQueue::Terminate+1690419
+14: 00007FF67EBEB1A6 uv_thread_detach+150
+13: 00007FF67E3E752B 
+15: 00007FF67FE4B0B3 
+ 6: 00007FF67F782ACF v8::platform::DelayedTaskQueue::Terminate+1689471
+15: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+14: 00007FF67F37684F 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+ 7: 00007FF67F78294F v8::platform::DelayedTaskQueue::Terminate+1689087
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+15: 00007FF67DE9CD8E 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+ 8: 00007FF67F590716 v8::base::DiyFp::Multiply+414934
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+16: 00007FF67EBEB1A6 
+ 9: 00007FF67F588F86 v8::base::DiyFp::Multiply+384326
+17: 00007FF67FE4B0B3 
+10: 00007FF67F588400 v8::base::DiyFp::Multiply+381376
+18: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+11: 00007FF67EB09ECF X509_STORE_set_get_issuer+200559
+19: 00007FF8AAD2C48C RtlUserThreadStart+44
+12: 00007FF67EACEF5D v8::internal::OptimizingCompileInputQueue::Prioritize+1773
+13: 00007FF67EACEC55 v8::internal::OptimizingCompileInputQueue::Prioritize+997
+14: 00007FF67F37684F v8::platform::DefaultJobHandle::UpdatePriority+591
+15: 00007FF67DE9CD8E node::GetNodeReport+90334
+16: 00007FF67EBEB1A6 uv_thread_detach+150
+17: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+18: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+19: 00007FF8AAD2C48C RtlUserThreadStart+44
+
+
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+----- Native stack trace -----
+
+ 1: 00007FF67DEA0ECD node::MultiIsolatePlatform::DisposeIsolate+5341
+ 2: 00007FF67F3036B6 v8::base::FatalOOM+54
+ 3: 00007FF67EB961F6 v8::Function::NewInstance+390
+ 4: 00007FF67E9FD52E v8::CppHeap::CollectGarbageInYoungGenerationForTesting+111438
+ 5: 00007FF67EA30B5F SSL_CTX_set_default_read_buffer_len+41247
+ 6: 00007FF67EA31612 SSL_CTX_set_default_read_buffer_len+43986
+ 7: 00007FF67EA31FF2 SSL_CTX_set_default_read_buffer_len+46514
+ 8: 00007FF67E52DE33 v8::internal::Version::GetSONAME+122307
+ 9: 00007FF67EBC10B6 v8::Isolate::Initialize+662
+10: 00007FF67E05A22D node::SetIsolateUpForNode+749
+11: 00007FF67DDB5B73 RSA_meth_get_flags+222691
+12: 00007FF67DDB4F09 RSA_meth_get_flags+219513
+13: 00007FF67DDBEA90 RSA_meth_get_flags+259328
+14: 00007FF67EBEB1A6 uv_thread_detach+150
+15: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+Error: Can't resolve 'tailwindcss' in 'C:\xampp\htdocs'
+    [2m[at finishWithoutResolve (C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:587:18)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:679:14][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'C:\\xampp\\htdocs'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in C:\\xampp\\htdocs or above\n' +
+    '  resolve as module\n' +
+    "    C:\\xampp\\htdocs\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\xampp\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\node_modules doesn't exist or is not a directory"
+}
+
+
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+
+<--- Last few GCs --->
+
+#
+
+<--- Last few GCs --->
+----- Native stack trace -----
+
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+
+----- Native stack trace -----
+ 1: 00007FF67DEA0ECD 
+
+ 2: 00007FF67F3036B6 
+
+
+
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+ 3: 00007FF67EB961F6 
+#
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 4: 00007FF67E9FD52E 
+
+#
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+ 5: 00007FF67EA30B5F 
+# Fatal process out of memory: Re-embedded builtins: set permissions
+ 3: 00007FF67E996C07 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+#
+ 4: 00007FF67E92F62B v8::platform::DefaultPlatform::CurrentClockTimeMillis+490523
+ 6: 00007FF67EA31612 
+----- Native stack trace -----
+#
+ 5: 00007FF67E90707E v8::platform::DefaultPlatform::CurrentClockTimeMillis+325230
+
+----- Native stack trace -----
+ 7: 00007FF67EA31FF2 
+ 6: 00007FF67E9996A2 v8::base::AddressSpaceReservation::AddressSpaceReservation+332978
+ 8: 00007FF67E52DE33 
+
+ 7: 00007FF67E998657 v8::base::AddressSpaceReservation::AddressSpaceReservation+328807
+ 9: 00007FF67EBC10B6 
+ 1: 00007FF67DEA0ECD node::MultiIsolatePlatform::DisposeIsolate+5341
+ 8: 00007FF67E9A9582 v8::internal::StrongRootAllocatorBase::deallocate_impl+15858
+ 2: 00007FF67F3036B6 v8::base::FatalOOM+54
+ 1: 00007FF67DEA0ECD node::MultiIsolatePlatform::DisposeIsolate+5341
+10: 00007FF67E05A22D 
+ 9: 00007FF67E9A90AB v8::internal::StrongRootAllocatorBase::deallocate_impl+14619
+ 3: 00007FF67EB961F6 v8::Function::NewInstance+390
+ 2: 00007FF67F3036B6 v8::base::FatalOOM+54
+11: 00007FF67DDB5B73 
+10: 00007FF67FE2F8ED v8::base::UnsignedDivisionByConstant<unsigned __int64>+2794685
+ 4: 00007FF67E996C07 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+12: 00007FF67DDB4F09 
+11: 00007FF67E9946D0 v8::base::AddressSpaceReservation::AddressSpaceReservation+312544
+ 5: 00007FF67E948E5A v8::base::AddressSpaceReservation::AddressSpaceReservation+3178
+ 3: 00007FF67EB961F6 v8::Function::NewInstance+390
+ 4: 00007FF67E9FD52E v8::CppHeap::CollectGarbageInYoungGenerationForTesting+111438
+13: 00007FF67DDBEA90 
+12: 00007FF67E9AEF1A X509_STORE_set_cleanup+5098
+ 6: 00007FF67E948F1C v8::base::AddressSpaceReservation::AddressSpaceReservation+3372
+13: 00007FF67E9BB3B6 uv_timer_set_repeat+20694
+14: 00007FF67EBEB1A6 
+ 5: 00007FF67EA30B5F SSL_CTX_set_default_read_buffer_len+41247
+ 7: 00007FF67E94980B v8::base::AddressSpaceReservation::AddressSpaceReservation+5659
+ 6: 00007FF67EA31612 SSL_CTX_set_default_read_buffer_len+43986
+15: 00007FF67FE4B0B3 
+ 8: 00007FF67E920A61 v8::platform::DefaultPlatform::CurrentClockTimeMillis+430161
+ 7: 00007FF67EA31FF2 SSL_CTX_set_default_read_buffer_len+46514
+14: 00007FF67E58D0F7 v8::String::Utf8Value::~Utf8Value+144199
+16: 00007FF8A8A6E8D7 
+15: 0000018A57E775FA 
+ 9: 00007FF67E986913 v8::base::AddressSpaceReservation::AddressSpaceReservation+255779
+ 8: 00007FF67E52DE33 v8::internal::Version::GetSONAME+122307
+17: 00007FF8AAD2C48C 
+10: 00007FF67E98667E v8::base::AddressSpaceReservation::AddressSpaceReservation+255118
+ 9: 00007FF67EBC10B6 v8::Isolate::Initialize+662
+11: 00007FF67E985468 v8::base::AddressSpaceReservation::AddressSpaceReservation+250488
+10: 00007FF67E05A22D node::SetIsolateUpForNode+749
+12: 00007FF67E9853EA v8::base::AddressSpaceReservation::AddressSpaceReservation+250362
+11: 00007FF67DDB5B73 RSA_meth_get_flags+222691
+13: 00007FF67E54B493 v8::internal::Version::GetSONAME+242723
+12: 00007FF67DDB4F09 RSA_meth_get_flags+219513
+14: 00007FF67E5492DC v8::internal::Version::GetSONAME+234092
+13: 00007FF67DDBEA90 RSA_meth_get_flags+259328
+15: 00007FF67E55055E v8::internal::Version::GetSONAME+263406
+14: 00007FF67EBEB1A6 uv_thread_detach+150
+16: 00007FF67E549D0D v8::internal::Version::GetSONAME+236701
+15: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+17: 00007FF67E99EBC8 v8::base::AddressSpaceReservation::AddressSpaceReservation+354776
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+18: 00007FF67E5281F3 v8::internal::Version::GetSONAME+98691
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+19: 00007FF67EA31BFC SSL_CTX_set_default_read_buffer_len+45500
+20: 00007FF67EA31FF2 SSL_CTX_set_default_read_buffer_len+46514
+21: 00007FF67E52DE33 v8::internal::Version::GetSONAME+122307
+22: 00007FF67EBC10B6 v8::Isolate::Initialize+662
+23: 00007FF67E05A22D node::SetIsolateUpForNode+749
+24: 00007FF67DDB5B73 RSA_meth_get_flags+222691
+25: 00007FF67DDB4F09 RSA_meth_get_flags+219513
+26: 00007FF67DDBEA90 RSA_meth_get_flags+259328
+27: 00007FF67EBEB1A6 uv_thread_detach+150
+28: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+29: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+30: 00007FF8AAD2C48C RtlUserThreadStart+44
+
+<--- Last few GCs --->
+
+[12692:000001D331932000]     8401 ms: Scavenge 8.7 (11.3) -> 7.4 (9.3) MB, pooled: 2 MB, 2.53 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 00007FF67DF4C44F 
+ 2: 00007FF67EB96217 
+ 3: 00007FF67E996C07 
+ 4: 00007FF67E92F62B 
+ 5: 00007FF67E90707E 
+ 6: 00007FF67E9996A2 
+ 7: 00007FF67E998657 
+ 8: 00007FF67E9A9582 
+ 9: 00007FF67E9A90AB 
+10: 00007FF67FE2F8ED 
+11: 00007FF67E9946D0 
+12: 00007FF67E9AEF1A 
+13: 00007FF67E9BAD78 
+14: 00007FF67E9D6EEA 
+15: 00007FF67E6C2A75 
+16: 00007FF67E6C29FD 
+17: 00007FF67E6CECBA 
+18: 00007FF67E6D1845 
+19: 00007FF67E6CE0E4 
+20: 00007FF67E6CDF2D 
+21: 00007FF67E6D3348 
+22: 00007FF67E6DBF43 
+23: 00007FF67E6BFBF1 
+24: 00007FF67E6BF429 
+25: 00007FF67E73C34B 
+26: 00007FF67E7460F4 
+27: 00007FF67E5897A6 
+28: 00007FF67E588143 
+29: 000001D36A0B75FA 
+Error: Can't resolve 'tailwindcss' in 'C:\xampp\htdocs'
+    [2m[at finishWithoutResolve (C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:587:18)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:679:14][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'C:\\xampp\\htdocs'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in C:\\xampp\\htdocs or above\n' +
+    '  resolve as module\n' +
+    "    C:\\xampp\\htdocs\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\xampp\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\node_modules doesn't exist or is not a directory"
+}
+
+
+
+#
+
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+# Fatal error in , line 0
+#
+----- Native stack trace -----
+# Out of memory: HashMap::Initialize
+
+#
+#
+#
+#FailureMessage Object: 000000E6123FA4E0
+----- Native stack trace -----
+
+ 1: 00007FF67DEA0ECD node::MultiIsolatePlatform::DisposeIsolate+5341
+ 1: 00007FF67DEA0ECD node::MultiIsolatePlatform::DisposeIsolate+5341
+ 2: 00007FF67F3036B6 v8::base::FatalOOM+54
+ 3: 00007FF67EB961F6 v8::Function::NewInstance+390
+ 2: 00007FF67F303C4F V8_Fatal+287
+ 4: 00007FF67E9FD52E v8::CppHeap::CollectGarbageInYoungGenerationForTesting+111438
+ 3: 00007FF67EB942B6 X509_STORE_set_get_issuer+766806
+ 5: 00007FF67EA30B5F SSL_CTX_set_default_read_buffer_len+41247
+ 4: 00007FF67EB939A2 X509_STORE_set_get_issuer+764482
+ 6: 00007FF67EA31612 SSL_CTX_set_default_read_buffer_len+43986
+ 5: 00007FF67EB937D0 X509_STORE_set_get_issuer+764016
+ 7: 00007FF67EA31FF2 SSL_CTX_set_default_read_buffer_len+46514
+ 6: 00007FF67E61AA7F EC_KEY_METHOD_set_verify+79647
+ 8: 00007FF67E52DE33 v8::internal::Version::GetSONAME+122307
+ 7: 00007FF67E63B6A6 EC_KEY_METHOD_set_verify+213830
+ 9: 00007FF67EBC10B6 v8::Isolate::Initialize+662
+ 8: 00007FF67E651D9B EC_KEY_METHOD_set_verify+305723
+10: 00007FF67E05A22D node::SetIsolateUpForNode+749
+ 9: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+11: 00007FF67DDB5B73 RSA_meth_get_flags+222691
+10: 00007FF67E650C29 EC_KEY_METHOD_set_verify+301257
+12: 00007FF67DDB4F09 RSA_meth_get_flags+219513
+11: 00007FF67E650001 EC_KEY_METHOD_set_verify+298145
+13: 00007FF67DDBEA90 RSA_meth_get_flags+259328
+12: 00007FF67E651D9B EC_KEY_METHOD_set_verify+305723
+14: 00007FF67EBEB1A6 uv_thread_detach+150
+13: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+15: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+14: 00007FF67E6577D2 EC_KEY_METHOD_set_verify+328818
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+15: 00007FF67E655AA0 EC_KEY_METHOD_set_verify+321344
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+16: 00007FF67E651D9B EC_KEY_METHOD_set_verify+305723
+17: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+18: 00007FF67E662E42 EC_KEY_METHOD_set_verify+375522
+19: 00007FF67E642915 EC_KEY_METHOD_set_verify+243125
+20: 00007FF67E64B51B EC_KEY_METHOD_set_verify+278971
+21: 00007FF67E64AA1A EC_KEY_METHOD_set_verify+276154
+22: 00007FF67E63E117 EC_KEY_METHOD_set_verify+224695
+23: 00007FF67E63D2E4 EC_KEY_METHOD_set_verify+221060
+24: 00007FF67E63C5D2 EC_KEY_METHOD_set_verify+217714
+25: 00007FF67E63C27A EC_KEY_METHOD_set_verify+216858
+26: 00007FF67E6378A9 EC_KEY_METHOD_set_verify+197961
+27: 00007FF67EB13C4F X509_STORE_set_get_issuer+240879
+28: 00007FF67EB16A51 X509_STORE_set_get_issuer+252657
+29: 00007FF67EB9F6D3 v8::ScriptCompiler::CompileFunction+1011
+30: 00007FF67DF69063 node::GetCurrentEnvironment+20883
+31: 00007FF67DF6780E node::GetCurrentEnvironment+14654
+32: 000002825B18F64D 
+
+<--- Last few GCs --->
+
+
+
+
+<--- Last few GCs --->
+<--- Last few GCs --->
+[24908:000001D20B00A000]      290 ms: Scavenge 8.7 (11.3) -> 7.4 (11.3) MB, pooled: 0 MB, 2.41 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+<--- Last few GCs --->
+
+
+[24908:000001D20B00A000]      395 ms: Scavenge 9.5 (12.3) -> 8.8 (17.3) MB, pooled: 0 MB, 3.43 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[17808:000001DA4F831000]     7622 ms: Scavenge 8.7 (11.5) -> 7.4 (11.5) MB, pooled: 0 MB, 2.73 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[28680:0000019ADD3D5000]     6419 ms: Scavenge 8.7 (11.8) -> 7.4 (12.0) MB, pooled: 0 MB, 3043.49 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[17808:000001DA4F831000]     7719 ms: Scavenge 9.5 (12.3) -> 8.8 (17.3) MB, pooled: 0 MB, 16.43 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+<--- Last few GCs --->
+[28948:000001C9E6555000]      385 ms: Scavenge 8.7 (11.3) -> 7.4 (11.3) MB, pooled: 0 MB, 2.20 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[28680:0000019ADD3D5000]     6513 ms: Scavenge 9.5 (12.5) -> 8.9 (17.5) MB, pooled: 0 MB, 3.44 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+
+[28948:000001C9E6555000]      438 ms: Scavenge 9.5 (12.3) -> 8.8 (17.5) MB, pooled: 0 MB, 3.32 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[1416:0000024C64921000]      393 ms: Scavenge 8.7 (11.3) -> 7.4 (11.3) MB, pooled: 0 MB, 2.46 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+----- Native stack trace -----
+FATAL ERROR: Zone Allocation failed - process out of memory
+FATAL ERROR: Zone Allocation failed - process out of memory
+[1416:0000024C64921000]      482 ms: Scavenge 9.5 (12.3) -> 8.8 (17.3) MB, pooled: 0 MB, 3.48 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+----- Native stack trace -----
+
+----- Native stack trace -----
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+FATAL ERROR: Zone Allocation failed - process out of memory
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+----- Native stack trace -----
+
+----- Native stack trace -----
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+ 4: 00007FF67E0D114A X509_get0_tbs_sigalg+9818
+ 5: 00007FF67E8812BA v8::Promise::MarkAsSilent+545562
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 4: 00007FF67E108201 v8::internal::Version::GetVersion+165185
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+ 5: 00007FF67E8A6F0E v8::Promise::MarkAsSilent+700270
+ 6: 00007FF67E880BE0 v8::Promise::MarkAsSilent+543808
+ 6: 00007FF67E8B72AE v8::Promise::MarkAsSilent+766734
+ 4: 00007FF67E340FBA SSL_CTX_get_client_CA_list+40890
+ 7: 00007FF67E8AE9FD v8::Promise::MarkAsSilent+731741
+ 5: 00007FF67E3A90B6 SSL_CTX_get_client_CA_list+467126
+ 7: 00007FF67E883B19 v8::Promise::MarkAsSilent+555897
+ 8: 00007FF67E898EFC v8::Promise::MarkAsSilent+642908
+ 6: 00007FF67E3E4327 SSL_CTX_get_client_CA_list+709415
+ 7: 00007FF67E3A3574 SSL_CTX_get_client_CA_list+443764
+ 9: 00007FF67E899749 v8::Promise::MarkAsSilent+645033
+ 8: 00007FF67E8ABBAD v8::Promise::MarkAsSilent+719885
+ 9: 00007FF67E8A293F v8::Promise::MarkAsSilent+682399
+10: 00007FF67E88AB55 v8::Promise::MarkAsSilent+584629
+ 8: 00007FF67E3A34AA SSL_CTX_get_client_CA_list+443562
+10: 00007FF67E88B1C0 v8::Promise::MarkAsSilent+586272
+11: 00007FF67E888DCB v8::Promise::MarkAsSilent+577067
+ 9: 00007FF67E39BEA4 SSL_CTX_get_client_CA_list+413348
+12: 00007FF67E889150 v8::Promise::MarkAsSilent+577968
+11: 00007FF67E88ACAD v8::Promise::MarkAsSilent+584973
+10: 00007FF67E370DCB SSL_CTX_get_client_CA_list+237003
+12: 00007FF67E88836B v8::Promise::MarkAsSilent+574411
+13: 00007FF67E88836B v8::Promise::MarkAsSilent+574411
+13: 00007FF67E8877DF v8::Promise::MarkAsSilent+571455
+11: 00007FF67E3E8F36 SSL_CTX_get_client_CA_list+728886
+14: 00007FF67E8877DF v8::Promise::MarkAsSilent+571455
+12: 00007FF67E3E7C50 SSL_CTX_get_client_CA_list+724048
+14: 00007FF67E885E73 v8::Promise::MarkAsSilent+564947
+15: 00007FF67E885E73 v8::Promise::MarkAsSilent+564947
+13: 00007FF67E3E5A4A SSL_CTX_get_client_CA_list+715338
+15: 00007FF67E87D296 v8::Promise::MarkAsSilent+529142
+14: 00007FF67EB09ECF X509_STORE_set_get_issuer+200559
+16: 00007FF67E87D296 v8::Promise::MarkAsSilent+529142
+16: 00007FF67EB1AF9F X509_STORE_set_get_issuer+270399
+17: 00007FF67EB1AF9F X509_STORE_set_get_issuer+270399
+15: 00007FF67E3E752B SSL_CTX_get_client_CA_list+722219
+18: 00007FF67EB118B8 X509_STORE_set_get_issuer+231768
+17: 00007FF67EB118B8 X509_STORE_set_get_issuer+231768
+16: 00007FF67F37684F v8::platform::DefaultJobHandle::UpdatePriority+591
+18: 00007FF67EB110DD X509_STORE_set_get_issuer+229757
+19: 00007FF67EB110DD X509_STORE_set_get_issuer+229757
+17: 00007FF67DE9CD8E node::GetNodeReport+90334
+20: 00007FF67EB11B7C X509_STORE_set_get_issuer+232476
+19: 00007FF67EB11B7C X509_STORE_set_get_issuer+232476
+18: 00007FF67EBEB1A6 uv_thread_detach+150
+20: 00007FF67E59417B v8::String::Utf8Value::~Utf8Value+173003
+21: 00007FF67E59417B v8::String::Utf8Value::~Utf8Value+173003
+19: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+21: 000001DA1FE775FA 
+22: 000001D2437F75FA 
+20: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+21: 00007FF8AAD2C48C RtlUserThreadStart+44
+ 1: 00007FF67DF4C44F 
+ 2: 00007FF67EB96217 
+ 3: 00007FF67E50FC46 
+ 4: 00007FF67E63CDFA 
+ 5: 00007FF67E63C27A 
+ 6: 00007FF67E6378A9 
+ 7: 00007FF67EB13C4F 
+ 8: 00007FF67EB16A51 
+ 9: 00007FF67EB9F6D3 
+10: 00007FF67DF69063 
+11: 00007FF67DF6780E 
+12: 0000019A9FDCF64D 
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+ 4: 00007FF67E63565D EC_KEY_METHOD_set_verify+189181
+ 5: 00007FF67E61F357 EC_KEY_METHOD_set_verify+98295
+ 6: 00007FF67E64A078 EC_KEY_METHOD_set_verify+273688
+ 7: 00007FF67E63E090 EC_KEY_METHOD_set_verify+224560
+ 8: 00007FF67E662613 EC_KEY_METHOD_set_verify+373427
+ 9: 00007FF67E642A84 EC_KEY_METHOD_set_verify+243492
+10: 00007FF67E64B51B EC_KEY_METHOD_set_verify+278971
+11: 00007FF67E64AA1A EC_KEY_METHOD_set_verify+276154
+12: 00007FF67E63E117 EC_KEY_METHOD_set_verify+224695
+13: 00007FF67E656213 EC_KEY_METHOD_set_verify+323251
+14: 00007FF67E651D9B EC_KEY_METHOD_set_verify+305723
+15: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+16: 00007FF67E656934 EC_KEY_METHOD_set_verify+325076
+17: 00007FF67E654DBE EC_KEY_METHOD_set_verify+318046
+18: 00007FF67E651D9B EC_KEY_METHOD_set_verify+305723
+19: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+20: 00007FF67E6577D2 EC_KEY_METHOD_set_verify+328818
+21: 00007FF67E6541F3 EC_KEY_METHOD_set_verify+315027
+22: 00007FF67E651DE8 EC_KEY_METHOD_set_verify+305800
+23: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+24: 00007FF67E656934 EC_KEY_METHOD_set_verify+325076
+25: 00007FF67E661D4F EC_KEY_METHOD_set_verify+371183
+26: 00007FF67E64B51B EC_KEY_METHOD_set_verify+278971
+27: 00007FF67E64AA1A EC_KEY_METHOD_set_verify+276154
+28: 00007FF67E63E117 EC_KEY_METHOD_set_verify+224695
+29: 00007FF67E63D2E4 EC_KEY_METHOD_set_verify+221060
+30: 00007FF67E63C5D2 EC_KEY_METHOD_set_verify+217714
+31: 00007FF67E63C27A EC_KEY_METHOD_set_verify+216858
+32: 00007FF67E6378A9 EC_KEY_METHOD_set_verify+197961
+33: 00007FF67EB13C4F X509_STORE_set_get_issuer+240879
+34: 00007FF67EB16A51 X509_STORE_set_get_issuer+252657
+35: 00007FF67EB9F6D3 v8::ScriptCompiler::CompileFunction+1011
+36: 00007FF67DF69063 node::GetCurrentEnvironment+20883
+37: 00007FF67DF6780E node::GetCurrentEnvironment+14654
+38: 0000024C1FDCF64D 
+
+
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+----- Native stack trace -----
+
+ 1: 00007FF67DEA0ECD node::MultiIsolatePlatform::DisposeIsolate+5341
+ 2: 00007FF67F3036B6 v8::base::FatalOOM+54
+ 3: 00007FF67EB961F6 v8::Function::NewInstance+390
+ 4: 00007FF67E9FD52E v8::CppHeap::CollectGarbageInYoungGenerationForTesting+111438
+ 5: 00007FF67EA30B5F SSL_CTX_set_default_read_buffer_len+41247
+ 6: 00007FF67EA31612 SSL_CTX_set_default_read_buffer_len+43986
+ 7: 00007FF67EA31FF2 SSL_CTX_set_default_read_buffer_len+46514
+ 8: 00007FF67E52DE33 v8::internal::Version::GetSONAME+122307
+ 9: 00007FF67EBC10B6 v8::Isolate::Initialize+662
+10: 00007FF67E05A22D node::SetIsolateUpForNode+749
+11: 00007FF67DDB5B73 RSA_meth_get_flags+222691
+12: 00007FF67DDB4F09 RSA_meth_get_flags+219513
+13: 00007FF67DDBEA90 RSA_meth_get_flags+259328
+14: 00007FF67EBEB1A6 uv_thread_detach+150
+15: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+
+<--- Last few GCs --->
+
+[22228:000001F2476D6000]     2272 ms: Scavenge 8.7 (11.3) -> 7.4 (11.3) MB, pooled: 0 MB, 2025.80 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[22228:000001F2476D6000]     6408 ms: Scavenge 9.5 (12.3) -> 8.9 (13.3) MB, pooled: 0 MB, 23.43 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+
+ 1: 00007FF67DF4C44F 
+ 2: 00007FF67EB96217 
+ 3: 00007FF67E50FC46 
+ 4: 00007FF67E0D114A 
+ 5: 00007FF67E8812BA 
+ 6: 00007FF67E880BE0 
+ 7: 00007FF67E8B3901 
+ 8: 00007FF67E8927F5 
+ 9: 00007FF67E89E158 
+10: 00007FF67E89CA44 
+11: 00007FF67E89D3B3 
+12: 00007FF67E88AB55 
+13: 00007FF67E888DCB 
+14: 00007FF67E889150 
+15: 00007FF67E888DCB 
+16: 00007FF67E889150 
+17: 00007FF67E88F37A 
+18: 00007FF67E888DCB 
+19: 00007FF67E889150 
+20: 00007FF67E888DCB 
+21: 00007FF67E889150 
+22: 00007FF67E88AD3A 
+23: 00007FF67E88836B 
+24: 00007FF67E8877DF 
+25: 00007FF67E885E73 
+26: 00007FF67E87D296 
+27: 00007FF67EB1AF9F 
+28: 00007FF67EB118B8 
+29: 00007FF67EB110DD 
+30: 00007FF67EB11B7C 
+31: 00007FF67E59417B 
+32: 000001F27F5F75FA 
+
+
+
+#
+
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+#
+
+
+
+----- Native stack trace -----
+----- Native stack trace -----
+
+<--- Last few GCs --->
+
+
+#
+
+<--- Last few GCs --->
+
+# Fatal process out of memory: Re-embedded builtins: set permissions
+[8420:000001FE1E9F5000]      629 ms: Scavenge 8.7 (11.3) -> 7.5 (11.3) MB, pooled: 0 MB, 3.34 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[41360:000002031E5E1000]      387 ms: Scavenge 8.7 (11.3) -> 7.4 (11.3) MB, pooled: 0 MB, 3.17 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+#
+[8420:000001FE1E9F5000]      682 ms: Scavenge 9.5 (12.3) -> 8.8 (17.5) MB, pooled: 0 MB, 4.48 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+----- Native stack trace -----
+
+[41360:000002031E5E1000]      571 ms: Scavenge 9.5 (12.3) -> 8.8 (17.3) MB, pooled: 0 MB, 2.91 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+----- Native stack trace -----
+
+
+ 1: 00007FF67DEA0ECD 
+ 1: 00007FF67DF4C44F 
+ 2: 00007FF67F3036B6 
+ 3: 00007FF67EB961F6 
+ 2: 00007FF67EB96217 
+ 4: 00007FF67E9FD52E 
+ 3: 00007FF67E50FC46 
+ 1: 00007FF67DEA0ECD 
+ 5: 00007FF67EA30B5F 
+ 4: 00007FF67E33E41E 
+ 6: 00007FF67EA31612 
+ 5: 00007FF67E3E7B43 
+ 7: 00007FF67EA31FF2 
+ 2: 00007FF67F3036B6 
+ 6: 00007FF67E3E5A4A 
+ 8: 00007FF67E52DE33 
+ 3: 00007FF67EB961F6 
+ 1: 00007FF67DF4C44F 
+ 7: 00007FF67EB09ECF 
+ 9: 00007FF67EBC10B6 
+ 4: 00007FF67E9FD52E 
+ 8: 00007FF67E3E752B 
+10: 00007FF67E05A22D 
+ 5: 00007FF67EA30B5F 
+ 2: 00007FF67EB96217 
+ 9: 00007FF67F37684F 
+11: 00007FF67DDB5B73 
+ 3: 00007FF67E50FC46 
+12: 00007FF67DDB4F09 
+10: 00007FF67DE9CD8E 
+ 6: 00007FF67EA31612 
+ 4: 00007FF67E8A4FEB 
+ 7: 00007FF67EA31FF2 
+11: 00007FF67EBEB1A6 
+13: 00007FF67DDBEA90 
+ 5: 00007FF67E890047 
+ 8: 00007FF67E52DE33 
+12: 00007FF67FE4B0B3 
+14: 00007FF67EBEB1A6 
+ 1: 00007FF67DEA0ECD 
+ 6: 00007FF67E88A00E 
+ 9: 00007FF67EBC10B6 
+15: 00007FF67FE4B0B3 
+ 7: 00007FF67E889EC1 
+10: 00007FF67E05A22D 
+13: 00007FF8A8A6E8D7 
+14: 00007FF8AAD2C48C 
+ 2: 00007FF67F3036B6 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+11: 00007FF67DDB5B73 
+17: 00007FF8AAD2C48C 
+ 3: 00007FF67EB961F6 
+ 8: 00007FF67E8867FB 
+ 9: 00007FF67E8863FD 
+12: 00007FF67DDB4F09 
+ 4: 00007FF67E9FD52E 
+10: 00007FF67E885FEF 
+13: 00007FF67DDBEA90 
+11: 00007FF67E87D296 
+ 5: 00007FF67EA30B5F 
+14: 00007FF67EBEB1A6 
+ 6: 00007FF67EA31612 
+12: 00007FF67EB1AF9F 
+15: 00007FF67FE4B0B3 
+ 7: 00007FF67EA31FF2 
+13: 00007FF67EB118B8 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+ 8: 00007FF67E52DE33 
+14: 00007FF67EB14054 
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+ 9: 00007FF67EBC10B6 
+15: 00007FF67EB16A51 
+10: 00007FF67E05A22D 
+16: 00007FF67EB9F6D3 
+11: 00007FF67DDB5B73 
+17: 00007FF67DF69063 
+12: 00007FF67DDB4F09 
+18: 00007FF67DF6780E 
+13: 00007FF67DDBEA90 
+19: 000002035648F64D 
+14: 00007FF67EBEB1A6 
+15: 00007FF67FE4B0B3 
+16: 00007FF8A8A6E8D7 
+17: 00007FF8AAD2C48C 
+
+<--- Last few GCs --->
+
+[36440:000001B7CD015000]     9515 ms: Scavenge 8.7 (11.3) -> 7.4 (9.0) MB, pooled: 2 MB, 16.57 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[36440:000001B7CD015000]    11619 ms: Scavenge 9.5 (10.3) -> 8.9 (17.5) MB, pooled: 0 MB, 3.21 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+ 4: 00007FF67F326616 v8::base::ieee754::tanh+113030
+ 5: 00007FF67F3308FB v8::base::ieee754::tanh+154731
+ 6: 00007FF67E33DBB1 SSL_CTX_get_client_CA_list+27569
+ 7: 00007FF67E3E7B43 SSL_CTX_get_client_CA_list+723779
+ 8: 00007FF67E3E5A4A SSL_CTX_get_client_CA_list+715338
+ 9: 00007FF67EB09ECF X509_STORE_set_get_issuer+200559
+10: 00007FF67E3E752B SSL_CTX_get_client_CA_list+722219
+11: 00007FF67F37684F v8::platform::DefaultJobHandle::UpdatePriority+591
+12: 00007FF67DE9CD8E node::GetNodeReport+90334
+13: 00007FF67EBEB1A6 uv_thread_detach+150
+14: 00007FF67FE4B0B3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2907267
+15: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+16: 00007FF8AAD2C48C RtlUserThreadStart+44
+
+<--- Last few GCs --->
+
+[37432:00000204CB804000]     7581 ms: Scavenge 8.7 (11.8) -> 7.4 (11.8) MB, pooled: 0 MB, 2.16 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[37432:00000204CB804000]     9681 ms: Scavenge 9.5 (12.5) -> 8.8 (17.5) MB, pooled: 0 MB, 2039.84 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+
+
+<--- Last few GCs --->
+
+[17056:000001CFFE209000]       47 ms: Scavenge 3.9 (6.1) -> 3.6 (6.1) MB, pooled: 0 MB, 1.49 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 3: 00007FF67E996C07 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+ 4: 00007FF67E9576A3 v8::base::AddressSpaceReservation::AddressSpaceReservation+62643
+ 5: 00007FF67E99900A v8::base::AddressSpaceReservation::AddressSpaceReservation+331290
+ 6: 00007FF67E998636 v8::base::AddressSpaceReservation::AddressSpaceReservation+328774
+ 7: 00007FF67E9A9582 v8::internal::StrongRootAllocatorBase::deallocate_impl+15858
+ 8: 00007FF67E9A90AB v8::internal::StrongRootAllocatorBase::deallocate_impl+14619
+ 9: 00007FF67FE2F8ED v8::base::UnsignedDivisionByConstant<unsigned __int64>+2794685
+10: 00007FF67E9946D0 v8::base::AddressSpaceReservation::AddressSpaceReservation+312544
+11: 00007FF67E54B57E v8::internal::Version::GetSONAME+242958
+12: 00007FF67E5492DC v8::internal::Version::GetSONAME+234092
+13: 00007FF67E54EF86 v8::internal::Version::GetSONAME+257814
+14: 00007FF67E549FC8 v8::internal::Version::GetSONAME+237400
+15: 00007FF67E5494BE v8::internal::Version::GetSONAME+234574
+16: 00007FF67E54EF86 v8::internal::Version::GetSONAME+257814
+17: 00007FF67E549FC8 v8::internal::Version::GetSONAME+237400
+18: 00007FF67E5494BE v8::internal::Version::GetSONAME+234574
+19: 00007FF67E54EF86 v8::internal::Version::GetSONAME+257814
+20: 00007FF67E549FC8 v8::internal::Version::GetSONAME+237400
+21: 00007FF67E5494BE v8::internal::Version::GetSONAME+234574
+22: 00007FF67E54DC64 v8::internal::Version::GetSONAME+252916
+23: 00007FF67E5499B7 v8::internal::Version::GetSONAME+235847
+24: 00007FF67E54986A v8::internal::Version::GetSONAME+235514
+25: 00007FF67E546BC7 v8::internal::Version::GetSONAME+224087
+26: 00007FF67E546B44 v8::internal::Version::GetSONAME+223956
+27: 00007FF67E557795 v8::internal::Version::GetSONAME+292645
+28: 00007FF67EB1674E X509_STORE_set_get_issuer+251886
+29: 00007FF67EB9F6D3 v8::ScriptCompiler::CompileFunction+1011
+30: 00007FF67DF7C520 node::GetCurrentEnvironment+99920
+31: 00007FF67DF7D0D2 node::GetCurrentEnvironment+102914
+32: 00007FF67DF7F146 node::GetCurrentEnvironment+111222
+33: 000001CF9FDCF64D 
+Error: Can't resolve 'tailwindcss' in 'C:\xampp\htdocs'
+    [2m[at finishWithoutResolve (C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:587:18)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:679:14][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'C:\\xampp\\htdocs'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in C:\\xampp\\htdocs or above\n' +
+    '  resolve as module\n' +
+    "    C:\\xampp\\htdocs\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\xampp\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in 'C:\xampp\htdocs'
+    [2m[at finishWithoutResolve (C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:587:18)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:679:14][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'C:\\xampp\\htdocs'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in C:\\xampp\\htdocs or above\n' +
+    '  resolve as module\n' +
+    "    C:\\xampp\\htdocs\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\xampp\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\node_modules doesn't exist or is not a directory"
+}
+
+<--- Last few GCs --->
+
+[39756:000001941E6B7000]      598 ms: Scavenge 8.7 (11.5) -> 7.4 (11.5) MB, pooled: 0 MB, 2.63 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[39756:000001941E6B7000]      800 ms: Scavenge 9.5 (12.3) -> 8.8 (17.3) MB, pooled: 0 MB, 2.79 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+ 4: 00007FF67E891746 v8::Promise::MarkAsSilent+612262
+ 5: 00007FF67E891CDD v8::Promise::MarkAsSilent+613693
+ 6: 00007FF67E8996A9 v8::Promise::MarkAsSilent+644873
+ 7: 00007FF67E88AB55 v8::Promise::MarkAsSilent+584629
+ 8: 00007FF67E88836B v8::Promise::MarkAsSilent+574411
+ 9: 00007FF67E8877DF v8::Promise::MarkAsSilent+571455
+10: 00007FF67E885FEF v8::Promise::MarkAsSilent+565327
+11: 00007FF67E87D296 v8::Promise::MarkAsSilent+529142
+12: 00007FF67EB1AF9F X509_STORE_set_get_issuer+270399
+13: 00007FF67EB118B8 X509_STORE_set_get_issuer+231768
+14: 00007FF67EB14054 X509_STORE_set_get_issuer+241908
+15: 00007FF67EB16A51 X509_STORE_set_get_issuer+252657
+16: 00007FF67EB9F6D3 v8::ScriptCompiler::CompileFunction+1011
+17: 00007FF67DF69063 node::GetCurrentEnvironment+20883
+18: 00007FF67DF6780E node::GetCurrentEnvironment+14654
+19: 000001945654F64D 
+
+<--- Last few GCs --->
+
+[23268:0000025FF3D74000]      766 ms: Scavenge 8.7 (11.3) -> 7.5 (11.3) MB, pooled: 0 MB, 3.37 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[23268:0000025FF3D74000]     8945 ms: Mark-Compact 8.6 (11.5) -> 7.5 (12.5) MB, pooled: 0 MB, 1052.90 / 0.00 ms  (average mu = 0.882, current mu = 0.882) background allocation failure; GC in old space requested
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+
+
+<--- Last few GCs --->
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+
+[4624:000001A945137000]     4507 ms: Scavenge 8.7 (11.3) -> 7.4 (9.3) MB, pooled: 2 MB, 2.60 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+ 4: 00007FF67EB7D236 X509_STORE_set_get_issuer+672470
+ 5: 00007FF67E633903 EC_KEY_METHOD_set_verify+181667
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+ 6: 00007FF67E630F9E EC_KEY_METHOD_set_verify+171070
+----- Native stack trace -----
+ 7: 00007FF67E622483 EC_KEY_METHOD_set_verify+110883
+
+ 8: 00007FF67E621AAD EC_KEY_METHOD_set_verify+108365
+ 9: 00007FF67E6201DB EC_KEY_METHOD_set_verify+102011
+10: 00007FF67E61F516 EC_KEY_METHOD_set_verify+98742
+11: 00007FF67E64A078 EC_KEY_METHOD_set_verify+273688
+12: 00007FF67E63E090 EC_KEY_METHOD_set_verify+224560
+13: 00007FF67E662613 EC_KEY_METHOD_set_verify+373427
+14: 00007FF67E642A84 EC_KEY_METHOD_set_verify+243492
+15: 00007FF67E64B51B EC_KEY_METHOD_set_verify+278971
+16: 00007FF67E64AA1A EC_KEY_METHOD_set_verify+276154
+17: 00007FF67E63E117 EC_KEY_METHOD_set_verify+224695
+18: 00007FF67E63D2E4 EC_KEY_METHOD_set_verify+221060
+19: 00007FF67E63C5D2 EC_KEY_METHOD_set_verify+217714
+20: 00007FF67E63C27A EC_KEY_METHOD_set_verify+216858
+21: 00007FF67E6378A9 EC_KEY_METHOD_set_verify+197961
+22: 00007FF67EB13C4F X509_STORE_set_get_issuer+240879
+23: 00007FF67EB16A51 X509_STORE_set_get_issuer+252657
+24: 00007FF67EB9F6D3 v8::ScriptCompiler::CompileFunction+1011
+25: 00007FF67DF69063 node::GetCurrentEnvironment+20883
+26: 00007FF67DF6780E node::GetCurrentEnvironment+14654
+27: 0000025FAFDCF64D 
+
+
+#
+# Fatal error in , line 0
+# Out of memory: HashMap::Initialize
+#
+#
+#
+#FailureMessage Object: 000000C788DF8130
+----- Native stack trace -----
+
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 3: 00007FF67E996C07 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+ 4: 00007FF67E92F62B v8::platform::DefaultPlatform::CurrentClockTimeMillis+490523
+ 5: 00007FF67E90707E v8::platform::DefaultPlatform::CurrentClockTimeMillis+325230
+ 6: 00007FF67E9996A2 v8::base::AddressSpaceReservation::AddressSpaceReservation+332978
+ 7: 00007FF67E998657 v8::base::AddressSpaceReservation::AddressSpaceReservation+328807
+ 8: 00007FF67E9A9582 v8::internal::StrongRootAllocatorBase::deallocate_impl+15858
+ 9: 00007FF67E9A90AB v8::internal::StrongRootAllocatorBase::deallocate_impl+14619
+10: 00007FF67FE2F8ED v8::base::UnsignedDivisionByConstant<unsigned __int64>+2794685
+11: 00007FF67E9946D0 v8::base::AddressSpaceReservation::AddressSpaceReservation+312544
+12: 00007FF67E9AEF1A X509_STORE_set_cleanup+5098
+13: 00007FF67E9BAD78 uv_timer_set_repeat+19096
+14: 00007FF67E9D227C uv_timer_set_repeat+114588
+15: 00007FF67E7B4DB1 v8::TypecheckWitness::TypecheckWitness+113585
+16: 00007FF67E7B4BB9 v8::TypecheckWitness::TypecheckWitness+113081
+17: 00007FF67E7B56A3 v8::TypecheckWitness::TypecheckWitness+115875
+18: 00007FF67E7B42B6 v8::TypecheckWitness::TypecheckWitness+110774
+19: 00007FF67E74917E v8::RegExp::GetFlags+693022
+20: 00007FF67E6BF527 v8::RegExp::GetFlags+128711
+21: 00007FF67E73C34B v8::RegExp::GetFlags+640235
+22: 00007FF67E7461EE v8::RegExp::GetFlags+680846
+23: 00007FF67E58972F v8::String::Utf8Value::~Utf8Value+129407
+24: 00007FF67E588143 v8::String::Utf8Value::~Utf8Value+123795
+25: 000001A97D0F75FA 
+ 1: 00007FF67DEA0ECD 
+ 2: 00007FF67F303C4F 
+ 3: 00007FF67EB942B6 
+ 4: 00007FF67EB939A2 
+ 5: 00007FF67EB937D0 
+ 6: 00007FF67E61AA7F 
+ 7: 00007FF67E62464C 
+ 8: 00007FF67E628D9B 
+ 9: 00007FF67E628263 
+10: 00007FF67E626CBA 
+11: 00007FF67E631DF4 
+12: 00007FF67E6224CC 
+13: 00007FF67E621AAD 
+14: 00007FF67E62126B 
+15: 00007FF67E62076C 
+16: 00007FF67E625DBA 
+17: 00007FF67E6248C9 
+18: 00007FF67E628D9B 
+19: 00007FF67E628263 
+20: 00007FF67E626CBA 
+21: 00007FF67E631DF4 
+22: 00007FF67E6224CC 
+23: 00007FF67E621AAD 
+24: 00007FF67E6201DB 
+25: 00007FF67E61F516 
+26: 00007FF67E64A078 
+27: 00007FF67E63E090 
+28: 00007FF67E662613 
+29: 00007FF67E642A84 
+30: 00007FF67E64B51B 
+31: 00007FF67E640F5A 
+32: 00007FF67E651C90 
+33: 00007FF67E650FB4 
+34: 00007FF67E656934 
+35: 00007FF67E654DBE 
+36: 00007FF67E651D9B 
+37: 00007FF67E650F6E 
+38: 00007FF67E656934 
+39: 00007FF67E661D4F 
+40: 00007FF67E64B51B 
+41: 00007FF67E640F5A 
+42: 00007FF67E651C90 
+43: 00007FF67E650FB4 
+44: 00007FF67E656934 
+45: 00007FF67E654DBE 
+46: 00007FF67E651D9B 
+47: 00007FF67E650F6E 
+48: 00007FF67E656934 
+49: 00007FF67E661D4F 
+50: 00007FF67E64B51B 
+51: 00007FF67E64AA1A 
+52: 00007FF67E63E117 
+53: 00007FF67E63D2E4 
+54: 00007FF67E63C5D2 
+55: 00007FF67E63C27A 
+56: 00007FF67E6378A9 
+57: 00007FF67EB13C4F 
+58: 00007FF67EB16A51 
+59: 00007FF67EB9F6D3 
+60: 00007FF67DF69063 
+61: 00007FF67DF6780E 
+62: 0000022F1FDCF64D 
+
+<--- Last few GCs --->
+
+
+
+#
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+#
+----- Native stack trace -----
+
+ 1: 00007FF67DEA0ECD 
+ 2: 00007FF67F3036B6 
+ 3: 00007FF67EB961F6 
+ 4: 00007FF67E996C07 
+ 5: 00007FF67E948E5A 
+ 6: 00007FF67E948F1C 
+ 7: 00007FF67E94980B 
+ 8: 00007FF67E920A61 
+ 9: 00007FF67E986913 
+10: 00007FF67E98667E 
+11: 00007FF67E985468 
+12: 00007FF67E9853EA 
+13: 00007FF67E54B493 
+14: 00007FF67E5492DC 
+15: 00007FF67E54EF86 
+16: 00007FF67E549FC8 
+17: 00007FF67E5494BE 
+18: 00007FF67E54EF86 
+19: 00007FF67E549FC8 
+20: 00007FF67E5494BE 
+21: 00007FF67E54EF86 
+22: 00007FF67E549FC8 
+23: 00007FF67E5494BE 
+24: 00007FF67E54EF86 
+25: 00007FF67E549FC8 
+26: 00007FF67E5494BE 
+27: 00007FF67E55055E 
+28: 00007FF67E549D0D 
+29: 00007FF67E99EBC8 
+30: 00007FF67E5281F3 
+31: 00007FF67EA31BFC 
+32: 00007FF67EA31FF2 
+33: 00007FF67E52DE33 
+34: 00007FF67EBC10B6 
+35: 00007FF67E05A22D 
+36: 00007FF67DDB5B73 
+37: 00007FF67DDB4F09 
+38: 00007FF67DDBEA90 
+39: 00007FF67EBEB1A6 
+40: 00007FF67FE4B0B3 
+41: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+42: 00007FF8AAD2C48C 
+
+<--- Last few GCs --->
+[35244:0000028B4A2C6000]      178 ms: Scavenge 5.9 (7.2) -> 5.3 (10.0) MB, pooled: 0 MB, 2.66 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+
+ 1: 00007FF67DF4C44F 
+ 2: 00007FF67EB96217 
+ 3: 00007FF67E50FC46 
+ 4: 00007FF67E63E4D9 
+ 5: 00007FF67E656213 
+ 6: 00007FF67E651D9B 
+ 7: 00007FF67E650F6E 
+ 8: 00007FF67E6517D6 
+ 9: 00007FF67E650FB4 
+10: 00007FF67E656934 
+11: 00007FF67E661D4F 
+12: 00007FF67E64B51B 
+13: 00007FF67E640F5A 
+14: 00007FF67E651C90 
+15: 00007FF67E650FB4 
+16: 00007FF67E656934 
+17: 00007FF67E654DBE 
+18: 00007FF67E651D9B 
+19: 00007FF67E650F6E 
+20: 00007FF67E656934 
+21: 00007FF67E661D4F 
+22: 00007FF67E64B51B 
+23: 00007FF67E640F5A 
+24: 00007FF67E651C90 
+25: 00007FF67E650FB4 
+26: 00007FF67E656934 
+27: 00007FF67E654DBE 
+28: 00007FF67E651D9B 
+29: 00007FF67E650F6E 
+30: 00007FF67E656934 
+31: 00007FF67E661D4F 
+32: 00007FF67E64B51B 
+33: 00007FF67E64AA1A 
+34: 00007FF67E63E117 
+35: 00007FF67E63D2E4 
+36: 00007FF67E63C5D2 
+37: 00007FF67E63C27A 
+38: 00007FF67E6378A9 
+39: 00007FF67EB13C4F 
+40: 00007FF67EB16A51 
+41: 00007FF67EB9F6D3 
+42: 00007FF67DF69063 
+43: 00007FF67DF6780E 
+44: 0000028B1FDCF64D 
+
+
+
+#
+
+
+
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+#
+#
+
+----- Native stack trace -----
+----- Native stack trace -----
+----- Native stack trace -----
+
+
+
+
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+----- Native stack trace -----
+
+
+<--- Last few GCs --->
+
+[26296:000001BC52C0F000]     1164 ms: Scavenge 4.0 (6.1) -> 3.7 (6.3) MB, pooled: 0 MB, 1016.74 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[26296:000001BC52C0F000]     5228 ms: Scavenge 5.1 (7.1) -> 4.8 (7.6) MB, pooled: 1 MB, 4022.03 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+<--- Last few GCs --->
+
+[32892:00000207F28F6000]     4347 ms: Scavenge 8.7 (11.3) -> 7.4 (9.3) MB, pooled: 2 MB, 1.75 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+
+----- Native stack trace -----
+
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+ 1: 00007FF67DF4C44F 
+----- Native stack trace -----
+ 2: 00007FF67EB96217 
+
+ 3: 00007FF67E996C07 
+ 4: 00007FF67E92F62B 
+ 5: 00007FF67E95799A 
+ 1: 00007FF67DF4C44F 
+ 6: 00007FF67E998FE6 
+ 2: 00007FF67EB96217 
+ 7: 00007FF67E998636 
+ 3: 00007FF67E996C07 
+ 8: 00007FF67E9A9582 
+ 4: 00007FF67E92F62B 
+ 9: 00007FF67E9A90AB 
+ 5: 00007FF67E95799A 
+10: 00007FF67FE2F8ED 
+ 6: 00007FF67E998FE6 
+11: 00007FF67E9946D0 
+ 7: 00007FF67E998636 
+12: 00007FF67E9DCC2B 
+ 8: 00007FF67E9A9582 
+13: 00007FF67E9DC95E 
+ 9: 00007FF67E9A90AB 
+14: 00007FF67E9D73FC 
+10: 00007FF67FE2F8ED 
+15: 00007FF67E55003E 
+ 1: 00007FF67DEA0ECD 
+ 1: 00007FF67DEA0ECD 
+ 1: 00007FF67DEA0ECD 
+11: 00007FF67E9946D0 
+16: 00007FF67E54A232 
+ 2: 00007FF67F3036B6 
+17: 00007FF67E5494BE 
+12: 00007FF67E9BB18C 
+ 2: 00007FF67F3036B6 
+ 2: 00007FF67F3036B6 
+ 3: 00007FF67EB961F6 
+ 3: 00007FF67EB961F6 
+13: 00007FF67E9BF1C4 
+ 3: 00007FF67EB961F6 
+18: 00007FF67E54EF86 
+ 4: 00007FF67E9FD52E 
+ 4: 00007FF67E9FD52E 
+14: 00007FF67E5895B7 
+19: 00007FF67E549FC8 
+ 5: 00007FF67EA30B5F 
+ 4: 00007FF67E9FD52E 
+ 5: 00007FF67EA30B5F 
+15: 00007FF67E588143 
+ 5: 00007FF67EA30B5F 
+20: 00007FF67E5494BE 
+ 6: 00007FF67EA31612 
+ 6: 00007FF67EA31612 
+16: 00000207AFE775FA 
+ 6: 00007FF67EA31612 
+21: 00007FF67E54EF86 
+ 7: 00007FF67EA31FF2 
+ 7: 00007FF67EA31FF2 
+22: 00007FF67E549FC8 
+ 7: 00007FF67EA31FF2 
+ 8: 00007FF67E52DE33 
+ 8: 00007FF67E52DE33 
+ 8: 00007FF67E52DE33 
+ 9: 00007FF67EBC10B6 
+ 9: 00007FF67EBC10B6 
+23: 00007FF67E5494BE 
+ 9: 00007FF67EBC10B6 
+24: 00007FF67E54EF86 
+10: 00007FF67E05A22D 
+10: 00007FF67E05A22D 
+10: 00007FF67E05A22D 
+25: 00007FF67E549FC8 
+11: 00007FF67DDB5B73 
+11: 00007FF67DDB5B73 
+11: 00007FF67DDB5B73 
+26: 00007FF67E5494BE 
+12: 00007FF67DDB4F09 
+12: 00007FF67DDB4F09 
+27: 00007FF67E54EF86 
+12: 00007FF67DDB4F09 
+13: 00007FF67DDBEA90 
+13: 00007FF67DDBEA90 
+13: 00007FF67DDBEA90 
+28: 00007FF67E549FC8 
+14: 00007FF67EBEB1A6 
+29: 00007FF67E5494BE 
+14: 00007FF67EBEB1A6 
+14: 00007FF67EBEB1A6 
+15: 00007FF67FE4B0B3 
+15: 00007FF67FE4B0B3 
+15: 00007FF67FE4B0B3 
+30: 00007FF67E54DC64 
+16: 00007FF8A8A6E8D7 
+16: 00007FF8A8A6E8D7 
+16: 00007FF8A8A6E8D7 
+17: 00007FF8AAD2C48C 
+17: 00007FF8AAD2C48C 
+31: 00007FF67E5499B7 
+17: 00007FF8AAD2C48C 
+ 1: 00007FF67DEA0ECD 
+32: 00007FF67E54986A 
+ 2: 00007FF67F3036B6 
+33: 00007FF67E555822 
+ 3: 00007FF67EB961F6 
+34: 00007FF67E5555C2 
+ 4: 00007FF67E9FD52E 
+35: 00007FF67E52E101 
+ 5: 00007FF67EA30B5F 
+36: 00007FF67E8B9425 
+ 6: 00007FF67EA31612 
+37: 00007FF67E8B9144 
+ 7: 00007FF67EA31FF2 
+38: 00007FF67EBB3B7C 
+ 8: 00007FF67E52DE33 
+39: 00007FF67EBB4156 
+ 9: 00007FF67EBC10B6 
+40: 00007FF67DF60CED 
+10: 00007FF67E05A22D 
+41: 00007FF67DF60B2E 
+11: 00007FF67DDB5B73 
+42: 00007FF67DF637BE 
+12: 00007FF67DDB4F09 
+43: 000001BC72F4F64D 
+13: 00007FF67DDBEA90 
+14: 00007FF67EBEB1A6 
+15: 00007FF67FE4B0B3 
+16: 00007FF8A8A6E8D7 
+17: 00007FF8AAD2C48C 
+
+<--- Last few GCs --->
+
+[7032:00000211ED3C7000]     7331 ms: Scavenge 5.9 (7.2) -> 5.3 (10.0) MB, pooled: 0 MB, 2.08 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+<--- Last few GCs --->
+
+[43920:0000021559D82000]     4272 ms: Scavenge 5.9 (7.2) -> 5.4 (10.0) MB, pooled: 0 MB, 4.54 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+----- Native stack trace -----
+
+
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+ 1: 00007FF67DF4C44F node::OnFatalError+1343
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+ 4: 00007FF67EB93A14 X509_STORE_set_get_issuer+764596
+ 2: 00007FF67EB96217 v8::Function::NewInstance+423
+ 5: 00007FF67EB937D0 X509_STORE_set_get_issuer+764016
+ 3: 00007FF67E50FC46 v8::SnapshotCreator::GetIsolate+56566
+ 6: 00007FF67E61AA7F EC_KEY_METHOD_set_verify+79647
+ 4: 00007FF67EB7D236 X509_STORE_set_get_issuer+672470
+ 7: 00007FF67E65A2E0 EC_KEY_METHOD_set_verify+339840
+ 5: 00007FF67EB7D637 X509_STORE_set_get_issuer+673495
+ 8: 00007FF67E6590A6 EC_KEY_METHOD_set_verify+335174
+ 6: 00007FF67E65550D EC_KEY_METHOD_set_verify+319917
+ 9: 00007FF67E650696 EC_KEY_METHOD_set_verify+299830
+ 7: 00007FF67E654DEA EC_KEY_METHOD_set_verify+318090
+10: 00007FF67E651D9B EC_KEY_METHOD_set_verify+305723
+ 8: 00007FF67E651D9B EC_KEY_METHOD_set_verify+305723
+11: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+ 9: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+12: 00007FF67E662E42 EC_KEY_METHOD_set_verify+375522
+10: 00007FF67E650C29 EC_KEY_METHOD_set_verify+301257
+13: 00007FF67E642915 EC_KEY_METHOD_set_verify+243125
+11: 00007FF67E6593F0 EC_KEY_METHOD_set_verify+336016
+14: 00007FF67E64B51B EC_KEY_METHOD_set_verify+278971
+12: 00007FF67E650696 EC_KEY_METHOD_set_verify+299830
+15: 00007FF67E64AA1A EC_KEY_METHOD_set_verify+276154
+13: 00007FF67E651D9B EC_KEY_METHOD_set_verify+305723
+16: 00007FF67E63E117 EC_KEY_METHOD_set_verify+224695
+14: 00007FF67E650F6E EC_KEY_METHOD_set_verify+302094
+17: 00007FF67E63D2E4 EC_KEY_METHOD_set_verify+221060
+15: 00007FF67E662E42 EC_KEY_METHOD_set_verify+375522
+18: 00007FF67E63C5D2 EC_KEY_METHOD_set_verify+217714
+16: 00007FF67E642915 EC_KEY_METHOD_set_verify+243125
+19: 00007FF67E63C27A EC_KEY_METHOD_set_verify+216858
+17: 00007FF67E64B51B EC_KEY_METHOD_set_verify+278971
+20: 00007FF67E6378A9 EC_KEY_METHOD_set_verify+197961
+18: 00007FF67E64AA1A EC_KEY_METHOD_set_verify+276154
+21: 00007FF67EB13C4F X509_STORE_set_get_issuer+240879
+19: 00007FF67E63E117 EC_KEY_METHOD_set_verify+224695
+22: 00007FF67EB16A51 X509_STORE_set_get_issuer+252657
+20: 00007FF67E63D2E4 EC_KEY_METHOD_set_verify+221060
+23: 00007FF67EB9F6D3 v8::ScriptCompiler::CompileFunction+1011
+21: 00007FF67E63C5D2 EC_KEY_METHOD_set_verify+217714
+24: 00007FF67DF69063 node::GetCurrentEnvironment+20883
+22: 00007FF67E63C27A EC_KEY_METHOD_set_verify+216858
+25: 00007FF67DF6780E node::GetCurrentEnvironment+14654
+23: 00007FF67E6378A9 EC_KEY_METHOD_set_verify+197961
+26: 00000211A7DCF64D 
+24: 00007FF67EB13C4F X509_STORE_set_get_issuer+240879
+25: 00007FF67EB16A51 X509_STORE_set_get_issuer+252657
+26: 00007FF67EB9F6D3 v8::ScriptCompiler::CompileFunction+1011
+27: 00007FF67DF69063 node::GetCurrentEnvironment+20883
+28: 00007FF67DF6780E node::GetCurrentEnvironment+14654
+29: 000002151FDCF64D 
+
+
+#
+# Fatal process out of memory: Re-embedded builtins: set permissions
+#
+----- Native stack trace -----
+
+ 1: 00007FF67DEA0ECD 
+ 2: 00007FF67F3036B6 
+ 3: 00007FF67EB961F6 
+ 4: 00007FF67E9FD52E 
+ 5: 00007FF67EA30B5F 
+ 6: 00007FF67EA31612 
+ 7: 00007FF67EA31FF2 
+ 8: 00007FF67E52DE33 
+ 9: 00007FF67EBC10B6 
+10: 00007FF67E05A22D 
+11: 00007FF67DDB5B73 
+12: 00007FF67DDB4F09 
+13: 00007FF67DDBEA90 
+14: 00007FF67EBEB1A6 
+15: 00007FF67FE4B0B3 
+16: 00007FF8A8A6E8D7 BaseThreadInitThunk+23
+17: 00007FF8AAD2C48C RtlUserThreadStart+44
+
+<--- Last few GCs --->
+
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 00007FF67DF4C44F 
+ 2: 00007FF67EB96217 
+ 3: 00007FF67E996C07 
+ 4: 00007FF67E92F62B 
+ 5: 00007FF67E90707E 
+ 6: 00007FF67E9996A2 
+ 7: 00007FF67E998657 
+ 8: 00007FF67E9A9582 
+ 9: 00007FF67E9A90AB 
+10: 00007FF67FE2F8ED 
+11: 00007FF67E9946D0 
+12: 00007FF67E9AEF1A 
+13: 00007FF67E9BB3B6 
+14: 00007FF67E58D0F7 
+15: 000001B29FE775FA 
+Error: Can't resolve 'tailwindcss' in 'C:\xampp\htdocs'
+    [2m[at finishWithoutResolve (C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:587:18)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:679:14][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at C:\xampp\htdocs\stairiosite\node_modules\enhanced-resolve\lib\Resolver.js:740:5][0m
+    [2m[at eval (eval at create (C:\xampp\htdocs\stairiosite\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in 'C:\\xampp\\htdocs'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in C:\\xampp\\htdocs or above\n' +
+    '  resolve as module\n' +
+    "    C:\\xampp\\htdocs\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\xampp\\node_modules doesn't exist or is not a directory\n" +
+    "    C:\\node_modules doesn't exist or is not a directory"
+}
+
+<--- Last few GCs --->
+
+[43368:0000019C3AE76000]   852598 ms: Scavenge 82.6 (102.3) -> 76.1 (104.5) MB, pooled: 0 MB, 7.78 / 0.17 ms  (average mu = 1.000, current mu = 1.000) task; 
+[43368:0000019C3AE76000]   860690 ms: Mark-Compact (reduce) 77.1 (104.5) -> 72.4 (75.3) MB, pooled: 0 MB, 17.11 / 1.11 ms  (+ 23.7 ms in 224 steps since start of marking, biggest step 2.3 ms, walltime since start of marking 45 ms) (average mu = 1.000, cur
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 00007FF67DF4C44F 
+ 2: 00007FF67EB96217 
+ 3: 00007FF67E996C07 
+ 4: 00007FF67E92F62B 
+ 5: 00007FF67E95799A 
+ 6: 00007FF67E998FE6 
+ 7: 00007FF67E998636 
+ 8: 00007FF67E9A9582 
+ 9: 00007FF67E9A90AB 
+10: 00007FF67FE2F8ED 
+11: 00007FF67E9946D0 
+12: 00007FF67E98D834 
+13: 00007FF67DE9F0CA 
+14: 00007FF67DE9D8B0 
+15: 00007FF67EBFD81B 
+16: 00007FF67EBFD38F 
+17: 00007FF67E05ECAF 
+18: 00007FF67DEDB416 
+19: 00007FF67DFA726C 
+20: 00007FF67EFC50C2 
+21: 00007FF67FE38FF4 
+22: 00007FF8A8A6E8D7 
+23: 00007FF8AAD2C48C 

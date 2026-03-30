@@ -1,4 +1,5 @@
 import mongoose, { Schema, Document, Model } from 'mongoose';
+import { quoteStatuses, type QuoteStatus } from '@/types/quotes';
 
 export interface IQuote extends Document {
   name: string;
@@ -9,7 +10,7 @@ export interface IQuote extends Document {
   budgetRange: string;
   timeline: string;
   projectDescription: string;
-  status: 'pending' | 'contacted' | 'completed' | 'cancelled';
+  status: QuoteStatus;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -53,7 +54,7 @@ const QuoteSchema = new Schema<IQuote>(
     },
     status: {
       type: String,
-      enum: ['pending', 'contacted', 'completed', 'cancelled'],
+      enum: quoteStatuses,
       default: 'pending',
     },
   },
