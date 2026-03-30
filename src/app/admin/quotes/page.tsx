@@ -21,7 +21,7 @@ export default async function AdminQuotesPage() {
       <QuotesDashboard
         initialQuotes={[]}
         adminUsername={session.username}
-        initialError="Quote data could not be loaded because the MongoDB connection failed. Please check your Atlas IP whitelist or cluster connectivity, then refresh."
+        initialError="Quote data could not be loaded because MongoDB Atlas is rejecting this machine. Add public IP 47.31.122.148 to Atlas Network Access, then refresh."
       />
     );
   }

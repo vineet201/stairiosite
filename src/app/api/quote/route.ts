@@ -48,9 +48,20 @@ export async function POST(request: NextRequest) {
     );
   } catch (error) {
     console.error('Quote submission error:', error);
+
+    const isMongoConnectionError =
+      error instanceof Error &&
+      (error.name === 'MongooseServerSelectionError' ||
+        error.message.includes('MongoDB Atlas cluster') ||
+        error.message.includes('ReplicaSetNoPrimary'));
+
     return NextResponse.json(
-      { error: 'Failed to submit quote request. Please try again.' },
-      { status: 500 }
+      {
+        error: isMongoConnectionError
+          ? 'MongoDB connection failed. Add this machine public IP 47.31.122.148 to MongoDB Atlas Network Access, then try again.'
+          : 'Failed to submit quote request. Please try again.',
+      },
+      { status: isMongoConnectionError ? 503 : 500 }
     );
   }
 }

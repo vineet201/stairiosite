@@ -33,6 +33,8 @@ const timelineOptions = [
   'Flexible',
 ];
 
+const FORM_SUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/growth@stairio.com';
+
 export default function QuotePage() {
   const [formData, setFormData] = useState({
     name: '',
@@ -54,29 +56,45 @@ export default function QuotePage() {
     setError('');
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError('');
 
     try {
-      const response = await fetch('/api/quote', {
+      const submission = new FormData(e.currentTarget);
+      submission.set('_subject', 'New Stairio Quote Request');
+      submission.set('_template', 'table');
+      submission.set('_replyto', formData.email);
+      submission.set('_captcha', 'false');
+      submission.set('submission_source', 'stairio-quote-page');
+      submission.set('page_url', window.location.href);
+
+      const response = await fetch(FORM_SUBMIT_ENDPOINT, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+        headers: { Accept: 'application/json' },
+        body: submission,
       });
 
-      const data = await response.json();
+      let data: { message?: string } | null = null;
+
+      try {
+        data = await response.json();
+      } catch {
+        data = null;
+      }
 
       if (!response.ok) {
-        throw new Error(data.error || 'Something went wrong');
+        throw new Error(data?.message || 'Something went wrong');
       }
 
       setIsSubmitted(true);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to submit. Please try again.');
+      setError(
+        err instanceof Error
+          ? err.message
+          : 'Failed to submit. Please try again.'
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -105,7 +123,7 @@ export default function QuotePage() {
               </h1>
               
               <p className="text-neutral-400 mb-8">
-                Thank you for your interest in Stairio. Our team will review your project details and get back to you within 24-48 hours.
+                Thank you for your interest in Stairio. Your quote request has been sent to our team at growth@stairio.com and we&apos;ll get back to you within 24-48 hours.
               </p>
               
               <Link

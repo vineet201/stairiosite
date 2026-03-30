@@ -30,6 +30,16 @@ const statusLabels: Record<QuoteStatus, string> = {
   cancelled: 'Cancelled',
 };
 
+const storageSourceStyles = {
+  mongodb: 'border-emerald-400/30 bg-emerald-400/10 text-emerald-200',
+  local: 'border-amber-400/30 bg-amber-400/10 text-amber-200',
+} as const;
+
+const storageSourceLabels = {
+  mongodb: 'MongoDB',
+  local: 'Local fallback',
+} as const;
+
 interface QuotesDashboardProps {
   initialQuotes: AdminQuoteRecord[];
   adminUsername: string;
@@ -311,7 +321,14 @@ export function QuotesDashboard({
                           </span>
                         </div>
                         <div className="mt-4 flex items-center justify-between text-xs text-neutral-500">
-                          <span>{quote.company || 'Independent'}</span>
+                          <div className="flex items-center gap-2">
+                            <span>{quote.company || 'Independent'}</span>
+                            <span
+                              className={`rounded-full border px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.16em] ${storageSourceStyles[quote.storageSource]}`}
+                            >
+                              {storageSourceLabels[quote.storageSource]}
+                            </span>
+                          </div>
                           <span>{formatDate(quote.createdAt)}</span>
                         </div>
                       </button>
@@ -348,6 +365,11 @@ export function QuotesDashboard({
                           className={`rounded-full border px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] ${statusStyles[selectedQuote.status]}`}
                         >
                           {statusLabels[selectedQuote.status]}
+                        </span>
+                        <span
+                          className={`rounded-full border px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] ${storageSourceStyles[selectedQuote.storageSource]}`}
+                        >
+                          {storageSourceLabels[selectedQuote.storageSource]}
                         </span>
                       </div>
                       <p className="mt-2 text-sm text-neutral-400">

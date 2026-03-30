@@ -1,6 +1,7 @@
 export const quoteStatuses = ['pending', 'contacted', 'completed', 'cancelled'] as const;
 
 export type QuoteStatus = (typeof quoteStatuses)[number];
+export type QuoteStorageSource = 'mongodb' | 'local';
 
 export interface AdminQuoteRecord {
   id: string;
@@ -13,6 +14,7 @@ export interface AdminQuoteRecord {
   timeline: string;
   projectDescription: string;
   status: QuoteStatus;
+  storageSource: QuoteStorageSource;
   createdAt: string;
   updatedAt: string;
 }
