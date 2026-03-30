@@ -443,34 +443,41 @@ export function TeamSectionBlock() {
             <p className="max-w-xl text-sm text-[var(--muted-foreground)]">
               We&apos;re always looking for talented people to join our mission
             </p>
-            <Button
-              size="lg"
-              className="group relative overflow-hidden rounded-full bg-primary px-10 py-6 text-primary-foreground shadow-lg shadow-primary/25 transition-transform duration-300 hover:translate-y-[-2px]"
+            <a
+              href="https://careers.stairio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
             >
-              <motion.span
-                className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/20 to-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                animate={
-                  shouldReduceMotion ? undefined : { x: ["-120%", "120%"] }
-                }
-                transition={
-                  shouldReduceMotion
-                    ? undefined
-                    : { repeat: Infinity, duration: 2, ease: "linear" }
-                }
-              />
-              <span className="relative font-medium">View Open Positions</span>
-              <motion.span
-                className="relative ml-2"
-                animate={shouldReduceMotion ? undefined : { x: [0, 5, 0] }}
-                transition={
-                  shouldReduceMotion
-                    ? undefined
-                    : { repeat: Infinity, duration: 1.5 }
-                }
+              <Button
+                size="lg"
+                className="group relative overflow-hidden rounded-full bg-primary px-10 py-6 text-primary-foreground shadow-lg shadow-primary/25 transition-transform duration-300 hover:translate-y-[-2px]"
               >
-                →
-              </motion.span>
-            </Button>
+                <motion.span
+                  className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/20 to-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  animate={
+                    shouldReduceMotion ? undefined : { x: ["-120%", "120%"] }
+                  }
+                  transition={
+                    shouldReduceMotion
+                      ? undefined
+                      : { repeat: Infinity, duration: 2, ease: "linear" }
+                  }
+                />
+                <span className="relative font-medium">View Open Positions</span>
+                <motion.span
+                  className="relative ml-2"
+                  animate={shouldReduceMotion ? undefined : { x: [0, 5, 0] }}
+                  transition={
+                    shouldReduceMotion
+                      ? undefined
+                      : { repeat: Infinity, duration: 1.5 }
+                  }
+                >
+                  →
+                </motion.span>
+              </Button>
+            </a>
           </Card>
         </motion.div>
 
