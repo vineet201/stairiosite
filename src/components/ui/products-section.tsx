@@ -31,15 +31,15 @@ interface Product {
 const products: Product[] = [
   {
     id: "hotelos",
-    name: "Hotelio",
+    name: "Hotelify",
     tagline: "AI Hospitality Operating System",
     description:
       "All-in-one platform for hotels combining PMS, SmartSite, and booking engine. Eliminate multiple tools and run your entire hospitality business from a single AI-powered dashboard.",
     features: ["Property Management", "SmartSite", "Booking Engine", "AI Sales Agents"],
     gradient: "from-amber-500 via-orange-500 to-red-500",
     image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop&q=80",
-    ctaText: "Explore Hotelio",
-    ctaLink: "/hotel-saas",
+    ctaText: "Explore Hotelify",
+    ctaLink: "/hotelify",
     icon: Building03Icon,
     badge: "Most Popular",
   },

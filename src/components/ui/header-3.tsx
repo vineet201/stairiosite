@@ -233,8 +233,8 @@ const productLinks: LinkItem[] = [
 		icon: LayersIcon,
 	},
 	{
-		title: 'Hotel Booking',
-		href: '/hotel-saas',
+		title: 'Hotelify',
+		href: '/hotelify',
 		description: 'Direct bookings. 0% commission.',
 		icon: Building2,
 	},

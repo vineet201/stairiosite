@@ -24,7 +24,7 @@ export function ComparisonSection() {
             transition={{ delay: 0.1 }}
             className="text-neutral-400 text-lg"
           >
-            See why hotels are switching to Hotelio
+            See why hotels are switching to Hotelify
           </motion.p>
         </div>
 

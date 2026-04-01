@@ -24,12 +24,12 @@ type CapabilityCard = {
 const products: CapabilityCard[] = [
   {
     id: "hoteloS",
-    name: "Hotelio",
+    name: "Hotelify",
     tagline: "AI Hospitality Operating System",
     description:
       "Unified PMS, booking engine, and AI sales agents for hotels.",
     tags: ["PMS", "Booking Engine", "AI Agents"],
-    href: "/hotel-saas",
+    href: "/hotelify",
     image: "/images/showcase/Dashboard Overview.png",
     status: "Live",
     statusColor: "#5DDF18",

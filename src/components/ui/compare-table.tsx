@@ -31,7 +31,7 @@ const plans = [
     level: "ota",
   },
   {
-    name: "With Hotelio",
+    name: "With Hotelify",
     level: "stairio",
     popular: true,
   },

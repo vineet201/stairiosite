@@ -6,7 +6,7 @@ import { ArrowLeft, Send, CheckCircle } from 'lucide-react';
 import { stairioServiceOptions } from '@/lib/services';
 
 const productOptions = [
-  'Hotelio',
+  'Hotelify',
   'AI Voice Calling Agent',
   'SmartSite',
   'Kore',

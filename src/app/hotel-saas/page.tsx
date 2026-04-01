@@ -501,7 +501,7 @@ export default function HotelSaasPage() {
             <h2 className="text-4xl font-bold tracking-tight text-white">
               Introducing{" "}
               <span className="relative inline-block">
-                Hotelio
+                Hotelify
                 <span className="absolute -bottom-5 right-0 text-sm font-normal text-neutral-500 whitespace-nowrap">powered by Stairio</span>
               </span>
             </h2>
@@ -517,7 +517,7 @@ export default function HotelSaasPage() {
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#D8B4FE]/20 to-[#FF9132]/20 border border-white/10">
                     <Hotel className="h-6 w-6 text-[#D8B4FE]" />
                   </div>
-                  <CardTitle className="text-white text-xl">Hotelio</CardTitle>
+                  <CardTitle className="text-white text-xl">Hotelify</CardTitle>
                   <CardDescription className="text-neutral-400 text-sm leading-relaxed">
                     A smart software solution designed for independent hotels to simplify and automate operations. Get direct bookings, full access to guest data, instant payments without commission, and manage daily tasks efficiently—so you can focus on delivering a better guest experience.
                   </CardDescription>
@@ -705,7 +705,7 @@ export default function HotelSaasPage() {
             <h2 className="text-4xl md:text-5xl font-semibold text-white mb-4 tracking-tight">
               Calculate your savings
             </h2>
-            <p className="text-neutral-400 text-lg">See how much you could save with Hotelio</p>
+            <p className="text-neutral-400 text-lg">See how much you could save with Hotelify</p>
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 40 }} animate={isRoiInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, delay: 0.2 }}>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const helpTopics = [
   {
     title: "Product questions",
-    description: "Learn more about SmartSite, Hotelio, automation workflows, and Stairio delivery models.",
+    description: "Learn more about SmartSite, Hotelify, automation workflows, and Stairio delivery models.",
     icon: Globe,
     href: "/about",
   },
@@ -39,7 +39,7 @@ const faqs = [
   {
     question: "Can Stairio build both products and custom services?",
     answer:
-      "Yes. Stairio offers both productized solutions like Hotelio and SmartSite, as well as custom AI, automation, and software engagements.",
+      "Yes. Stairio offers both productized solutions like Hotelify and SmartSite, as well as custom AI, automation, and software engagements.",
   },
   {
     question: "Where can I find policy information?",

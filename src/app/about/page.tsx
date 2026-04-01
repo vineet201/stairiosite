@@ -36,7 +36,7 @@ const principles = [
   {
     title: "Products With Depth",
     description:
-      "From SmartSite to Hotelio, we build experiences that feel polished on the surface and resilient underneath.",
+      "From SmartSite to Hotelify, we build experiences that feel polished on the surface and resilient underneath.",
     icon: Layers3,
   },
   {
@@ -156,7 +156,7 @@ export default function AboutPage() {
                       unnecessary friction.
                     </p>
                     <p>
-                      Whether we are building Hotelio, SmartSite, an automation workflow, or a
+                      Whether we are building Hotelify, SmartSite, an automation workflow, or a
                       custom platform, the goal stays the same: make technology feel like leverage,
                       not overhead.
                     </p>
