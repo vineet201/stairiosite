@@ -731,6 +731,7 @@ export default function HotelSaasPage() {
             icon: <Building2 className="w-8 h-8 text-white" />,
             priceMonthly: 18999,
             users: "Unlimited rooms",
+            checkoutUrl: "https://subscription.stairio.com/checkout/hotelify/enterprise-12m",
             features: [
               { label: "Everything in Professional", included: true },
               { label: "Website (Pro)", included: true },
@@ -753,6 +754,7 @@ export default function HotelSaasPage() {
             icon: <Users className="w-8 h-8 text-[#5DDF18]" />,
             priceMonthly: 7499,
             users: "Up to 50 rooms",
+            checkoutUrl: "https://subscription.stairio.com/checkout/hotelify/professional-12m",
             features: [
               { label: "Everything in Growth", included: true },
               { label: "WhatsApp Notifications", included: true },
@@ -776,6 +778,7 @@ export default function HotelSaasPage() {
             icon: <Monitor className="w-8 h-8 text-[#FF9132]" />,
             priceMonthly: 2999,
             users: "Up to 30 rooms",
+            checkoutUrl: "https://subscription.stairio.com/checkout/hotelify/growth-12m",
             features: [
               { label: "Everything in Starter", included: true },
               { label: "Website (Advanced)", included: true },
@@ -798,6 +801,7 @@ export default function HotelSaasPage() {
             icon: <Layers className="w-8 h-8 text-[#D8B4FE]" />,
             priceMonthly: 1499,
             users: "Up to 10 rooms",
+            checkoutUrl: "https://subscription.stairio.com/checkout/hotelify/starter-12m",
             features: [
               { label: "Direct Booking Engine (0% commission)", included: true },
               { label: "Real-time Availability", included: true },

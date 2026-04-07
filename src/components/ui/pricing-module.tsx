@@ -25,6 +25,7 @@ export interface PricingPlan {
   priceMonthly: number;
   users: string;
   features: PlanFeature[];
+  checkoutUrl?: string;
   recommended?: boolean;
 }
 
@@ -125,12 +126,24 @@ export function PricingModule({
                   / month {isAnnual && <span className="text-xs">(billed annually)</span>}
                 </p>
 
-                <Button
-                  variant={plan.recommended ? "default" : "outline"}
-                  className="w-full mb-6"
-                >
-                  {buttonLabel}
-                </Button>
+                {plan.checkoutUrl ? (
+                  <Button
+                    asChild
+                    variant={plan.recommended ? "default" : "outline"}
+                    className="w-full mb-6"
+                  >
+                    <a href={plan.checkoutUrl}>
+                      {buttonLabel}
+                    </a>
+                  </Button>
+                ) : (
+                  <Button
+                    variant={plan.recommended ? "default" : "outline"}
+                    className="w-full mb-6"
+                  >
+                    {buttonLabel}
+                  </Button>
+                )}
 
                 <div className="text-left text-sm">
                   <h4 className="font-semibold mb-2">Overview</h4>
