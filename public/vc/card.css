@@ -99,6 +99,47 @@ body::after {
     0 8px 18px rgba(1, 8, 24, 0.5);
 }
 
+.face::before {
+  content: '';
+  position: absolute;
+  inset: -30%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.38;
+  background:
+    repeating-radial-gradient(
+      circle at 30% 35%,
+      rgba(210, 180, 255, 0.34) 0 1px,
+      transparent 1px 7px
+    ),
+    repeating-radial-gradient(
+      circle at 70% 65%,
+      rgba(170, 220, 255, 0.24) 0 1px,
+      transparent 1px 8px
+    ),
+    repeating-conic-gradient(
+      from 0deg at 50% 50%,
+      rgba(188, 146, 255, 0.2) 0deg 5deg,
+      transparent 5deg 11deg
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.09) 0 1px,
+      transparent 1px 11px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.07) 0 1px,
+      transparent 1px 11px
+    );
+  background-size: 180% 180%, 170% 170%, 160% 160%, 120% 120%, 120% 120%;
+  background-position: 0% 0%, 0% 0%, 50% 50%, 0% 0%, 0% 0%;
+  mix-blend-mode: plus-lighter;
+  transform-origin: 50% 50%;
+  will-change: transform, background-position, opacity;
+  animation: notePatternDrift 9s ease-in-out infinite alternate;
+}
+
 .face::after {
   content: '';
   position: absolute;
@@ -106,6 +147,12 @@ body::after {
   border-radius: inherit;
   border: 0.5px solid rgba(255,255,255,0.12);
   pointer-events: none;
+}
+
+.front > *,
+.back > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* ── FRONT FACE ── */
@@ -450,4 +497,22 @@ body::after {
   color: rgba(214,225,246,0.2);
   text-transform: uppercase;
   text-align: center;
+}
+
+@keyframes notePatternDrift {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0) scale(1);
+    background-position: 0% 0%, 0% 0%, 50% 50%, 0% 0%, 0% 0%;
+    opacity: 0.28;
+  }
+  50% {
+    transform: rotate(1.8deg) translate3d(2.2%, -1.4%, 0) scale(1.06);
+    background-position: 16% 10%, -12% -10%, 58% 42%, 10% -8%, -9% 9%;
+    opacity: 0.42;
+  }
+  100% {
+    transform: rotate(3.2deg) translate3d(4.2%, -2.8%, 0) scale(1.1);
+    background-position: 28% 18%, -22% -18%, 66% 34%, 18% -14%, -16% 16%;
+    opacity: 0.5;
+  }
 }
