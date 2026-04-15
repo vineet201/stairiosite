@@ -93,11 +93,11 @@ document.getElementById('scene').addEventListener('click', () => {
 // Share card.
 function buildURL() {
   const base = window.location.origin + window.location.pathname;
-  // Keep share links short. Only profile id is needed for standard cards.
-  if (!selectedProfile.id || selectedProfile.id === defaultProfileId) {
+  // Use profile path URL for accurate social metadata previews.
+  if (!selectedProfile.id) {
     return base;
   }
-  return base + '?p=' + encodeURIComponent(selectedProfile.id);
+  return window.location.origin + '/vc/' + encodeURIComponent(selectedProfile.id);
 }
 
 function copyToClipboard(text) {
