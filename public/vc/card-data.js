@@ -20,6 +20,13 @@ window.CARD_CONFIG = {
       role: 'Chief Strategic Communications Officer',
       phone: '95600 72305',
       email: 'growth@stairio.com'
+    },
+    {
+      id: 'alka',
+      name: 'Alka Prasad',
+      role: 'Founding Director',
+      phone: '9431685127',
+      email: 'growth@stairio.com'
     }
   ],
   defaultProfileId: 'vineet',

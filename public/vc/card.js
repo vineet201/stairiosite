@@ -93,14 +93,11 @@ document.getElementById('scene').addEventListener('click', () => {
 // Share card.
 function buildURL() {
   const base = window.location.origin + window.location.pathname;
-  const p = new URLSearchParams({
-    p: selectedProfile.id,
-    name: data.name,
-    role: data.role,
-    phone: data.phone,
-    email: data.email
-  });
-  return base + '?' + p.toString();
+  // Keep share links short. Only profile id is needed for standard cards.
+  if (!selectedProfile.id || selectedProfile.id === defaultProfileId) {
+    return base;
+  }
+  return base + '?p=' + encodeURIComponent(selectedProfile.id);
 }
 
 function copyToClipboard(text) {
