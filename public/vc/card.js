@@ -128,8 +128,6 @@ window.shareCard = function shareCard() {
   if (navigator.share) {
     navigator
       .share({
-        title: data.name + ' — ' + company.brand,
-        text: data.role + ' at ' + company.legalName,
         url
       })
       .catch(() => {});
