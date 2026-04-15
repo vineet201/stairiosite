@@ -143,7 +143,19 @@ body::after {
   display: block;
   width: clamp(2px, 0.5vw, 3px);
   border-radius: 1px;
-  background: linear-gradient(to top, var(--blue1), var(--blue2));
+  background: #ffffff;
+}
+.mark span:nth-child(1) {
+  background: linear-gradient(to top, #0fa968, #22d18a);
+}
+.mark span:nth-child(2) {
+  background: linear-gradient(to top, #dfe5f5, #ffffff);
+}
+.mark span:nth-child(3) {
+  background: linear-gradient(to top, #7a42ff, #c56dff);
+}
+.mark span:nth-child(4) {
+  background: linear-gradient(to top, #d96f00, #ff9f1a);
 }
 
 .wordmark {
@@ -266,7 +278,19 @@ body::after {
 .back-mark span {
   display: block;
   border-radius: 2px;
-  background: linear-gradient(to top, var(--blue1), var(--blue2));
+  background: #ffffff;
+}
+.back-mark span:nth-child(1) {
+  background: linear-gradient(to top, #0fa968, #22d18a);
+}
+.back-mark span:nth-child(2) {
+  background: linear-gradient(to top, #dfe5f5, #ffffff);
+}
+.back-mark span:nth-child(3) {
+  background: linear-gradient(to top, #7a42ff, #c56dff);
+}
+.back-mark span:nth-child(4) {
+  background: linear-gradient(to top, #d96f00, #ff9f1a);
 }
 
 .back-wordmark {
