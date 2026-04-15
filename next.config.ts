@@ -9,6 +9,14 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: "/vc",
+        destination: "/vc/vc.html",
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shivam Srivastava — Chief Strategic Communications Officer at STAIRIO Technologies">
+<meta property="og:title" content="Shivam Srivastava · STAIRIO">
+<meta property="og:description" content="Chief Strategic Communications Officer">
+<meta property="og:type" content="profile">
+<title id="page-title">Shivam Srivastava — STAIRIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="card.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Card scene -->
+  <div class="scene" id="scene" title="Tap to flip">
+    <div class="card-inner" id="cardInner">
+
+      <!-- FRONT -->
+      <div class="face front">
+        <div>
+          <div class="brand-row">
+            <div class="mark" id="front-mark"></div>
+            <span class="wordmark" id="brand-wordmark-front">STAIRIO</span>
+          </div>
+          <div class="tagline" id="brand-tagline-front">Every Dream Needs a Step</div>
+        </div>
+        <div class="accent-line"></div>
+        <div class="bottom-row">
+          <div class="name-block">
+            <div class="name" id="fn-name">Shivam Srivastava</div>
+            <div class="role" id="fn-role">Chief Strategic<br>Communications Officer</div>
+          </div>
+          <div class="contact-block">
+            <div class="ci hi" id="fn-phone">+91 95828 16233</div>
+            <div class="ci" id="fn-email">growth@stairio.com</div>
+            <div class="ci" id="fn-website">www.stairio.com</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BACK -->
+      <div class="face back">
+        <div class="back-logo">
+          <div class="back-mark" id="back-mark"></div>
+          <div class="back-wordmark" id="brand-wordmark-back">STAIRIO</div>
+        </div>
+        <div class="back-divider"></div>
+        <div class="back-tagline" id="brand-tagline-back">Every Dream Needs a Step</div>
+        <div class="back-url" id="back-url">www.stairio.com</div>
+        <div class="back-company" id="back-company">Stairio Technologies Private Limited</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Flip hint -->
+  <div class="hint" id="hint">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <path d="M2 7C2 4.2 4.2 2 7 2c1.6 0 3 .7 3.9 1.9M12 7c0 2.8-2.2 5-5 5-1.6 0-3-.7-3.9-1.9" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+      <path d="M11 1.5v2.8h-2.8M3 12.5v-2.8h2.8" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Tap to flip
+  </div>
+
+  <!-- Actions -->
+  <div class="actions">
+    <button class="btn primary" onclick="shareCard()">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+        <circle cx="10" cy="2.5" r="1.5" stroke="currentColor" stroke-width="1.1"/>
+        <circle cx="10" cy="10.5" r="1.5" stroke="currentColor" stroke-width="1.1"/>
+        <circle cx="2.5" cy="6.5" r="1.5" stroke="currentColor" stroke-width="1.1"/>
+        <path d="M8.6 3.2L3.8 5.8M8.6 9.8L3.8 7.2" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+      </svg>
+      Share Card
+    </button>
+    <button class="btn" onclick="saveContact()">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+        <rect x="1.5" y="1.5" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.1"/>
+        <path d="M4 8.5h5M6.5 5v3.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+        <circle cx="6.5" cy="4.5" r="0.5" fill="currentColor"/>
+      </svg>
+      Save Contact
+    </button>
+  </div>
+
+  <div class="footer" id="card-footer">Digital Business Card &nbsp;·&nbsp; STAIRIO Technologies Pvt. Ltd.</div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">Link copied!</div>
+
+<script src="card-data.js"></script>
+<script src="card.js"></script>
+</body>
+</html>
