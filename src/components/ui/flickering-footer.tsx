@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { ChevronRight, ShieldCheck, Sparkles, Workflow } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
@@ -422,26 +423,13 @@ function FlickeringGrid({
 
 function BrandMark() {
   return (
-    <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-[#D8B4FE]/30 bg-[#D8B4FE]/10 shadow-[0_0_30px_rgba(216,180,254,0.18)]">
-      <svg viewBox="0 0 32 32" className="h-6 w-6" fill="none">
-        {/* Stylized "S" logo mark */}
-        <path 
-          d="M22 9C22 9 19 6 14 7.5C9 9 7.5 13.5 10.5 16.5C13.5 19.5 19.5 18 19.5 21C19.5 24 15 25.5 10 24" 
-          stroke="url(#stairio-footer-gradient)" 
-          strokeWidth="2.5" 
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        {/* Small accent dot */}
-        <circle cx="24" cy="8" r="2" fill="#5DDF18" />
-        <defs>
-          <linearGradient id="stairio-footer-gradient" x1="8" y1="8" x2="24" y2="24">
-            <stop offset="0%" stopColor="#D8B4FE" />
-            <stop offset="100%" stopColor="#FF9132" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
+    <Image
+      src="/images/icon1.png"
+      alt=""
+      width={48}
+      height={48}
+      className="h-10 w-10 object-contain drop-shadow-[0_0_20px_rgba(216,180,254,0.24)]"
+    />
   );
 }
 
