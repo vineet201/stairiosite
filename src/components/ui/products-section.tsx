@@ -52,10 +52,10 @@ const products: Product[] = [
     features: ["Voice Outreach", "Lead Qualification", "Follow-ups", "Scheduling"],
     gradient: "from-[#D8B4FE] via-[#FF9132] to-[#D8B4FE]",
     image: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=800&h=600&fit=crop&q=80",
-    ctaText: "Explore Voice Agent",
-    ctaLink: "#voice-agent",
+    ctaText: "Discuss Voice Agent",
+    ctaLink: "/quote",
     icon: Message01Icon,
-    badge: "AI-Powered",
+    badge: "AI Agent",
   },
   {
     id: "smart-website",
@@ -79,9 +79,10 @@ const products: Product[] = [
     features: ["Member Management", "Class Scheduling", "Payment Processing", "Progress Tracking"],
     gradient: "from-[#5DDF18] via-[#5DDF18]/80 to-[#FF9132]",
     image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop&q=80",
-    ctaText: "Explore Kore",
-    ctaLink: "#kore",
+    ctaText: "Discuss Kore",
+    ctaLink: "/quote",
     icon: Dumbbell01Icon,
+    badge: "Roadmap",
   },
   {
     id: "salespro",
@@ -92,10 +93,10 @@ const products: Product[] = [
     features: ["Sales Pipeline", "Lead Tracking", "Automation", "Revenue Visibility"],
     gradient: "from-rose-500 via-pink-500 to-fuchsia-500",
     image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?w=800&h=600&fit=crop&q=80",
-    ctaText: "Explore SalesPro",
-    ctaLink: "#salespro",
+    ctaText: "Discuss SalesPro",
+    ctaLink: "/quote",
     icon: SourceCodeIcon,
-    badge: "New",
+    badge: "Roadmap",
   },
 ];
 
@@ -286,7 +287,7 @@ export function ProductsSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-neutral-400 text-base sm:text-lg max-w-xl mx-auto"
           >
-            AI-native products and services for modern businesses
+            AI-native products and service systems for Indian businesses
           </motion.p>
         </div>
 
@@ -304,7 +305,7 @@ export function ProductsSection() {
               <div className="relative z-50 mb-8">
                 <h3 className="text-2xl font-bold text-white mb-3">Our Solutions</h3>
                 <p className="text-neutral-400 text-sm leading-relaxed">
-                  From AI-powered platforms to custom development, we build the tools that power modern businesses.
+                  Productized platforms and AI systems built around hospitality, lead conversion, sales, and daily operations.
                 </p>
               </div>
               
@@ -445,7 +446,7 @@ export function ProductsSection() {
               href="/quote"
               className="inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-white text-black font-semibold text-sm hover:bg-neutral-200 transition-colors"
             >
-              Let's Talk
+              Let&apos;s Talk
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
               </svg>

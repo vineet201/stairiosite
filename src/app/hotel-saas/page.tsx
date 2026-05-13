@@ -7,6 +7,7 @@ import { HeroSection } from "@/components/ui/hero-3";
 import { BentoGridShowcase } from "@/components/ui/bento-product-features";
 import { Features } from "@/components/blocks/features-4";
 import { BentoShowcase } from "@/components/blocks/bento-showcase";
+import { HotelifyAdvancedFeatures } from "@/components/blocks/hotelify-advanced-features";
 import { StaggerTestimonials } from "@/components/blocks/stagger-testimonials";
 import { ComparisonSection } from "@/components/blocks/comparison-section";
 import {
@@ -692,6 +693,9 @@ export default function HotelSaasPage() {
       {/* ── BENTO SHOWCASE ─────────────────────────────────────────────────── */}
       <BentoShowcase />
 
+      {/* ── ADVANCED HOTELIFY FEATURES ─────────────────────────────────────── */}
+      <HotelifyAdvancedFeatures />
+
       {/* ── TESTIMONIALS ─────────────────────────────────────────────────────── */}
       <StaggerTestimonials />
 
@@ -722,6 +726,7 @@ export default function HotelSaasPage() {
           annualBillingLabel="Pay annually and save 20%"
           buttonLabel="Get Started"
           className="bg-[#0A0A0A]"
+          defaultAnnual
           annualDiscount={0.2}
           plans={[
             {
@@ -833,7 +838,7 @@ export default function HotelSaasPage() {
                 { label: "Inventory Management", included: true },
               ],
             },
-        ]}
+          ].reverse()}
       />
       </div>
 
@@ -888,7 +893,7 @@ export default function HotelSaasPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-4">
-              Questions? We've got answers.
+              Questions? We&apos;ve got answers.
             </h2>
             <p className="text-neutral-400">Everything you need to know before getting started</p>
           </motion.div>

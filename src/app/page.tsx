@@ -1,7 +1,6 @@
-import { LiquidButton } from "@/components/ui/liquid-glass-button";
+import { HomeProductPositioning } from "@/components/blocks/home-product-positioning";
 import { LiquidMetalButton } from "@/components/ui/liquid-metal-button";
 import { SplineScene } from "@/components/ui/splite";
-import { Spotlight } from "@/components/ui/spotlight";
 import { Card } from "@/components/ui/card";
 import { TestimonialsSection } from "@/components/ui/testimonials-section";
 import AnimatedTextCycle from "@/components/ui/animated-text-cycle";
@@ -74,7 +73,7 @@ export default function Home() {
           <div className="px-5 text-center animate-[fadeInUp_0.5s_ease-out_0.08s_both]">
             <h1 className="text-[2.2rem] font-bold tracking-[-0.025em] leading-[1.1]">
               <span className="block text-white">The future</span>
-              <span className="block text-white">isn't coming.</span>
+              <span className="block text-white">isn&apos;t coming.</span>
             </h1>
           </div>
 
@@ -151,7 +150,7 @@ export default function Home() {
           {/* Large Heading - Top Area */}
           <div className="flex items-start justify-center pt-16">
             <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-center px-4 leading-tight">
-              The future isn't coming. <br />
+              The future isn&apos;t coming. <br />
               <PixelDissolveText
                 texts={["It's already here.", "It's built on AI.", "It's built by Stairio."]}
                 className="text-white"
@@ -221,13 +220,13 @@ export default function Home() {
             <div className="flex-1 p-6 sm:p-8 md:p-12 relative z-10 flex flex-col justify-center pointer-events-none order-2 md:order-1">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 mb-3 sm:mb-4">What Is Stairio?</h2>
               <p className="text-sm sm:text-base text-neutral-400 mb-5 sm:mb-6 leading-relaxed max-w-xl">
-                Stairio transforms any business into an AI-powered organization with full-stack innovation across intelligent systems, scalable software, and automation-driven solutions. By accelerating the entire operational workflow, Stairio helps ideas move to execution faster - with greater accuracy, efficiency, and system performance, all while reducing overall costs across platforms and applications.
+                Stairio is an AI-native product company building reusable software systems for Indian service businesses. We focus on vertical products for hospitality, lead conversion, sales operations, and customer workflows where automation can reduce manual coordination and improve daily decision-making.
               </p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 mb-3 sm:mb-4">
                 Not just AI-enabled.<br/><span className="bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient-flow bg-[linear-gradient(90deg,#60a5fa,#a78bfa,#f472b6,#fb923c,#60a5fa)]">AI-native.</span>
               </h2>
               <p className="text-base sm:text-lg text-neutral-400">
-                Every product, every system, built for the next generation of business.
+                Every product is shaped around a repeatable workflow, a measurable operator problem, and a path to scale.
               </p>
             </div>
             <div className="flex-1 relative min-h-[320px] sm:min-h-[350px] md:h-full order-1 md:order-2 flex items-center justify-center">
@@ -239,6 +238,8 @@ export default function Home() {
           </Card>
         </div>
       </section>
+
+      <HomeProductPositioning />
 
       {/* Products Section */}
       <ProductsSection />

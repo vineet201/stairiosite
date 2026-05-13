@@ -17,7 +17,7 @@ export default function AnimatedServiceCardDemo() {
         <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/[0.06] bg-white/[0.03] px-4 py-2">
           <div className="h-1.5 w-1.5 rounded-full bg-[#5DDF18] animate-pulse" />
           <span className="text-xs font-medium uppercase tracking-wide text-neutral-400">
-            Our Services
+            Stairio Labs
           </span>
         </div>
 
@@ -29,8 +29,8 @@ export default function AnimatedServiceCardDemo() {
         </h2>
 
         <p className="mx-auto max-w-2xl text-base text-neutral-400 sm:text-lg">
-          The core Stairio services we use to design, build, automate, and
-          scale modern businesses.
+          The engineering and automation capabilities behind our products,
+          prototypes, and custom AI systems.
         </p>
       </div>
       <ServiceCarousel services={services} />
