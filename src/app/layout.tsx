@@ -39,10 +39,6 @@ const satoshi = localFont({
 export const metadata: Metadata = {
   title: "Stairio - AI-Native Solutions",
   description: "AI-first systems that transform how businesses operate",
-  icons: {
-    icon: "/images/icon1.png",
-    apple: "/images/icon1.png",
-  },
 };
 
 export default function RootLayout({

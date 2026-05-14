@@ -67,18 +67,6 @@ const words = data.role.split(' ');
 const mid = Math.ceil(words.length / 2);
 roleEl.innerHTML = words.slice(0, mid).join(' ') + '<br>' + words.slice(mid).join(' ');
 
-// Build stair marks.
-function buildMark(el, heights, width) {
-  el.innerHTML = '';
-  heights.forEach((h) => {
-    const s = document.createElement('span');
-    s.style.cssText = `height:${h}px;width:${width}px`;
-    el.appendChild(s);
-  });
-}
-buildMark(document.getElementById('front-mark'), [5, 8, 11, 15], 3);
-buildMark(document.getElementById('back-mark'), [8, 13, 18, 24], 5);
-
 // Flip logic.
 let flipped = false;
 const inner = document.getElementById('cardInner');

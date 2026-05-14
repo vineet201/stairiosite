@@ -179,30 +179,13 @@ body::after {
   gap: clamp(6px, 1.5vw, 10px);
 }
 
-/* Stair mark */
 .mark {
-  display: flex;
-  align-items: flex-end;
-  gap: 2px;
-  flex-shrink: 0;
-}
-.mark span {
   display: block;
-  width: clamp(2px, 0.5vw, 3px);
-  border-radius: 1px;
-  background: #ffffff;
-}
-.mark span:nth-child(1) {
-  background: linear-gradient(to top, #0fa968, #22d18a);
-}
-.mark span:nth-child(2) {
-  background: linear-gradient(to top, #dfe5f5, #ffffff);
-}
-.mark span:nth-child(3) {
-  background: linear-gradient(to top, #7a42ff, #c56dff);
-}
-.mark span:nth-child(4) {
-  background: linear-gradient(to top, #d96f00, #ff9f1a);
+  width: clamp(18px, 4.2vw, 26px);
+  height: clamp(22px, 5vw, 31px);
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 12px rgba(208,107,255,0.28));
 }
 
 .wordmark {
@@ -325,27 +308,11 @@ body::after {
 }
 
 .back-mark {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 3px;
-}
-.back-mark span {
   display: block;
-  border-radius: 2px;
-  background: #ffffff;
-}
-.back-mark span:nth-child(1) {
-  background: linear-gradient(to top, #0fa968, #22d18a);
-}
-.back-mark span:nth-child(2) {
-  background: linear-gradient(to top, #dfe5f5, #ffffff);
-}
-.back-mark span:nth-child(3) {
-  background: linear-gradient(to top, #7a42ff, #c56dff);
-}
-.back-mark span:nth-child(4) {
-  background: linear-gradient(to top, #d96f00, #ff9f1a);
+  width: clamp(42px, 10vw, 60px);
+  height: clamp(50px, 12vw, 72px);
+  object-fit: contain;
+  filter: drop-shadow(0 0 24px rgba(208,107,255,0.28));
 }
 
 .back-wordmark {

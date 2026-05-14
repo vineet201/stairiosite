@@ -5,6 +5,7 @@ import { ChevronRight, ShieldCheck, Sparkles, Workflow } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { stairioLogo } from "@/lib/brand-assets";
 
 type FooterLink = {
   id: number;
@@ -424,7 +425,7 @@ function FlickeringGrid({
 function BrandMark() {
   return (
     <Image
-      src="/images/icon1.png"
+      src={stairioLogo}
       alt=""
       width={48}
       height={48}

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import { stairioLogo } from '@/lib/brand-assets';
 
 interface PixelLogoProps {
   text?: string;
@@ -32,7 +33,7 @@ export function PixelLogo({ text = 'Stairio', className, href = '/' }: PixelLogo
       />
 
       <Image
-        src="/images/icon1.png"
+        src={stairioLogo}
         alt=""
         width={48}
         height={48}
