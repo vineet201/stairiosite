@@ -63,8 +63,8 @@ interface PricingTableProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export function PricingTable({ features, plans, ...props }: PricingTableProps) {
   return (
-    <section>
-      <div className={"border-x border-white/10"} {...props}>
+    <section className="-mx-4 overflow-x-auto px-4 pb-2">
+      <div className="min-w-[720px] border-x border-white/10" {...props}>
         <div className="divide-y divide-white/10 last:border-b last:border-white/10">
           <div className="sticky top-20 z-10 mt-2 flex items-center border-t border-white/10 bg-[#0A0A0A] pl-6">
             <div className="flex-1 text-sm font-medium text-neutral-400">Features</div>
@@ -73,7 +73,7 @@ export function PricingTable({ features, plans, ...props }: PricingTableProps) {
                 <div
                   key={plan.level}
                   className={cn(
-                    "w-28 border-r border-white/10 p-6 text-center font-medium first:border-l first:border-white/10 last:border-0 md:w-44 lg:w-56",
+                    "w-32 border-r border-white/10 p-4 text-center font-medium first:border-l first:border-white/10 last:border-0 md:w-44 md:p-6 lg:w-56",
                     plan.popular 
                       ? "bg-[#D8B4FE]/10 text-[#D8B4FE]" 
                       : "text-neutral-300"
@@ -98,7 +98,7 @@ export function PricingTable({ features, plans, ...props }: PricingTableProps) {
                     <div
                       key={plan.level}
                       className={cn(
-                        "flex w-28 justify-center border-r border-white/10 py-5 first:border-l first:border-white/10 last:border-0 md:w-44 lg:w-56",
+                        "flex w-32 justify-center border-r border-white/10 py-5 first:border-l first:border-white/10 last:border-0 md:w-44 lg:w-56",
                         plan.popular && "bg-[#D8B4FE]/[0.03]"
                       )}
                     >

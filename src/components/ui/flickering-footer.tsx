@@ -20,6 +20,8 @@ type FooterColumn = {
 
 const footerConfig = {
   legalName: "STAIRIO TECHNOLOGIES PRIVATE LIMITED",
+  address:
+    "NO 5, 5th Cross, 27th Main Road, VGS Layout, Ejipura, Kormangala, Viveknagar (Bangalore), Bangalore, Bangalore South, Karnataka, India, 560047",
   description:
     "Stairio builds AI-native systems that automate operations, sharpen decision-making, and move ideas into production faster.",
   trustMarks: [
@@ -475,6 +477,15 @@ export function FlickeringFooter() {
               );
             })}
           </div>
+
+          <div className="max-w-2xl space-y-2 border-l border-white/10 pl-4 text-sm leading-6 text-white/45">
+            <p>
+              <span className="text-white/60">Legal name:</span> {footerConfig.legalName}
+            </p>
+            <p>
+              <span className="text-white/60">Company address:</span> {footerConfig.address}
+            </p>
+          </div>
         </div>
 
         <div className="grid gap-8 sm:grid-cols-3">
@@ -519,11 +530,8 @@ export function FlickeringFooter() {
           />
         </div>
 
-        <div className="absolute inset-x-6 bottom-6 flex flex-col gap-2 text-sm text-white/45 md:inset-x-10 md:flex-row md:items-end md:justify-between">
-          <div className="space-y-1">
-            <p>© {new Date().getFullYear()} Stairio. Built for faster AI execution.</p>
-            <p>Legal name: {footerConfig.legalName}</p>
-          </div>
+        <div className="absolute inset-x-6 bottom-6 flex flex-col gap-2 text-sm text-white/45 md:inset-x-10 md:flex-row md:items-center md:justify-between">
+          <p>© {new Date().getFullYear()} Stairio. Built for faster AI execution.</p>
           <p>Automation, platform engineering, and decision systems.</p>
         </div>
       </div>

@@ -30,6 +30,7 @@ import {
 	BarChart,
 	PlugIcon,
 	Building2,
+	Phone,
 } from 'lucide-react';
 
 type LinkItem = {
@@ -122,7 +123,12 @@ export function Header() {
 						</NavigationMenuList>
 					</NavigationMenu>
 				</div>
-				<div className="hidden md:flex">
+				<div className="hidden items-center gap-2 md:flex">
+					<Button asChild size="icon" variant="outline" aria-label="Call Stairio">
+						<a href="tel:+919262579663">
+							<Phone className="size-4" />
+						</a>
+					</Button>
 					<Button asChild>
 						<a href="/#products-section">Get Started</a>
 					</Button>
@@ -156,6 +162,12 @@ export function Header() {
 					</div>
 				</NavigationMenu>
 				<div className="flex flex-col gap-2">
+					<Button asChild variant="outline" className="w-full">
+						<a href="tel:+919262579663">
+							<Phone className="mr-2 size-4" />
+							Call Stairio
+						</a>
+					</Button>
 					<Button asChild className="w-full">
 						<a href="/#products-section">Get Started</a>
 					</Button>

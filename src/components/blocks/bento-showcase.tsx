@@ -13,9 +13,9 @@ export function BentoShowcase() {
                 </div>
 
                 {/* Bento Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[220px] gap-3 md:gap-4">
+                <div className="grid grid-cols-1 auto-rows-[220px] gap-3 sm:grid-cols-2 md:grid-cols-4 md:gap-4">
                     {/* Dashboard - Large hero - ANIMATED */}
-                    <div className="col-span-2 md:col-span-3 row-span-2 group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0d0d12]">
+                    <div className="row-span-2 group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0d0d12] sm:col-span-2 md:col-span-3">
                         {/* Dashboard CSS Animations */}
                         <style jsx>{`
                             @keyframes lineChart {
@@ -383,7 +383,7 @@ export function BentoShowcase() {
                     </div>
 
                     {/* Booking Widget - Tall - Animated Code Widget */}
-                    <div className="col-span-1 row-span-2 group relative overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] p-4 flex flex-col">
+                    <div className="row-span-2 group relative flex flex-col overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] p-4 sm:col-span-1">
                         {/* CSS Keyframes */}
                         <style jsx>{`
                             @keyframes cursorMove {
@@ -538,7 +538,7 @@ export function BentoShowcase() {
                     </div>
 
                     {/* Hotel Website */}
-                    <div className="col-span-2 row-span-2 group relative overflow-hidden rounded-2xl border border-white/10 bg-[#111]">
+                    <div className="row-span-2 group relative overflow-hidden rounded-2xl border border-white/10 bg-[#111] sm:col-span-2">
                         <Image
                             src="/images/showcase/Hotel Website.png"
                             alt="Hotel Website"
@@ -553,7 +553,7 @@ export function BentoShowcase() {
                     </div>
 
                     {/* Mobile */}
-                    <div className="col-span-1 row-span-2 group relative overflow-hidden rounded-2xl border border-white/10 bg-[#111]">
+                    <div className="row-span-2 group relative overflow-hidden rounded-2xl border border-white/10 bg-[#111] sm:col-span-1">
                         <Image
                             src="/images/showcase/Mobile Ready.png"
                             alt="Mobile Ready"
@@ -567,7 +567,7 @@ export function BentoShowcase() {
                     </div>
 
                     {/* Room Status */}
-                    <div className="col-span-1 row-span-1 group relative overflow-hidden rounded-2xl border border-white/10 bg-[#111]">
+                    <div className="row-span-1 group relative overflow-hidden rounded-2xl border border-white/10 bg-[#111] sm:col-span-1">
                         <Image
                             src="/images/showcase/Room Status.png"
                             alt="Room Status"
@@ -581,7 +581,7 @@ export function BentoShowcase() {
                     </div>
 
                     {/* Analytics - Animated Multi-Screen Widget */}
-                    <div className="col-span-1 row-span-1 group relative overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-br from-[#151515] via-[#1a1a1a] to-[#0d0d0d] p-3">
+                    <div className="row-span-1 group relative overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-br from-[#151515] via-[#1a1a1a] to-[#0d0d0d] p-3 sm:col-span-1">
                         {/* CSS Keyframes for Analytics */}
                         <style jsx>{`
                             @keyframes screenFade {

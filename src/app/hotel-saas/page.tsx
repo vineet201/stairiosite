@@ -318,10 +318,10 @@ function SavingsCalculatorInline() {
 
   return (
     <div className="rounded-2xl bg-[#0A0A0A] border border-white/[0.08] overflow-hidden">
-      <div className="flex flex-row">
+      <div className="flex flex-col lg:flex-row">
         {/* Left: Inputs */}
-        <div className="flex-1 p-5">
-          <div className="grid grid-cols-2 gap-3">
+        <div className="flex-1 p-4 sm:p-5">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {/* Monthly Bookings */}
             <div className="p-3 rounded-lg bg-white/[0.02] border border-white/[0.05]">
               <div className="flex items-center justify-between mb-2">
@@ -396,24 +396,24 @@ function SavingsCalculatorInline() {
           </div>
 
           {/* Stats Row */}
-          <div className="mt-3 pt-3 border-t border-white/[0.05] grid grid-cols-3 gap-2">
+          <div className="mt-3 grid grid-cols-3 gap-2 border-t border-white/[0.05] pt-3">
             <div className="text-center">
-              <p className="text-lg font-bold text-white">{otaBookings * 12}</p>
+              <p className="text-base font-bold text-white sm:text-lg">{otaBookings * 12}</p>
               <p className="text-[9px] text-neutral-500">bookings/year</p>
             </div>
             <div className="text-center">
-              <p className="text-lg font-bold text-white">{otaBookings * avgStayDays * 12}</p>
+              <p className="text-base font-bold text-white sm:text-lg">{otaBookings * avgStayDays * 12}</p>
               <p className="text-[9px] text-neutral-500">room nights</p>
             </div>
             <div className="text-center">
-              <p className="text-lg font-bold text-white">₹{((otaBookings * avgStayDays * rate * 12) / 100000).toFixed(1)}L</p>
+              <p className="text-base font-bold text-white sm:text-lg">₹{((otaBookings * avgStayDays * rate * 12) / 100000).toFixed(1)}L</p>
               <p className="text-[9px] text-neutral-500">revenue</p>
             </div>
           </div>
         </div>
 
         {/* Right: Results Panel */}
-        <div className="w-72 shrink-0 bg-[#5DDF18] p-5 flex flex-col justify-center">
+        <div className="flex w-full shrink-0 flex-col justify-center bg-[#5DDF18] p-5 lg:w-72">
           <p className="text-[10px] text-black/60 uppercase tracking-wider font-medium mb-1">Your Yearly Savings</p>
           <motion.p
             key={yearlySaving}
@@ -426,13 +426,13 @@ function SavingsCalculatorInline() {
           </motion.p>
           <p className="text-xs text-black/70 mb-4">by switching to direct bookings</p>
 
-          <div className="flex gap-4 mb-4">
+          <div className="mb-4 grid grid-cols-2 gap-3">
             <div>
               <p className="text-xl font-bold text-black">₹{monthlySaving.toLocaleString()}</p>
               <p className="text-[9px] text-black/60">per month</p>
             </div>
             <div>
-              <p className="text-xl font-bold text-black">₹{yearlySaving.toLocaleString()}</p>
+              <p className="break-words text-xl font-bold text-black">₹{yearlySaving.toLocaleString()}</p>
               <p className="text-[9px] text-black/60">per year</p>
             </div>
           </div>
@@ -644,19 +644,19 @@ export default function HotelSaasPage() {
             }
             shortcuts={
               <Card className="h-full bg-white/[0.03] border-white/[0.08] overflow-hidden">
-                <CardContent className="flex h-full items-center gap-6 p-5">
+                <CardContent className="flex h-full flex-col items-start gap-4 p-5 sm:flex-row sm:items-center sm:gap-6">
                   {/* Left side - Text content */}
-                  <div className="flex-1 min-w-0">
+                  <div className="min-w-0 flex-1">
                     <CardTitle className="text-base font-medium text-white mb-1">
                       Your Online Land Acquired
                     </CardTitle>
-                    <CardDescription className="text-neutral-400 text-sm">
+                    <CardDescription className="text-sm leading-relaxed text-neutral-400">
                       Make you discoverable directly from anywhere in the world.
                     </CardDescription>
                   </div>
                   
                   {/* Right side - Google Search Mockup (compact) */}
-                  <div className="flex-shrink-0 w-[320px] rounded-lg bg-[#202124] border border-white/[0.06] p-3 cursor-pointer hover:bg-[#2a2a2d] transition-all duration-200 group">
+                  <div className="w-full rounded-lg bg-[#202124] border border-white/[0.06] p-3 cursor-pointer hover:bg-[#2a2a2d] transition-all duration-200 group sm:w-[320px] sm:flex-shrink-0">
                     {/* Site info row */}
                     <div className="flex items-center gap-2 mb-2">
                       <div className="w-5 h-5 rounded-full bg-gradient-to-br from-[#D8B4FE]/20 to-[#8ab4f8]/20 flex items-center justify-center border border-white/10 shrink-0">
