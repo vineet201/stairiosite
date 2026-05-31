@@ -19,6 +19,7 @@ type FooterColumn = {
 };
 
 const footerConfig = {
+  legalName: "STAIRIO TECHNOLOGIES PRIVATE LIMITED",
   description:
     "Stairio builds AI-native systems that automate operations, sharpen decision-making, and move ideas into production faster.",
   trustMarks: [
@@ -518,8 +519,11 @@ export function FlickeringFooter() {
           />
         </div>
 
-        <div className="absolute inset-x-6 bottom-6 flex flex-col gap-2 text-sm text-white/45 md:inset-x-10 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} Stairio. Built for faster AI execution.</p>
+        <div className="absolute inset-x-6 bottom-6 flex flex-col gap-2 text-sm text-white/45 md:inset-x-10 md:flex-row md:items-end md:justify-between">
+          <div className="space-y-1">
+            <p>© {new Date().getFullYear()} Stairio. Built for faster AI execution.</p>
+            <p>Legal name: {footerConfig.legalName}</p>
+          </div>
           <p>Automation, platform engineering, and decision systems.</p>
         </div>
       </div>

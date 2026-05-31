@@ -10,7 +10,7 @@ const sections = [
   {
     title: "Using Stairio services",
     paragraphs: [
-      "These Terms of Service describe the general rules for using Stairio websites, products, software, and service engagements.",
+      "These Terms of Service describe the general rules for using Stairio websites, products, software, and service engagements operated by STAIRIO TECHNOLOGIES PRIVATE LIMITED.",
       "By accessing or using Stairio, you agree to act lawfully, provide accurate information when requested, and avoid misuse of the platform, site, or any connected systems.",
     ],
   },

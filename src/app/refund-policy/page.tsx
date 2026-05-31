@@ -10,7 +10,7 @@ const sections = [
   {
     title: "General payment approach",
     paragraphs: [
-      "Stairio engagements are usually structured around defined discovery, build, delivery, or support phases. Payment terms are normally documented in a proposal, invoice schedule, or signed agreement.",
+      "Stairio engagements by STAIRIO TECHNOLOGIES PRIVATE LIMITED are usually structured around defined discovery, build, delivery, or support phases. Payment terms are normally documented in a proposal, invoice schedule, or signed agreement.",
       "Because many Stairio services involve reserved time, strategic work, implementation effort, and custom delivery, payments may be partially or fully non-refundable once work has begun.",
     ],
   },

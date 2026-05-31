@@ -10,7 +10,7 @@ const sections = [
   {
     title: "What information we collect",
     paragraphs: [
-      "Stairio may collect information you submit directly, such as your name, email address, company details, phone number, and project requirements.",
+      "STAIRIO TECHNOLOGIES PRIVATE LIMITED, operating as Stairio, may collect information you submit directly, such as your name, email address, company details, phone number, and project requirements.",
       "We may also collect limited technical data such as browser details, device information, and site usage signals to improve performance and user experience.",
     ],
   },
