@@ -197,9 +197,9 @@ function SavingsCalculatorModal({ onClose }: { onClose: () => void }) {
           </div>
 
           {/* Main content - horizontal layout */}
-          <div className="flex gap-6 items-stretch">
+          <div className="flex flex-col gap-4 items-stretch md:flex-row md:gap-6">
             {/* Left: 2x2 grid of inputs */}
-            <div className="flex-1 grid grid-cols-2 gap-3">
+            <div className="grid flex-1 grid-cols-1 gap-3 sm:grid-cols-2">
               {/* Monthly OTA bookings */}
               <div className="p-3 rounded-xl bg-white/[0.03] border border-white/[0.06]">
                 <div className="flex justify-between items-center mb-2">
@@ -274,7 +274,7 @@ function SavingsCalculatorModal({ onClose }: { onClose: () => void }) {
             </div>
 
             {/* Right: Results */}
-            <div className="w-72 flex flex-col">
+            <div className="flex w-full flex-col md:w-72">
               {/* Main result */}
               <div className="flex-1 p-5 rounded-xl bg-gradient-to-br from-[#5DDF18]/10 via-transparent to-[#D8B4FE]/10 border border-[#5DDF18]/20 flex flex-col items-center justify-center text-center">
                 <p className="text-[10px] text-neutral-500 uppercase tracking-widest mb-1">Yearly savings</p>

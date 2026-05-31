@@ -64,16 +64,16 @@ interface PricingTableProps extends React.HTMLAttributes<HTMLDivElement> {
 export function PricingTable({ features, plans, ...props }: PricingTableProps) {
   return (
     <section className="-mx-4 overflow-x-auto px-4 pb-2">
-      <div className="min-w-[720px] border-x border-white/10" {...props}>
+      <div className="min-w-[374px] border-x border-white/10 sm:min-w-0" {...props}>
         <div className="divide-y divide-white/10 last:border-b last:border-white/10">
           <div className="sticky top-20 z-10 mt-2 flex items-center border-t border-white/10 bg-[#0A0A0A] pl-6">
-            <div className="flex-1 text-sm font-medium text-neutral-400">Features</div>
+            <div className="w-[110px] shrink-0 text-xs font-medium text-neutral-400 sm:flex-1 sm:text-sm">Features</div>
             <div className="flex items-center text-sm">
               {plans.map((plan) => (
                 <div
                   key={plan.level}
                   className={cn(
-                    "w-32 border-r border-white/10 p-4 text-center font-medium first:border-l first:border-white/10 last:border-0 md:w-44 md:p-6 lg:w-56",
+                    "w-[88px] border-r border-white/10 p-2 text-center text-xs font-medium first:border-l first:border-white/10 last:border-0 sm:w-28 md:w-44 md:p-6 md:text-sm lg:w-56",
                     plan.popular 
                       ? "bg-[#D8B4FE]/10 text-[#D8B4FE]" 
                       : "text-neutral-300"
@@ -90,7 +90,7 @@ export function PricingTable({ features, plans, ...props }: PricingTableProps) {
               key={feature.name}
               className={cn("flex items-center pl-6 transition-colors hover:bg-white/[0.02]")}
             >
-              <div className="flex-1 pr-4 text-sm text-neutral-300">{feature.name}</div>
+              <div className="w-[110px] shrink-0 pr-3 text-xs leading-5 text-neutral-300 sm:flex-1 sm:pr-4 sm:text-sm">{feature.name}</div>
               <div className="flex items-center text-sm">
                 {plans.map((plan) => {
                   const value = feature[plan.level as keyof Pick<PricingFeature, 'channel' | 'ota' | 'stairio'>]
@@ -98,7 +98,7 @@ export function PricingTable({ features, plans, ...props }: PricingTableProps) {
                     <div
                       key={plan.level}
                       className={cn(
-                        "flex w-32 justify-center border-r border-white/10 py-5 first:border-l first:border-white/10 last:border-0 md:w-44 lg:w-56",
+                        "flex w-[88px] justify-center border-r border-white/10 py-5 first:border-l first:border-white/10 last:border-0 sm:w-28 md:w-44 lg:w-56",
                         plan.popular && "bg-[#D8B4FE]/[0.03]"
                       )}
                     >
@@ -131,7 +131,7 @@ function renderCellValue(value: string, isPopular?: boolean): React.ReactNode {
   
   return (
     <span className={cn(
-      "text-xs text-center px-2",
+      "px-1 text-center text-[10px] leading-4 sm:px-2 sm:text-xs",
       isPopular ? "text-[#5DDF18] font-medium" : isNegative ? "text-red-400/80" : "text-neutral-400"
     )}>
       {value}

@@ -79,11 +79,11 @@ export function BentoShowcase() {
                         
                         <div className="absolute inset-0 flex">
                             {/* Sidebar */}
-                            <div className="w-[140px] bg-[#0a0a0f] border-r border-white/5 p-3 flex flex-col gap-1">
+                            <div className="flex w-[58px] flex-col gap-1 border-r border-white/5 bg-[#0a0a0f] p-2 sm:w-[140px] sm:p-3">
                                 {/* Active - Dashboard */}
-                                <div className="flex items-center gap-2 px-2.5 py-2 rounded-lg bg-gradient-to-r from-[#D8B4FE]/20 to-[#D8B4FE]/5 border border-[#D8B4FE]/20 slide-in">
+                                <div className="flex items-center justify-center gap-2 rounded-lg border border-[#D8B4FE]/20 bg-gradient-to-r from-[#D8B4FE]/20 to-[#D8B4FE]/5 px-2 py-2 sm:justify-start sm:px-2.5 slide-in">
                                     <LayoutDashboard className="w-4 h-4 text-[#D8B4FE]" />
-                                    <span className="text-[10px] text-white font-medium">Dashboard</span>
+                                    <span className="hidden text-[10px] font-medium text-white sm:inline">Dashboard</span>
                                 </div>
                                 {/* Other nav items */}
                                 {[
@@ -95,9 +95,9 @@ export function BentoShowcase() {
                                     { icon: Wrench, label: "Maintenance" },
                                     { icon: Settings, label: "Settings" },
                                 ].map((item, i) => (
-                                    <div key={i} className="flex items-center gap-2 px-2.5 py-1.5 rounded-lg hover:bg-white/5 transition-colors cursor-pointer" style={{ animationDelay: `${(i + 1) * 0.1}s` }}>
+                                    <div key={i} className="flex cursor-pointer items-center justify-center gap-2 rounded-lg px-2 py-1.5 transition-colors hover:bg-white/5 sm:justify-start sm:px-2.5" style={{ animationDelay: `${(i + 1) * 0.1}s` }}>
                                         <item.icon className="w-3.5 h-3.5 text-neutral-500" />
-                                        <span className="text-[9px] text-neutral-400">{item.label}</span>
+                                        <span className="hidden text-[9px] text-neutral-400 sm:inline">{item.label}</span>
                                     </div>
                                 ))}
                             </div>
