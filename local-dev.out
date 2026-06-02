@@ -1,0 +1,23 @@
+
+> my-site@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.4:3000
+- Environments: .env.local
+✓ Ready in 740ms
+Creating turbopack project { dir: 'C:\\xampp\\htdocs\\stairiosite', testMode: true }
+
+ HEAD /about 200 in 908ms (next.js: 319ms, application-code: 590ms)
+ HEAD /about 200 in 216ms (next.js: 5ms, application-code: 211ms)
+ GET /about 200 in 218ms (next.js: 6ms, application-code: 211ms)
+ GET /team 200 in 382ms (next.js: 146ms, application-code: 236ms)
+ GET /team 200 in 181ms (next.js: 9ms, application-code: 172ms)
+ HEAD /team 200 in 644ms (next.js: 197ms, application-code: 447ms)
+ GET /team 200 in 272ms (next.js: 11ms, application-code: 261ms)
+✓ Compiled in 524ms
+ GET /team 200 in 931ms (next.js: 463ms, application-code: 468ms)
+ HEAD /team 200 in 157ms (next.js: 8ms, application-code: 149ms)
+✓ Compiled in 310ms
+ HEAD /team 200 in 886ms (next.js: 343ms, application-code: 543ms)

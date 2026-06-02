@@ -12,90 +12,72 @@ import {
   type Variants,
 } from "framer-motion";
 import {
-  Github,
-  Linkedin,
+  ArrowRight,
+  BrainCircuit,
+  Cloud,
+  Code2,
+  DatabaseZap,
   Mail,
   MapPin,
+  Palette,
   Sparkles,
-  Twitter,
+  Users,
 } from "lucide-react";
 import { useState } from "react";
 
 const teamMembers = [
   {
-    name: "Aditya Sharma",
-    role: "Lead Frontend Engineer",
-    bio: "With 5+ years of experience building scalable SaaS interfaces, Aditya specializes in React, Next.js, and Tailwind CSS. He's passionate about crafting pixel-perfect UIs with smooth animations and seamless user experiences that drive engagement.",
-    image: "https://api.dicebear.com/9.x/notionists/svg?seed=Aditya%20Sharma&backgroundColor=1f2937,111827,2a2a2a",
+    name: "Alka Prasad",
+    role: "Founding Director and Strategist",
+    bio: "Alka guides Stairio's company direction, product positioning, and strategy for building AI-native systems for Indian service businesses.",
+    image: "/images/team/alka-prasad.png",
     location: "India",
-    skills: ["React", "Next.js", "Tailwind CSS"],
+    skills: ["Strategy", "Product Direction", "Operations"],
     gradient: "from-white/10 via-white/5 to-transparent",
-    social: {
-      twitter: "#",
-      linkedin: "#",
-      github: "#",
-      email: "aditya@stairio.com",
-    },
+    email: "alka@stairio.com",
   },
   {
-    name: "Riya Sharma",
-    role: "UI/UX Engineer",
-    bio: "Riya is an expert in user psychology and interaction design, ensuring every product feels intuitive from the first click. She crafts smooth onboarding flows and delightful navigation experiences using Figma, Framer, and Webflow.",
-    image: "https://api.dicebear.com/9.x/notionists/svg?seed=Riya%20Sharma&backgroundColor=1f2937,111827,2a2a2a",
+    name: "Vineet Kumar Sinha",
+    role: "Lead Engineer",
+    bio: "Vineet leads product engineering across Stairio's AI-native platforms, with a focus on full-stack systems, automation workflows, and scalable product delivery.",
+    image: "/images/team/vineet-kumar-sinha.png",
     location: "India",
-    skills: ["Figma", "Framer", "Webflow"],
+    skills: ["Full-Stack Engineering", "AI Workflows", "Product Systems"],
     gradient: "from-white/12 via-white/5 to-transparent",
-    social: {
-      twitter: "#",
-      linkedin: "#",
-      github: "#",
-      email: "riya@stairio.com",
-    },
+    email: "vineet@stairio.com",
+  },
+];
+
+const capabilityAreas = [
+  {
+    title: "AI Engineering",
+    description: "Agent workflows, automation logic, prompt flows, and human-reviewed AI product behavior.",
+    icon: BrainCircuit,
   },
   {
-    name: "Vishal Kumar Singh",
-    role: "Lead Backend Engineer",
-    bio: "Vishal architects scalable backend systems for hotel SaaS, gym SaaS, and AI automation platforms. With deep expertise in Node.js, Firebase, and Cloud Functions, he builds reliable infrastructure focused on automation and peak performance.",
-    image: "https://api.dicebear.com/9.x/notionists/svg?seed=Vishal%20Kumar%20Singh&backgroundColor=1f2937,111827,2a2a2a",
-    location: "India",
-    skills: ["Node.js", "Firebase", "Cloud Functions"],
-    gradient: "from-white/12 via-white/5 to-transparent",
-    social: {
-      twitter: "#",
-      linkedin: "#",
-      github: "#",
-      email: "vishal@stairio.com",
-    },
+    title: "Full-Stack Product",
+    description: "Customer-facing apps, dashboards, APIs, booking flows, lead capture, and admin tools.",
+    icon: Code2,
   },
   {
-    name: "Ankit Raj",
-    role: "Backend Developer",
-    bio: "Ankit specializes in database architecture and API design, building robust booking systems, authentication flows, and third-party integrations. He ensures data integrity and seamless connectivity using MongoDB, Express, and REST APIs.",
-    image: "https://api.dicebear.com/9.x/notionists/svg?seed=Ankit%20Raj&backgroundColor=1f2937,111827,2a2a2a",
-    location: "India",
-    skills: ["MongoDB", "Express", "REST APIs"],
-    gradient: "from-foreground/12 via-foreground/5 to-transparent",
-    social: {
-      twitter: "#",
-      linkedin: "#",
-      github: "#",
-      email: "ankit@stairio.com",
-    },
+    title: "Cloud & Delivery",
+    description: "Deployment pipelines, hosting setup, environment handling, monitoring habits, and release support.",
+    icon: Cloud,
   },
   {
-    name: "Neha Gupta",
-    role: "Cloud & DevOps Engineer",
-    bio: "Neha manages deployment pipelines, server scaling, and infrastructure stability across AWS and Firebase. She ensures 99.9% uptime with robust CI/CD workflows, automated backups, and enterprise-grade security protocols.",
-    image: "https://api.dicebear.com/9.x/notionists/svg?seed=Neha%20Gupta&backgroundColor=1f2937,111827,2a2a2a",
-    location: "India",
-    skills: ["AWS", "Firebase", "CI/CD"],
-    gradient: "from-white/10 via-white/5 to-transparent",
-    social: {
-      twitter: "#",
-      linkedin: "#",
-      github: "#",
-      email: "neha@stairio.com",
-    },
+    title: "Data & Integrations",
+    description: "Business records, operational data, third-party APIs, auth flows, and reusable service layers.",
+    icon: DatabaseZap,
+  },
+  {
+    title: "UX & Product Design",
+    description: "Operator-friendly journeys, product prototypes, design systems, and conversion-focused interfaces.",
+    icon: Palette,
+  },
+  {
+    title: "Domain & GTM Research",
+    description: "Hospitality, MSME, fitness, and sales workflows translated into pilot-ready product requirements.",
+    icon: Users,
   },
 ];
 
@@ -286,49 +268,27 @@ function TeamMemberCard({ member }: { member: (typeof teamMembers)[0] }) {
                 ))}
               </motion.div>
 
-              {/* Social Links */}
+              {/* Contact */}
               <motion.div
                 className="flex justify-center gap-2"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
               >
-                {[
-                  { icon: Twitter, label: "Twitter" },
-                  { icon: Linkedin, label: "LinkedIn" },
-                  { icon: Github, label: "GitHub" },
-                  { icon: Mail, label: "Email" },
-                ].map((social, idx) => (
-                  <motion.div
-                    key={social.label}
-                    initial={{ scale: 0, rotate: -180 }}
-                    animate={
-                      isHovered
-                        ? { scale: 1, rotate: shouldReduceMotion ? 0 : 0 }
-                        : { scale: 0.85, rotate: 0 }
-                    }
-                    transition={{
-                      delay: isHovered ? 0.1 * idx : 0,
-                      type: "spring",
-                      stiffness: 300,
-                      damping: 20,
-                    }}
-                  >
-                    <Button
-                      size="icon"
-                      variant="ghost"
-                      className="h-8 w-8 rounded-full border border-border/40 bg-white/5 text-[var(--muted-foreground)] transition-colors hover:text-white"
-                    >
-                      <motion.div
-                        transition={{
-                          duration: shouldReduceMotion ? 0.25 : 0.4,
-                        }}
-                      >
-                        <social.icon className="h-4 w-4" aria-hidden />
-                      </motion.div>
-                    </Button>
-                  </motion.div>
-                ))}
+                <motion.a
+                  href={`mailto:${member.email}`}
+                  aria-label={`Email ${member.name}`}
+                  initial={{ scale: 0.85 }}
+                  animate={isHovered ? { scale: 1 } : { scale: 0.9 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 20,
+                  }}
+                  className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-border/40 bg-white/5 text-[var(--muted-foreground)] transition-colors hover:text-white"
+                >
+                  <Mail className="h-4 w-4" aria-hidden />
+                </motion.a>
               </motion.div>
             </div>
           </div>
@@ -401,10 +361,10 @@ export function TeamSectionBlock() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Meet the people behind
+            The builders behind
             <br />
             <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              our success
+              Stairio&apos;s products
             </span>
           </motion.h2>
 
@@ -414,8 +374,8 @@ export function TeamSectionBlock() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            A diverse team of talented individuals working together to build
-            amazing products and deliver exceptional results.
+            A focused product and engineering team building AI-native systems
+            for hospitality, service MSMEs, sales teams, and operators.
           </motion.p>
         </motion.div>
 
@@ -431,6 +391,50 @@ export function TeamSectionBlock() {
           ))}
         </motion.div>
 
+        {/* Capability Matrix */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.9, duration: 0.6 }}
+          className="mt-20"
+        >
+          <div className="mb-8 text-center">
+            <Badge
+              className="mb-4 gap-2 bg-white/10 text-[var(--muted-foreground)] backdrop-blur"
+              variant="secondary"
+            >
+              <Sparkles className="h-3 w-3" aria-hidden />
+              Capability Matrix
+            </Badge>
+            <h3 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
+              Execution strengths for product pilots and scale
+            </h3>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {capabilityAreas.map((area) => {
+              const Icon = area.icon;
+
+              return (
+                <Card
+                  key={area.title}
+                  className="rounded-3xl border border-border/60 bg-card/80 p-6 backdrop-blur-xl"
+                >
+                  <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl border border-border/60 bg-white/5">
+                    <Icon className="h-5 w-5 text-white" aria-hidden />
+                  </div>
+                  <h4 className="mb-3 text-lg font-semibold text-white">
+                    {area.title}
+                  </h4>
+                  <p className="text-sm leading-relaxed text-[var(--muted-foreground)]">
+                    {area.description}
+                  </p>
+                </Card>
+              );
+            })}
+          </div>
+        </motion.div>
+
         {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -441,7 +445,8 @@ export function TeamSectionBlock() {
           <Card className="inline-flex flex-col items-center gap-6 rounded-3xl border border-border/60 bg-card/80 px-10 py-8 shadow-[0_20px_70px_-30px_rgba(15,23,42,0.6)] backdrop-blur-xl">
             <h3 className="text-2xl font-semibold">Join Our Amazing Team</h3>
             <p className="max-w-xl text-sm text-[var(--muted-foreground)]">
-              We&apos;re always looking for talented people to join our mission
+              We&apos;re building a team for AI products that can move from
+              prototype to product trials and commercial deployment.
             </p>
             <a
               href="https://careers.stairio.com"
@@ -474,7 +479,7 @@ export function TeamSectionBlock() {
                       : { repeat: Infinity, duration: 1.5 }
                   }
                 >
-                  →
+                  <ArrowRight className="h-4 w-4" aria-hidden />
                 </motion.span>
               </Button>
             </a>
@@ -490,9 +495,8 @@ export function TeamSectionBlock() {
         >
           <div className="mx-auto max-w-3xl">
             <div className="mb-4 flex items-center justify-center gap-2">
-              <span className="text-2xl">💬</span>
               <h3 className="text-2xl font-semibold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent">
-                Our Philosophy
+                Builder Philosophy
               </h3>
             </div>
             <motion.p
@@ -501,7 +505,7 @@ export function TeamSectionBlock() {
               animate={{ opacity: 1 }}
               transition={{ delay: 1.4, duration: 0.6 }}
             >
-              &ldquo;At Stairio, we don&apos;t just build software — we build systems that automate businesses, enhance experiences, and scale effortlessly.&rdquo;
+              &ldquo;At Stairio, we build product systems that help service businesses automate work, improve customer journeys, and scale with measurable software-led leverage.&rdquo;
             </motion.p>
           </div>
         </motion.div>

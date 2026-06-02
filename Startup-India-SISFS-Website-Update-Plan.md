@@ -11,10 +11,10 @@ This document is the implementation blueprint for updating the Stairio website s
 Current working phase:
 
 ```text
-Phase 1: Home Page Positioning
+Phase 2: About + Team Credibility
 Status: implemented, pending visual review
 Completion: 90%
-Next phase after review: Phase 2 - About + Team Credibility
+Next phase after review: Phase 3 - Hotelify Flagship Proof
 ```
 
 Phase progress:
@@ -23,7 +23,7 @@ Phase progress:
 |---|---|---:|---:|---|
 | Phase 0 | Content + Design Lock | Partially complete | 60% | Conservative claim rules are locked. Real incorporation, DPIIT, traction, customer, and team proof still need founder confirmation before publishing hard claims. |
 | Phase 1 | Home Page Positioning | Review needed | 90% | Original hero restored by founder preference. "What Is Stairio?", Technology Core, Impact Thesis, Roadmap Snapshot, and product carousel updates remain. Targeted lint passed, production build passed, `/` returns 200. Final 10% is desktop/mobile visual review. |
-| Phase 2 | About + Team Credibility | Not started | 0% | Wait until Phase 1 is reviewed. |
+| Phase 2 | About + Team Credibility | Review needed | 90% | About and Team credibility updates implemented. Final 10% is desktop/mobile visual review and founder verification of public team/fact details. |
 | Phase 3 | Hotelify Flagship Proof | Not started | 0% | Existing Hotelify design must be preserved. |
 | Phase 4 | SmartSite Product Repositioning | Not started | 0% | Depends on approved product-company language from Phase 1. |
 | Phase 5A | New `/impact` Page | Not started | 0% | Should use verified impact claims only. |
@@ -1473,12 +1473,12 @@ ABOUT + TEAM PHASE
 Work items:
 
 ```text
-[ ] Add "Why we exist" with India/MSME/product framing.
-[ ] Add mission and vision cards.
-[ ] Add product thesis section.
-[ ] Add company facts section, only with verified facts.
-[ ] Add team capability matrix.
-[ ] Clean fake `#` social links where possible.
+[x] Add "Why we exist" with India/MSME/product framing.
+[x] Add mission and vision cards.
+[x] Add product thesis section.
+[x] Add company facts section, only with verified facts.
+[x] Add team capability matrix.
+[x] Clean fake `#` social links where possible.
 ```
 
 Do not touch:
@@ -1498,9 +1498,9 @@ Reuse About page dark cards and Team page motion/card pattern.
 Validation:
 
 ```text
-[ ] /about returns 200.
-[ ] /team returns 200.
-[ ] Targeted lint for changed files.
+[x] /about returns 200.
+[x] /team returns 200.
+[x] Targeted lint for changed files.
 [ ] Check mobile card stacking.
 ```
 

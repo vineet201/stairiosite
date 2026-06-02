@@ -5,6 +5,7 @@ import {
   Bot,
   BrainCircuit,
   Building2,
+  CheckCircle2,
   Layers3,
   Rocket,
   ShieldCheck,
@@ -17,20 +18,20 @@ import { Card, CardContent } from "@/components/ui/card";
 export const metadata: Metadata = {
   title: "About Stairio",
   description:
-    "Learn how Stairio designs AI-native products, automation systems, and modern software for ambitious businesses.",
+    "Learn how Stairio builds AI-native products for Indian service businesses, MSMEs, hospitality operators, and modern teams.",
 };
 
 const principles = [
   {
     title: "AI-Native Thinking",
     description:
-      "We do not bolt AI onto old systems. We design products and workflows around intelligence from the start.",
+      "We design products, workflows, and operating layers around useful intelligence from the start.",
     icon: BrainCircuit,
   },
   {
-    title: "Execution Over Hype",
+    title: "Measurable Outcomes",
     description:
-      "Every engagement is grounded in practical outcomes, measurable efficiency, and systems teams can actually use.",
+      "Every product direction is tied to clearer operations, better conversion, or less manual work.",
     icon: Rocket,
   },
   {
@@ -40,9 +41,9 @@ const principles = [
     icon: Layers3,
   },
   {
-    title: "Trusted Delivery",
+    title: "Responsible AI",
     description:
-      "We care about clean execution, clear communication, and long-term reliability after launch.",
+      "AI should support operators with clear data ownership, human oversight, and practical guardrails.",
     icon: ShieldCheck,
   },
 ];
@@ -50,34 +51,64 @@ const principles = [
 const timeline = [
   {
     step: "01",
-    title: "Understand the business",
+    title: "Prototype",
     description:
-      "We start with how your team operates today, where friction lives, and what growth actually looks like.",
+      "Shape the product wedge, core workflow, and first useful AI layer around a real operator problem.",
   },
   {
     step: "02",
-    title: "Design the right system",
+    title: "Validate",
     description:
-      "We shape the product, workflow, or automation around your business model instead of forcing a template.",
+      "Test the workflow with demos, interviews, pilot targets, and evidence that the solution is usable.",
   },
   {
     step: "03",
-    title: "Build with clarity",
+    title: "Commercialize",
     description:
-      "Our team ships the platform, experience, or AI layer with a strong focus on usability, speed, and scale.",
+      "Package the product, pricing, onboarding, and support model so customers can adopt it repeatedly.",
   },
   {
     step: "04",
-    title: "Improve continuously",
+    title: "Scale",
     description:
-      "After launch, we keep refining the product based on performance, team feedback, and customer behavior.",
+      "Improve the shared technology core, integrations, analytics, and deployment playbooks across products.",
   },
 ];
 
 const stats = [
-  { value: "AI-first", label: "Products and services built with intelligence at the core" },
-  { value: "Full-stack", label: "From interfaces and APIs to workflow and automation logic" },
-  { value: "Outcome-led", label: "Focused on growth, speed, clarity, and operational leverage" },
+  { value: "India-first", label: "Built around hospitality, service MSMEs, sales teams, and operators" },
+  { value: "Product-led", label: "Reusable platforms supported by AI agents, workflows, and dashboards" },
+  { value: "Pilot-ready", label: "Structured for prototypes, product trials, market entry, and scale" },
+];
+
+const thesisPillars = [
+  {
+    title: "Vertical SaaS",
+    description:
+      "Focused product systems for categories such as hospitality, service businesses, fitness, and sales operations.",
+  },
+  {
+    title: "AI Agents",
+    description:
+      "Voice, chat, follow-up, and workflow agents that reduce repetitive work while keeping operators in control.",
+  },
+  {
+    title: "Workflow Automation",
+    description:
+      "Booking, lead, customer, revenue, and internal process flows that move work through a repeatable system.",
+  },
+  {
+    title: "Data Layer",
+    description:
+      "Dashboards, customer records, activity history, and insights that make business operations easier to measure.",
+  },
+];
+
+const companyFacts = [
+  "AI-native product company focused on Indian service businesses.",
+  "Current product directions include Hotelify, SmartSite, AI Voice Agent, Kore, and SalesPro.",
+  "Technology focus areas include AI agents, workflow automation, dashboards, and integrations.",
+  "Public claims avoid unverified DPIIT, funding, revenue, customer-count, or certification statements.",
 ];
 
 export default function AboutPage() {
@@ -103,14 +134,13 @@ export default function AboutPage() {
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight leading-tight mb-6">
               <span className="text-white">Building the next layer of </span>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#D8B4FE] via-[#FF9132] to-[#D8B4FE]">
-                AI-native business systems
+                India-first AI products
               </span>
             </h1>
 
             <p className="text-base sm:text-lg lg:text-xl text-neutral-400 leading-relaxed max-w-3xl mx-auto">
-              Stairio helps modern businesses design, launch, and scale products that feel
-              intelligent from day one, from automation engines and agent workflows to polished
-              software platforms and growth-focused digital experiences.
+              Stairio builds AI-native products for Indian service businesses that still depend on
+              manual work, fragmented tools, and disconnected customer journeys.
             </p>
           </div>
 
@@ -143,22 +173,23 @@ export default function AboutPage() {
                     Why we exist
                   </div>
                   <h2 className="text-3xl sm:text-4xl font-bold text-white mb-5 leading-tight">
-                    We build systems that make teams faster, clearer, and more confident.
+                    We exist to make AI useful for operators, not just impressive in demos.
                   </h2>
                   <div className="space-y-4 text-neutral-400 leading-relaxed">
                     <p>
-                      Businesses do not need more disconnected tools. They need products,
-                      workflows, and experiences that work together cleanly.
+                      Many Indian hotels, gyms, agencies, clinics, local service businesses, and
+                      sales teams still run on calls, spreadsheets, manual follow-ups, and isolated
+                      software.
                     </p>
                     <p>
-                      Stairio was created to bridge that gap with AI-native thinking, sharp product
-                      execution, and software that helps teams move from idea to execution without
-                      unnecessary friction.
+                      Stairio was created to turn those repeated problems into deployable product
+                      systems: vertical software, AI agents, workflow automation, and dashboards
+                      that can be piloted, measured, improved, and scaled.
                     </p>
                     <p>
-                      Whether we are building Hotelify, SmartSite, an automation workflow, or a
-                      custom platform, the goal stays the same: make technology feel like leverage,
-                      not overhead.
+                      Our first wedge is hospitality and service MSMEs, where better direct revenue
+                      capture, faster response times, and cleaner operations can create visible
+                      business impact.
                     </p>
                   </div>
                 </div>
@@ -173,8 +204,8 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-3">What we build</h3>
                   <p className="text-neutral-400 leading-relaxed">
-                    AI automation, business systems, agent workflows, full-stack software, and
-                    modern web experiences designed for real growth.
+                    Productized AI systems such as Hotelify, SmartSite, AI Voice Agent, Kore, and
+                    SalesPro, supported by shared workflow, data, and automation layers.
                   </p>
                 </CardContent>
               </Card>
@@ -186,12 +217,91 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-3">Who we build for</h3>
                   <p className="text-neutral-400 leading-relaxed">
-                    Founders, operators, and growing teams who want software and AI to create
-                    momentum, not complexity.
+                    Indian service operators, MSMEs, founders, and sales teams that need practical
+                    technology adoption without enterprise complexity.
                   </p>
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative py-12 sm:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10 sm:mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.06] mb-5">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#5DDF18] animate-pulse" />
+              <span className="text-xs font-medium text-neutral-400 tracking-wide uppercase">
+                Company Thesis
+              </span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+              <span className="text-white">Vertical products, </span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#D8B4FE] via-[#FF9132] to-[#D8B4FE]">
+                reusable AI core
+              </span>
+            </h2>
+            <p className="text-neutral-400 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
+              Stairio is structured as a product studio with shared technology primitives that can
+              support multiple service-business categories over time.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5">
+            {thesisPillars.map((pillar) => (
+              <Card
+                key={pillar.title}
+                className="rounded-3xl bg-[#0d0d0d]/80 border border-white/[0.08] shadow-[0_0_0_1px_rgba(255,255,255,0.03)] backdrop-blur-xl"
+              >
+                <CardContent className="p-6 sm:p-7">
+                  <div className="w-10 h-10 rounded-2xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center mb-5">
+                    <CheckCircle2 className="w-5 h-5 text-[#5DDF18]" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-white mb-3">{pillar.title}</h3>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{pillar.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="relative py-12 sm:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+            <Card className="rounded-3xl bg-[#0d0d0d]/80 border border-white/[0.08] shadow-[0_0_0_1px_rgba(255,255,255,0.03)] backdrop-blur-xl">
+              <CardContent className="p-7 sm:p-9">
+                <div className="inline-flex items-center gap-2 text-xs font-medium text-neutral-400 tracking-wide uppercase mb-5">
+                  <Rocket className="w-4 h-4 text-[#FF9132]" />
+                  Mission
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+                  Make AI deployable for everyday Indian business operations.
+                </h2>
+                <p className="text-neutral-400 leading-relaxed">
+                  We want operators to use AI inside real workflows: responding to leads, managing
+                  bookings, following up with customers, tracking revenue, and reducing repetitive
+                  manual work.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="rounded-3xl bg-[#0d0d0d]/80 border border-white/[0.08] shadow-[0_0_0_1px_rgba(255,255,255,0.03)] backdrop-blur-xl">
+              <CardContent className="p-7 sm:p-9">
+                <div className="inline-flex items-center gap-2 text-xs font-medium text-neutral-400 tracking-wide uppercase mb-5">
+                  <Sparkles className="w-4 h-4 text-[#D8B4FE]" />
+                  Vision
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+                  Build category-defining AI-native operating systems.
+                </h2>
+                <p className="text-neutral-400 leading-relaxed">
+                  Our long-term direction is a portfolio of focused products that help service
+                  businesses digitize, automate, commercialize, and grow with software-led leverage.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -247,11 +357,11 @@ export default function AboutPage() {
                 </span>
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
-                Clear process, strong execution, better outcomes.
+                Prototype, validate, commercialize, and scale.
               </h2>
               <p className="text-neutral-400 text-base sm:text-lg leading-relaxed max-w-xl">
-                We keep our process collaborative and focused so teams know what is being built,
-                why it matters, and how it supports business growth.
+                Our working model keeps product depth, market validation, and deployment readiness
+                visible at each stage.
               </p>
             </div>
 
@@ -279,6 +389,42 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="relative py-12 sm:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <Card className="rounded-3xl bg-[#0d0d0d]/80 border border-white/[0.08] shadow-[0_0_0_1px_rgba(255,255,255,0.03)] backdrop-blur-xl overflow-hidden">
+            <CardContent className="relative p-7 sm:p-9">
+              <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+              <div className="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-8 lg:gap-10">
+                <div>
+                  <div className="inline-flex items-center gap-2 text-xs font-medium text-neutral-400 tracking-wide uppercase mb-5">
+                    <Building2 className="w-4 h-4 text-[#5DDF18]" />
+                    Company Facts
+                  </div>
+                  <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">
+                    Factual positioning, without unverified claims.
+                  </h2>
+                  <p className="text-neutral-400 leading-relaxed">
+                    These are the public facts this page can safely communicate until incorporation,
+                    DPIIT, customer, revenue, or certification details are confirmed by the founder.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {companyFacts.map((fact) => (
+                    <div
+                      key={fact}
+                      className="rounded-2xl border border-white/[0.08] bg-white/[0.03] p-4 text-sm text-neutral-300 leading-relaxed"
+                    >
+                      {fact}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       <section className="relative py-14 sm:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <Card className="rounded-[2rem] bg-[#0d0d0d]/85 border border-white/[0.08] shadow-[0_0_0_1px_rgba(255,255,255,0.03),0_20px_60px_-20px_rgba(0,0,0,0.65)] backdrop-blur-xl overflow-hidden">
@@ -293,8 +439,8 @@ export default function AboutPage() {
                   Ready to build with Stairio?
                 </h2>
                 <p className="text-neutral-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
-                  If you are exploring a new product, a smarter digital experience, or an AI-native
-                  workflow, we would love to shape it with you.
+                  If you are exploring a product pilot, service-business automation, or an
+                  AI-native workflow, we would love to shape it with you.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <Button asChild size="lg" className="rounded-full">
