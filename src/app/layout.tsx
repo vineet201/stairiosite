@@ -49,6 +49,20 @@ export const metadata: Metadata = {
     url: "/",
     siteName: "Stairio",
     type: "website",
+    images: [
+      {
+        url: "/images/Logo/Stairio.png",
+        width: 1254,
+        height: 1254,
+        alt: "Stairio Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Stairio - AI-Native Solutions",
+    description: "AI-first systems that transform how businesses operate",
+    images: ["/images/Logo/Stairio.png"],
   },
 };
 
