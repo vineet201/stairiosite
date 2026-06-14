@@ -42,29 +42,28 @@ const footerConfig = {
     {
       title: "Company",
       links: [
-        { id: 1, title: "About Stairio", url: "#" },
+        { id: 1, title: "About Stairio", url: "/about" },
         { id: 2, title: "Our Team", url: "/team" },
-        { id: 3, title: "Capabilities", url: "#" },
-        { id: 4, title: "Case Studies", url: "#" },
-        { id: 5, title: "Contact", url: "#" },
+        { id: 3, title: "Careers", url: "#" },
+        { id: 4, title: "Contact", url: "#" },
       ],
     },
     {
       title: "Solutions",
       links: [
+        { id: 5, title: "Hotelify", url: "/hotelify" },
         { id: 6, title: "AI Systems", url: "#" },
         { id: 7, title: "Automation", url: "#" },
         { id: 8, title: "Platform Engineering", url: "#" },
-        { id: 9, title: "Advisory", url: "#" },
       ],
     },
     {
-      title: "Resources",
+      title: "Legal & Support",
       links: [
-        { id: 10, title: "Insights", url: "#" },
-        { id: 11, title: "News", url: "#" },
-        { id: 12, title: "Careers", url: "#" },
-        { id: 13, title: "Support", url: "#" },
+        { id: 9, title: "Privacy Policy", url: "/privacy-policy" },
+        { id: 10, title: "Terms of Service", url: "/terms-of-service" },
+        { id: 11, title: "Refund Policy", url: "/refund-policy" },
+        { id: 12, title: "Support", url: "#" },
       ],
     },
   ] satisfies FooterColumn[],
@@ -530,8 +529,13 @@ export function FlickeringFooter() {
           />
         </div>
 
-        <div className="absolute inset-x-6 bottom-6 flex flex-col gap-2 text-sm text-white/45 md:inset-x-10 md:flex-row md:items-center md:justify-between">
+        <div className="absolute inset-x-6 bottom-6 flex flex-col gap-4 text-sm text-white/45 md:inset-x-10 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Stairio. Built for faster AI execution.</p>
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="/refund-policy" className="hover:text-white transition-colors">Refund Policy</Link>
+          </div>
           <p>Automation, platform engineering, and decision systems.</p>
         </div>
       </div>
