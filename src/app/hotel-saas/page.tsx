@@ -462,6 +462,7 @@ export default function HotelSaasPage() {
   const brandRef = useRef(null);
 
   const [isCalcOpen, setIsCalcOpen] = useState(false);
+  const getStartedUrl = "/quote";
 
   const isHeroInView = useInView(heroRef, { once: true });
   const isProblemInView = useInView(problemRef, { once: true, margin: "-100px" });
@@ -736,7 +737,7 @@ export default function HotelSaasPage() {
               icon: <Layers className="w-8 h-8 text-[#D8B4FE]" />,
               priceMonthly: 1499,
               users: "Up to 10 rooms",
-              checkoutUrl: "https://subscription.stairio.com/checkout/hotelify/starter-12m",
+              checkoutUrl: getStartedUrl,
               features: [
                 { label: "0% Commission Direct Booking Engine", included: true },
                 { label: "Real-Time Availability Calendar", included: true },
@@ -760,7 +761,7 @@ export default function HotelSaasPage() {
               icon: <Monitor className="w-8 h-8 text-[#FF9132]" />,
               priceMonthly: 2999,
               users: "Up to 30 rooms",
-              checkoutUrl: "https://subscription.stairio.com/checkout/hotelify/growth-12m",
+              checkoutUrl: getStartedUrl,
               features: [
                 { label: "Everything in Starter", included: true },
                 { label: "Unlimited Staff Accounts", included: true },
@@ -791,7 +792,7 @@ export default function HotelSaasPage() {
               icon: <Users className="w-8 h-8 text-[#5DDF18]" />,
               priceMonthly: 7499,
               users: "Up to 50 rooms",
-              checkoutUrl: "https://subscription.stairio.com/checkout/hotelify/professional-12m",
+              checkoutUrl: getStartedUrl,
               features: [
                 { label: "Everything in Growth", included: true },
                 { label: "Channel Manager (Booking.com, MakeMyTrip, Airbnb, Agoda, Expedia & more)", included: true },
@@ -820,7 +821,7 @@ export default function HotelSaasPage() {
               icon: <Building2 className="w-8 h-8 text-white" />,
               priceMonthly: 18999,
               users: "Unlimited rooms",
-              checkoutUrl: "https://subscription.stairio.com/checkout/hotelify/enterprise-12m",
+              checkoutUrl: getStartedUrl,
               features: [
                 { label: "Everything in Professional", included: true },
                 { label: "AI Chat Assistant (Automated Guest Chatbot — 24/7)", included: true },

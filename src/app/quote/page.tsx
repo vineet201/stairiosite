@@ -15,15 +15,6 @@ const productOptions = [
 
 const serviceOptions = stairioServiceOptions;
 
-const budgetOptions = [
-  'Under $5,000',
-  '$5,000 - $15,000',
-  '$15,000 - $50,000',
-  '$50,000 - $100,000',
-  '$100,000+',
-  'Not sure yet',
-];
-
 const timelineOptions = [
   'Less than 1 month',
   '1 - 3 months',
@@ -42,7 +33,6 @@ export default function QuotePage() {
     company: '',
     phone: '',
     serviceType: '',
-    budgetRange: '',
     timeline: '',
     projectDescription: '',
   });
@@ -123,7 +113,7 @@ export default function QuotePage() {
               </h1>
               
               <p className="text-neutral-400 mb-8">
-                Thank you for your interest in Stairio. Your quote request has been sent to our team at growth@stairio.com and we&apos;ll get back to you within 24-48 hours.
+                Thank you for contacting Stairio. Your request has been sent to our team at growth@stairio.com and we&apos;ll get back to you within 24-48 hours.
               </p>
               
               <Link
@@ -164,7 +154,7 @@ export default function QuotePage() {
             Get a Quote
           </h1>
           <p className="text-base sm:text-lg text-neutral-400 max-w-2xl mx-auto">
-            Tell us about your project and we&apos;ll craft a custom solution tailored to your business needs.
+            Share your contact details and what you need. Our team will respond with the next step.
           </p>
         </div>
 
@@ -296,27 +286,6 @@ export default function QuotePage() {
                         </option>
                       ))}
                     </optgroup>
-                  </select>
-                </div>
-
-                {/* Budget Range */}
-                <div>
-                  <label htmlFor="budgetRange" className="block text-sm font-medium text-neutral-300 mb-2">
-                    Budget Range <span className="text-red-400">*</span>
-                  </label>
-                  <select
-                    id="budgetRange"
-                    name="budgetRange"
-                    value={formData.budgetRange}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/10 text-white focus:outline-none focus:border-purple-500/50 focus:ring-1 focus:ring-purple-500/50 transition-all duration-300 appearance-none cursor-pointer"
-                    style={{backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23737373' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 12px center', backgroundSize: '16px'}}
-                  >
-                    <option value="" className="bg-neutral-900">Select budget range</option>
-                    {budgetOptions.map(budget => (
-                      <option key={budget} value={budget} className="bg-neutral-900">{budget}</option>
-                    ))}
                   </select>
                 </div>
 

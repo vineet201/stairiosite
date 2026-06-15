@@ -130,7 +130,7 @@ export function Header() {
 						</a>
 					</Button>
 					<Button asChild>
-						<a href="/#products-section">Get Started</a>
+						<a href="/quote">Get Started</a>
 					</Button>
 				</div>
 				<Button
@@ -169,7 +169,7 @@ export function Header() {
 						</a>
 					</Button>
 					<Button asChild className="w-full">
-						<a href="/#products-section">Get Started</a>
+						<a href="/quote">Get Started</a>
 					</Button>
 				</div>
 			</MobileMenu>
