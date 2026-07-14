@@ -31,6 +31,7 @@ import {
 	PlugIcon,
 	Building2,
 	Phone,
+	Mail,
 } from 'lucide-react';
 
 type LinkItem = {
@@ -124,6 +125,10 @@ export function Header() {
 					</NavigationMenu>
 				</div>
 				<div className="hidden items-center gap-2 md:flex">
+					<a href="mailto:growth@stairio.com" className="text-sm font-medium hover:underline mr-2 flex items-center gap-2">
+						<Mail className="size-4" />
+						growth@stairio.com
+					</a>
 					<Button asChild size="icon" variant="outline" aria-label="Call Stairio">
 						<a href="tel:+919262579663">
 							<Phone className="size-4" />
@@ -162,6 +167,12 @@ export function Header() {
 					</div>
 				</NavigationMenu>
 				<div className="flex flex-col gap-2">
+					<Button asChild variant="outline" className="w-full">
+						<a href="mailto:growth@stairio.com">
+							<Mail className="mr-2 size-4" />
+							growth@stairio.com
+						</a>
+					</Button>
 					<Button asChild variant="outline" className="w-full">
 						<a href="tel:+919262579663">
 							<Phone className="mr-2 size-4" />

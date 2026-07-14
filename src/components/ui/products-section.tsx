@@ -45,7 +45,7 @@ const products: Product[] = [
   },
   {
     id: "ai-voice-calling-agent",
-    name: "AI Voice Calling Agent",
+    name: "AI Voice Calling Agent CRM",
     tagline: "Automated Voice Outreach System",
     description:
       "An AI calling agent that handles outbound calls, follow-ups, appointment scheduling, and lead qualification at scale.",

@@ -38,13 +38,13 @@ const satoshi = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.stairio.com"),
-  title: "Stairio - AI-Native Solutions",
+  title: "Stairio Technologies - AI Native Solutions",
   description: "AI-first systems that transform how businesses operate",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Stairio - AI-Native Solutions",
+    title: "Stairio Technologies - AI Native Solutions",
     description: "AI-first systems that transform how businesses operate",
     url: "/",
     siteName: "Stairio",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stairio - AI-Native Solutions",
+    title: "Stairio Technologies - AI Native Solutions",
     description: "AI-first systems that transform how businesses operate",
     images: ["/images/Logo/Stairio.png"],
   },

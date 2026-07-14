@@ -7,7 +7,7 @@ import { stairioServiceOptions } from '@/lib/services';
 
 const productOptions = [
   'Hotelify',
-  'AI Voice Calling Agent',
+  'AI Voice Calling Agent CRM',
   'SmartSite',
   'Kore',
   'SalesPro - AI Powered Sales Management Software',
